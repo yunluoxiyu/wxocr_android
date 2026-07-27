@@ -1,7 +1,9 @@
 package com.yunluo.wxocr.ui
 
 import android.widget.Toast
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Delete
@@ -25,6 +27,8 @@ fun SettingsScreen(onNavigateBack: () -> Unit) {
     val context = LocalContext.current
     var cardKeyInput by remember { mutableStateOf(AppConfig.cardKey ?: "") }
     var cardKeyError by remember { mutableStateOf<String?>(null) }
+    var deepSeekKeyInput by remember { mutableStateOf(AppConfig.deepSeekApiKey ?: "") }
+    var deepSeekKeyError by remember { mutableStateOf<String?>(null) }
     var dirInput by remember { mutableStateOf(AppConfig.saveDirPath) }
     var dirError by remember { mutableStateOf<String?>(null) }
 
@@ -45,7 +49,11 @@ fun SettingsScreen(onNavigateBack: () -> Unit) {
         }
     ) { padding ->
         Column(
-            modifier = Modifier.fillMaxSize().padding(padding).padding(16.dp),
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding)
+                .verticalScroll(rememberScrollState())
+                .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             // 卡密管理
@@ -88,6 +96,54 @@ fun SettingsScreen(onNavigateBack: () -> Unit) {
                                 Icon(Icons.Default.Delete, contentDescription = null, modifier = Modifier.size(16.dp))
                                 Spacer(Modifier.width(4.dp))
                                 Text("清除卡密", color = MaterialTheme.colorScheme.error)
+                            }
+                        }
+                    }
+                }
+            }
+
+            // DeepSeek API Key
+            Card(modifier = Modifier.fillMaxWidth()) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(Icons.Default.Key, contentDescription = null, modifier = Modifier.size(20.dp),
+                            tint = MaterialTheme.colorScheme.primary)
+                        Spacer(Modifier.width(8.dp))
+                        Text("DeepSeek API Key", fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                    }
+                    Spacer(Modifier.height(4.dp))
+                    Text("反作弊弹框答题会使用此 Key 调用 DeepSeek", fontSize = 13.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Spacer(Modifier.height(12.dp))
+                    OutlinedTextField(
+                        value = deepSeekKeyInput,
+                        onValueChange = { deepSeekKeyInput = it; deepSeekKeyError = null },
+                        label = { Text("DeepSeek API Key") },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth(),
+                        isError = deepSeekKeyError != null
+                    )
+                    if (deepSeekKeyError != null) {
+                        Text(deepSeekKeyError!!, fontSize = 12.sp, color = MaterialTheme.colorScheme.error)
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Button(modifier = Modifier.weight(1f), onClick = {
+                            val newKey = deepSeekKeyInput.trim()
+                            if (newKey.isBlank()) { deepSeekKeyError = "API Key 不能为空"; return@Button }
+                            AppConfig.deepSeekApiKey = newKey
+                            ServiceState.postLog("DeepSeek API Key 已更新")
+                            Toast.makeText(context, "DeepSeek API Key 已保存", Toast.LENGTH_SHORT).show()
+                        }) { Text("保存") }
+                        if (AppConfig.deepSeekApiKey != null) {
+                            OutlinedButton(modifier = Modifier.weight(1f), onClick = {
+                                AppConfig.deepSeekApiKey = null
+                                deepSeekKeyInput = ""
+                                Toast.makeText(context, "DeepSeek API Key 已清除", Toast.LENGTH_SHORT).show()
+                            }) {
+                                Icon(Icons.Default.Delete, contentDescription = null, modifier = Modifier.size(16.dp))
+                                Spacer(Modifier.width(4.dp))
+                                Text("清除", color = MaterialTheme.colorScheme.error)
                             }
                         }
                     }

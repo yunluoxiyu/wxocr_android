@@ -261,9 +261,11 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         try {
             val tplFile = AppConfig.templateFile
             if (!tplFile.exists()) return null
-            val tplBmp = android.graphics.BitmapFactory.decodeFile(tplFile.absolutePath) ?: return null
-            val tplMat = Mat()
-            org.opencv.android.Utils.bitmapToMat(tplBmp, tplMat)
+            val tplMat = Imgcodecs.imread(tplFile.absolutePath, Imgcodecs.IMREAD_COLOR)
+            if (tplMat.empty()) {
+                tplMat.release()
+                return null
+            }
             val result = ImagePreprocessor.templateMatch(mat, tplMat)
             tplMat.release()
             return result
@@ -275,12 +277,108 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         try {
             val roi = ImagePreprocessor.crop(mat, x, y, x + w, y + h)
             if (roi.empty()) return emptyList()
-            val processed = ImagePreprocessor.preprocessWhiteForRapidOcr(roi)
-            val text = recModel.predict(ImagePreprocessor.matToBitmap(processed))
+            val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi)
+            val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(processed)))
             roi.release(); processed.release()
             if (text.isBlank()) return emptyList()
             return listOf(OcrDetection(text = text, centerX = x + w / 2, centerY = y + h / 2, confidence = 0.8f))
         } finally { mat.release() }
+    }
+
+    fun ocrRoiDetections(base64Str: String, x: Int, y: Int, w: Int, h: Int): List<OcrDetection> {
+        val mat = decodeToMat(base64Str) ?: return emptyList()
+        try {
+            return ocrRoiDetections(mat, x, y, w, h)
+        } finally { mat.release() }
+    }
+
+    fun ocrAntiCheatOptionGrid(base64Str: String, x: Int, y: Int, w: Int, h: Int): Map<String, OcrDetection> {
+        val mat = decodeToMat(base64Str) ?: return emptyMap()
+        try {
+            val halfW = w / 2
+            val halfH = h / 2
+            val cells = linkedMapOf(
+                "A" to Rect(x, y, halfW, halfH),
+                "B" to Rect(x + halfW, y, w - halfW, halfH),
+                "C" to Rect(x, y + halfH, halfW, h - halfH),
+                "D" to Rect(x + halfW, y + halfH, w - halfW, h - halfH)
+            )
+            val result = linkedMapOf<String, OcrDetection>()
+            for ((letter, rect) in cells) {
+                val padX = (rect.width * 0.06).toInt()
+                val padY = (rect.height * 0.12).toInt()
+                val roi = ImagePreprocessor.crop(
+                    mat,
+                    rect.x + padX,
+                    rect.y + padY,
+                    rect.x + rect.width - padX,
+                    rect.y + rect.height - padY
+                )
+                if (roi.empty()) {
+                    roi.release()
+                    continue
+                }
+                val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi, targetWidth = 320)
+                if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_option_${letter}")
+                val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(processed)))
+                processed.release(); roi.release()
+                result[letter] = OcrDetection(
+                    text = text,
+                    centerX = rect.x + rect.width / 2,
+                    centerY = rect.y + rect.height / 2,
+                    confidence = 0.8f
+                )
+            }
+            return result
+        } finally { mat.release() }
+    }
+
+    private fun ocrRoiDetections(mat: Mat, x: Int, y: Int, w: Int, h: Int): List<OcrDetection> {
+        val roi = ImagePreprocessor.crop(mat, x, y, x + w, y + h)
+        if (roi.empty()) return emptyList()
+        val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi)
+        if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_roi_${x}_${y}")
+
+        val sx = roi.cols().toDouble() / processed.cols().coerceAtLeast(1)
+        val sy = roi.rows().toDouble() / processed.rows().coerceAtLeast(1)
+        val boxes = detModel.predict(processed)
+            .filter { it.score >= AppConfig.OCR_MIN_CONFIDENCE }
+            .sortedWith(compareBy<PaddleLiteDetModel.DetBox> { it.centerY }.thenBy { it.centerX })
+
+        val detections = mutableListOf<OcrDetection>()
+        for (box in boxes) {
+            val localCrop = cropDetBox(processed, box)
+            if (localCrop.empty()) {
+                localCrop.release()
+                continue
+            }
+            val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(localCrop)))
+            localCrop.release()
+            if (text.isBlank()) continue
+            val centerX = x + (box.centerX * sx).toInt()
+            val centerY = y + (box.centerY * sy).toInt()
+            detections.add(OcrDetection(text = text, centerX = centerX, centerY = centerY, confidence = box.score))
+        }
+
+        if (detections.isEmpty()) {
+            val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(processed)))
+            processed.release(); roi.release()
+            return if (text.isBlank()) emptyList() else listOf(
+                OcrDetection(text = text, centerX = x + w / 2, centerY = y + h / 2, confidence = 0.8f)
+            )
+        }
+
+        processed.release(); roi.release()
+        return detections
+    }
+
+    private fun cropDetBox(mat: Mat, box: PaddleLiteDetModel.DetBox): Mat {
+        val minX = minOf(box.x1, box.x2, box.x3, box.x4).coerceIn(0, mat.cols() - 1)
+        val maxX = maxOf(box.x1, box.x2, box.x3, box.x4).coerceIn(0, mat.cols() - 1)
+        val minY = minOf(box.y1, box.y2, box.y3, box.y4).coerceIn(0, mat.rows() - 1)
+        val maxY = maxOf(box.y1, box.y2, box.y3, box.y4).coerceIn(0, mat.rows() - 1)
+        if (maxX <= minX || maxY <= minY) return Mat.zeros(1, 1, CvType.CV_8UC3)
+        return Mat(mat, Rect(minX, minY, maxX - minX, maxY - minY))
     }
 
     data class OcrResult(
@@ -318,6 +416,10 @@ class PaddleOcrEngine(private val device: String = "cpu") {
             t = t.replace(Regex("""([一-鿿])[0O]$"""), "$1")
             t = t.replace(Regex("""[0O]$"""), "")
             return t.trim()
+        }
+
+        fun cleanAntiCheatText(text: String): String {
+            return text.replace(Regex("""[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]"""), "").trim()
         }
     }
 }

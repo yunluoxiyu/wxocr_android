@@ -203,14 +203,65 @@ object ImagePreprocessor {
         return result
     }
 
-    fun templateMatch(source: Mat, template: Mat, threshold: Double = AppConfig.TEMPLATE_MATCH_THRESHOLD): TemplateMatchResult? {
-        Log.d(TAG, "templateMatch: source=${source.cols()}x${source.rows()}, template=${template.cols()}x${template.rows()}, threshold=$threshold")
-        val start = System.currentTimeMillis()
+    fun preprocessAntiCheatWhite(roi: Mat, targetWidth: Int = AppConfig.OCR_RESIZE_TARGET_WIDTH): Mat {
+        Log.d(TAG, "preprocessAntiCheatWhite: ${roi.cols()}x${roi.rows()}")
+        val hsv = Mat()
+        Imgproc.cvtColor(roi, hsv, Imgproc.COLOR_BGR2HSV)
+        val mask = Mat()
+        Core.inRange(
+            hsv,
+            Scalar(
+                AppConfig.WHITE_HSV_LOWER[0].toDouble(),
+                AppConfig.WHITE_HSV_LOWER[1].toDouble(),
+                AppConfig.WHITE_HSV_LOWER[2].toDouble()
+            ),
+            Scalar(
+                AppConfig.WHITE_HSV_UPPER[0].toDouble(),
+                AppConfig.WHITE_HSV_UPPER[1].toDouble(),
+                AppConfig.WHITE_HSV_UPPER[2].toDouble()
+            ),
+            mask
+        )
+
+        val whiteOnly = Mat()
+        Core.bitwise_and(roi, roi, whiteOnly, mask)
+        val gray = Mat()
+        Imgproc.cvtColor(whiteOnly, gray, Imgproc.COLOR_BGR2GRAY)
+        Imgproc.threshold(gray, gray, AppConfig.WHITE_BINARY_THRESHOLD.toDouble(), 255.0, Imgproc.THRESH_BINARY)
+
         val result = Mat()
-        Imgproc.matchTemplate(source, template, result, AppConfig.TEMPLATE_MATCH_METHOD)
+        Imgproc.cvtColor(gray, result, Imgproc.COLOR_GRAY2BGR)
+        hsv.release(); mask.release(); whiteOnly.release(); gray.release()
+
+        val w = result.cols()
+        if (w > targetWidth) {
+            val scale = targetWidth.toDouble() / w
+            val dst = Mat()
+            Imgproc.resize(result, dst, Size(targetWidth.toDouble(), (result.rows() * scale).coerceAtLeast(1.0)))
+            result.release()
+            return dst
+        }
+        return result
+    }
+
+    fun templateMatch(source: Mat, template: Mat, threshold: Double = AppConfig.TEMPLATE_MATCH_THRESHOLD): TemplateMatchResult? {
+        Log.d(TAG, "templateMatch: source=${source.cols()}x${source.rows()} type=${source.type()}, template=${template.cols()}x${template.rows()} type=${template.type()}, threshold=$threshold")
+        if (source.empty() || template.empty()) return null
+        if (source.cols() < template.cols() || source.rows() < template.rows()) {
+            Log.w(TAG, "templateMatch: 模板大于原图，跳过")
+            return null
+        }
+        val start = System.currentTimeMillis()
+        val src = Mat()
+        val tpl = Mat()
+        normalizeForTemplateMatch(source, src)
+        normalizeForTemplateMatch(template, tpl)
+        val result = Mat()
+        Imgproc.matchTemplate(src, tpl, result, AppConfig.TEMPLATE_MATCH_METHOD)
         val mmr = Core.minMaxLoc(result)
         val maxVal = mmr.maxVal
         result.release()
+        src.release(); tpl.release()
         if (maxVal < threshold) {
             Log.d(TAG, "templateMatch: 未匹配到, 最高相似度=${"%.4f".format(maxVal)} (${System.currentTimeMillis() - start}ms)")
             return null
@@ -224,6 +275,22 @@ object ImagePreprocessor {
             h = template.rows(),
             confidence = maxVal
         )
+    }
+
+    private fun normalizeForTemplateMatch(input: Mat, output: Mat) {
+        val gray = Mat()
+        when (input.channels()) {
+            1 -> input.copyTo(gray)
+            3 -> Imgproc.cvtColor(input, gray, Imgproc.COLOR_BGR2GRAY)
+            4 -> Imgproc.cvtColor(input, gray, Imgproc.COLOR_BGRA2GRAY)
+            else -> input.copyTo(gray)
+        }
+        if (gray.depth() == CvType.CV_8U) {
+            gray.copyTo(output)
+        } else {
+            gray.convertTo(output, CvType.CV_8U)
+        }
+        gray.release()
     }
 
     fun saveBase64Image(base64Str: String, prefix: String, dir: File = AppConfig.debugDir) {

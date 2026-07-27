@@ -133,5 +133,13 @@ object AppConfig {
         get() = prefs.getString("card_key", null)
         set(v) = prefs.edit().putString("card_key", v).apply()
 
+    // DeepSeek API
+    var deepSeekApiKey: String?
+        get() = prefs.getString("deepseek_api_key", null)
+        set(v) = prefs.edit().putString("deepseek_api_key", v).apply()
+    const val DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+    const val DEEPSEEK_MODEL = "deepseek-v4-flash"
+    const val DEEPSEEK_TIMEOUT_MS = 30000
+
     data class SearchRect(val offsetX: Int, val offsetY: Int, val w: Int, val h: Int)
 }

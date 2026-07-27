@@ -9,7 +9,11 @@ import com.yunluo.wxocr.ocr.ImagePreprocessor
 import com.yunluo.wxocr.ocr.PaddleOcrEngine
 import fi.iki.elonen.NanoHTTPD
 import kotlinx.coroutines.*
+import org.json.JSONArray
+import org.json.JSONObject
 import java.io.ByteArrayOutputStream
+import java.net.HttpURLConnection
+import java.net.URL
 import java.util.concurrent.ConcurrentHashMap
 
 class OcrHttpServer(
@@ -200,48 +204,128 @@ class OcrHttpServer(
         val ox = btnX - os.offsetX
         val oy = btnY - os.offsetY
 
-        val questionDetections = engine.ocrRoiRegion(img, qx, qy, qs.w, qs.h)
-        val optionDetections = engine.ocrRoiRegion(img, ox, oy, os.w, os.h)
+        val questionDetections = engine.ocrRoiDetections(img, qx, qy, qs.w, qs.h)
+        val optionDetections = engine.ocrRoiDetections(img, ox, oy, os.w, os.h)
 
-        val questionText = questionDetections.firstOrNull()?.text ?: ""
+        val questionText = questionDetections.sortedBy { it.centerY }.joinToString("") { it.text }
 
-        val optTexts = optionDetections.map { it.text }
-        val classified = classifyOptionsGrid(optTexts)
+        var classified = classifyOptionsGrid(optionDetections)
+        if (classified.isEmpty() || classified.values.count { it.text.isNotBlank() } < 2) {
+            log("anti_cheat_popup: 检测框选项不足，启用 2x2 网格兜底 OCR")
+            classified = engine.ocrAntiCheatOptionGrid(img, ox, oy, os.w, os.h)
+        }
 
         val optionsMap = linkedMapOf(
-            "A" to (classified.getOrElse("A") { "" }),
-            "B" to (classified.getOrElse("B") { "" }),
-            "C" to (classified.getOrElse("C") { "" }),
-            "D" to (classified.getOrElse("D") { "" })
+            "A" to (classified["A"]?.text ?: ""),
+            "B" to (classified["B"]?.text ?: ""),
+            "C" to (classified["C"]?.text ?: ""),
+            "D" to (classified["D"]?.text ?: "")
         )
 
         log("anti_cheat_popup: 题目=$questionText, 选项=$optionsMap")
 
+        val answer = if (questionText.isNotBlank() && optionsMap.values.any { it.isNotBlank() }) {
+            askDeepSeek(questionText, optionsMap)
+        } else null
+        val click = answer?.let { classified[it] }
+
         val responseMap = linkedMapOf(
             "question" to questionText,
             "options" to optionsMap,
-            "answer" to "",
-            "click_x" to 0,
-            "click_y" to 0,
+            "answer" to (answer ?: ""),
+            "click_x" to (click?.centerX ?: 0),
+            "click_y" to (click?.centerY ?: 0),
             "btn_x" to (btnX + AppConfig.BTN_CLICK_OFFSET_X),
             "btn_y" to btnY
         )
 
-        log("anti_cheat_popup: 完成")
+        log("anti_cheat_popup: 完成 answer=${answer ?: ""}")
         return jsonResponse(gson.toJson(responseMap))
     }
 
-    private fun classifyOptionsGrid(texts: List<String>): Map<String, String> {
-        if (texts.isEmpty()) return emptyMap()
-        val result = mutableMapOf<String, String>()
-        for ((i, text) in texts.withIndex()) {
-            val letter = when (i % 4) {
-                0 -> "A"; 1 -> "B"; 2 -> "C"; 3 -> "D"
-                else -> continue
+    private fun classifyOptionsGrid(results: List<PaddleOcrEngine.OcrDetection>): Map<String, PaddleOcrEngine.OcrDetection> {
+        if (results.size < 2) return emptyMap()
+        val sortedByY = results.sortedBy { it.centerY }
+        var splitIdx = sortedByY.size / 2
+        if (sortedByY.size >= 4) {
+            val bestGap = sortedByY.zipWithNext().mapIndexed { i, pair ->
+                i to (pair.second.centerY - pair.first.centerY)
+            }.maxByOrNull { it.second }
+            if (bestGap != null && bestGap.second > AppConfig.GRID_Y_GAP_MIN) {
+                splitIdx = bestGap.first + 1
             }
-            result[letter] = text
         }
-        return result
+
+        val topRow = sortedByY.take(splitIdx)
+            .sortedByDescending { it.confidence }
+            .take(AppConfig.GRID_TOP_N_BY_CONF)
+        val bottomRow = sortedByY.drop(splitIdx)
+            .sortedByDescending { it.confidence }
+            .take(AppConfig.GRID_TOP_N_BY_CONF)
+
+        if (topRow.isEmpty() || bottomRow.isEmpty()) {
+            val byX = results.sortedBy { it.centerX }
+            return buildMap {
+                if (byX.isNotEmpty()) put("A", byX.first())
+                if (byX.size >= 2) put("B", byX.last())
+            }
+        }
+
+        return buildMap {
+            put("A", topRow.minBy { it.centerX })
+            put("B", topRow.maxBy { it.centerX })
+            put("C", bottomRow.minBy { it.centerX })
+            put("D", bottomRow.maxBy { it.centerX })
+        }
+    }
+
+    private fun askDeepSeek(question: String, options: Map<String, String>): String? {
+        val apiKey = AppConfig.deepSeekApiKey?.takeIf { it.isNotBlank() } ?: run {
+            log("anti_cheat_popup: DeepSeek API Key 未配置，跳过答题")
+            return null
+        }
+        var conn: HttpURLConnection? = null
+        return try {
+            val prompt = buildString {
+                append("题目：").append(question).append('\n')
+                append("选项：\n")
+                for (letter in listOf("A", "B", "C", "D")) {
+                    append(letter).append(". ").append(options[letter].orEmpty()).append('\n')
+                }
+                append("请只返回正确答案的字母(A/B/C/D)，不要返回其他内容。")
+            }
+            val payload = JSONObject()
+                .put("model", AppConfig.DEEPSEEK_MODEL)
+                .put("messages", JSONArray().apply {
+                    put(JSONObject().put("role", "system").put("content", "你是一个答题助手，请根据题目和选项选择正确答案，只返回选项字母，不要解释。"))
+                    put(JSONObject().put("role", "user").put("content", prompt))
+                })
+                .put("max_tokens", 100)
+
+            conn = URL(AppConfig.DEEPSEEK_API_URL).openConnection() as HttpURLConnection
+            conn.requestMethod = "POST"
+            conn.setRequestProperty("Authorization", "Bearer $apiKey")
+            conn.setRequestProperty("Content-Type", "application/json")
+            conn.doOutput = true
+            conn.connectTimeout = AppConfig.DEEPSEEK_TIMEOUT_MS
+            conn.readTimeout = AppConfig.DEEPSEEK_TIMEOUT_MS
+            conn.outputStream.use { it.write(payload.toString().toByteArray(Charsets.UTF_8)) }
+
+            val stream = if (conn.responseCode in 200..299) conn.inputStream else conn.errorStream
+            val resp = stream?.use { it.reader().readText() }.orEmpty()
+            if (conn.responseCode !in 200..299) {
+                log("anti_cheat_popup: DeepSeek HTTP ${conn.responseCode}: ${resp.take(160)}")
+                return null
+            }
+            val choice = JSONObject(resp).getJSONArray("choices").getJSONObject(0).getJSONObject("message")
+            val raw = (choice.optString("content") + choice.optString("reasoning_content")).trim()
+            Regex("[ABCD]").find(raw)?.value
+        } catch (e: Exception) {
+            log("anti_cheat_popup: DeepSeek 调用失败 ${e.message}")
+            null
+        } finally {
+            conn?.disconnect()
+        }
     }
 
     private fun readBody(session: IHTTPSession): String? {
