@@ -1,0 +1,7944 @@
+[{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a3a"
+  },
+  "question": "《红楼梦》中葬花指的是谁",
+  "answer": "林黛玉",
+  "createdAt": 1779703396292
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a3c"
+  },
+  "question": "雪莲花是什么颜色的",
+  "answer": "紫色",
+  "createdAt": 1779703396306
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a3e"
+  },
+  "question": "明月几时有，把酒问青天，是谁的句子",
+  "answer": "苏东坡",
+  "createdAt": 1779703396310
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a40"
+  },
+  "question": "动物园里谁是百兽之王",
+  "answer": "园长",
+  "createdAt": 1779703396312
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a42"
+  },
+  "question": "大家都不想得到",
+  "answer": "得病",
+  "createdAt": 1779703396315
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a44"
+  },
+  "question": "人们最早是从那种动物身上得知咖啡的作用",
+  "answer": "羊",
+  "createdAt": 1779703396318
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a46"
+  },
+  "question": "门神一个是蔚迟恭，另一个是",
+  "answer": "秦琼",
+  "createdAt": 1779703396320
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a48"
+  },
+  "question": "宋词名句“天不老，情难绝心似双丝网，中有千千结”作者是",
+  "answer": "张生",
+  "createdAt": 1779703396322
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a4a"
+  },
+  "question": "“冲天香阵透长安，满城尽带黄金甲”是从谁的诗作中摘取的",
+  "answer": "黄巢",
+  "createdAt": 1779703396324
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a4c"
+  },
+  "question": "泰坦被问候一句什么话后选择了沉默",
+  "answer": "你可好",
+  "createdAt": 1779703396326
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a4e"
+  },
+  "question": "一把刀顺水漂，有眼睛，没眉毛是什么",
+  "answer": "鱼",
+  "createdAt": 1779703396328
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a50"
+  },
+  "question": "地球上什么动物最大",
+  "answer": "蓝鲸",
+  "createdAt": 1779703396330
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a52"
+  },
+  "question": "一般金婚是纪念结婚",
+  "answer": "50年",
+  "createdAt": 1779703396332
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a54"
+  },
+  "question": "“碧云天，黄叶地，北雁南飞”是语出",
+  "answer": "西厢记",
+  "createdAt": 1779703396333
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a56"
+  },
+  "question": "和张旭齐名，被称“素狂”的是",
+  "answer": "素人",
+  "createdAt": 1779703396335
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a58"
+  },
+  "question": "人类最古老的绘画形式是",
+  "answer": "壁画",
+  "createdAt": 1779703396337
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a5a"
+  },
+  "question": "什么东西不能用放大镜放大",
+  "answer": "角度",
+  "createdAt": 1779703396339
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a5c"
+  },
+  "question": "人类创造的第一个超过音速的东西是",
+  "answer": "鞭子",
+  "createdAt": 1779703396342
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a5e"
+  },
+  "question": "以下哪种室内盆载植物是常年开花的",
+  "answer": "紫罗兰",
+  "createdAt": 1779703396346
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a60"
+  },
+  "question": "本身元素与金刚石一样的矿物质是",
+  "answer": "煤",
+  "createdAt": 1779703396348
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a62"
+  },
+  "question": "好莱坞位于美国那个洲",
+  "answer": "加利福尼亚州",
+  "createdAt": 1779703396351
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a64"
+  },
+  "question": "飞机的机翼是用来",
+  "answer": "增加升级",
+  "createdAt": 1779703396354
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a66"
+  },
+  "question": "鲨鱼的皮肤是",
+  "answer": "粗糟的",
+  "createdAt": 1779703396356
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a68"
+  },
+  "question": "下列鱼种，对水中氧气要求最高的是",
+  "answer": "海水热带鱼",
+  "createdAt": 1779703396359
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a6a"
+  },
+  "question": "人生果又名",
+  "answer": "长寿果",
+  "createdAt": 1779703396361
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a6c"
+  },
+  "question": "什么地方没有佛",
+  "answer": "南",
+  "createdAt": 1779703396364
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a6e"
+  },
+  "question": "老天有了什么也会变老",
+  "answer": "有情",
+  "createdAt": 1779703396366
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a70"
+  },
+  "question": "“初出茅庐”的“茅庐”本意是指谁的住处",
+  "answer": "诸葛亮",
+  "createdAt": 1779703396368
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a72"
+  },
+  "question": "最不耐酸的织品是",
+  "answer": "棉织品",
+  "createdAt": 1779703396369
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a74"
+  },
+  "question": "鱼是用身体哪一部分保持平衡的",
+  "answer": "鱼鳍",
+  "createdAt": 1779703396372
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a76"
+  },
+  "question": "“东山再起”的典故是出自于",
+  "answer": "谢安",
+  "createdAt": 1779703396375
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a78"
+  },
+  "question": "蟋蟀是靠什么发出鸣叫声的",
+  "answer": "翅膀",
+  "createdAt": 1779703396378
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a7a"
+  },
+  "question": "和尚打着一把伞，是一个什么成语",
+  "answer": "无法无天",
+  "createdAt": 1779703396382
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a7c"
+  },
+  "question": "屈原是春秋时代哪国人",
+  "answer": "楚国",
+  "createdAt": 1779703396386
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a7e"
+  },
+  "question": "鸢又俗称是",
+  "answer": "老鹰",
+  "createdAt": 1779703396391
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a80"
+  },
+  "question": "一般来说治疗伤风感冒的解药以及清热药、芳香药宜用什么火煎",
+  "answer": "武火",
+  "createdAt": 1779703396393
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a82"
+  },
+  "question": "鸡蛋用哪种吃法最能保持维生素B2",
+  "answer": "白煮",
+  "createdAt": 1779703396397
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a84"
+  },
+  "question": "果汁在什么温度饮用最适宜",
+  "answer": "10度",
+  "createdAt": 1779703396399
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a86"
+  },
+  "question": "一堆西瓜，一半的一半比一半的一半的一半少半个，请问这堆西瓜有多少个",
+  "answer": "2个",
+  "createdAt": 1779703396402
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a88"
+  },
+  "question": "饮酒时不宜多吃凉粉，是因为凉粉中含有",
+  "answer": "白矾",
+  "createdAt": 1779703396404
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a8a"
+  },
+  "question": "烹调海参不宜加什么",
+  "answer": "醋",
+  "createdAt": 1779703396406
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a8c"
+  },
+  "question": "万寿山五庄观的镇元子在自己的大殿之上供奉的是",
+  "answer": "天地二字",
+  "createdAt": 1779703396408
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a8e"
+  },
+  "question": "在三国中，诸葛亮欠了谁的东西没有还",
+  "answer": "东风",
+  "createdAt": 1779703396409
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a90"
+  },
+  "question": "蚊订虫咬涂什么没用",
+  "answer": "黄酒",
+  "createdAt": 1779703396411
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a92"
+  },
+  "question": "用哪个季节的竹子做出的竹席质量最好",
+  "answer": "夏",
+  "createdAt": 1779703396414
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a94"
+  },
+  "question": "《三国演义》中，张颌的死因",
+  "answer": "中箭而死",
+  "createdAt": 1779703396419
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a96"
+  },
+  "question": "什么样的人见到阳光，会消失的无影无踪",
+  "answer": "雪人",
+  "createdAt": 1779703396425
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a98"
+  },
+  "question": "一个人想要在一夜里变成百万富翁，他应该马上怎么办",
+  "answer": "做梦",
+  "createdAt": 1779703396428
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a9a"
+  },
+  "question": "希腊神话中，战争女神和智慧女神是",
+  "answer": "雅迪娜",
+  "createdAt": 1779703396431
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a9c"
+  },
+  "question": "热咖啡在多少度才香甜可口",
+  "answer": "70度",
+  "createdAt": 1779703396434
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3a9e"
+  },
+  "question": "鲸是世界上最大的鱼，对吗",
+  "answer": "不对",
+  "createdAt": 1779703396439
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aa0"
+  },
+  "question": "什么票最危险",
+  "answer": "绑票",
+  "createdAt": 1779703396442
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aa2"
+  },
+  "question": "钢铁工人在炼钢时，穿了一种不怕烧，不怕钢水，火星的衣服请问它是什么材质做成的",
+  "answer": "石棉",
+  "createdAt": 1779703396446
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aa4"
+  },
+  "question": "什么门是打不开也关不上的",
+  "answer": "球门",
+  "createdAt": 1779703396448
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aa6"
+  },
+  "question": "现代第一届夏季运动会在哪举行",
+  "answer": "雅典",
+  "createdAt": 1779703396450
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aa8"
+  },
+  "question": "围棋棋盘共有几个交叉点",
+  "answer": "361.0",
+  "createdAt": 1779703396453
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aaa"
+  },
+  "question": "狼来了——猜一水果名",
+  "answer": "杨桃",
+  "createdAt": 1779703396455
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aac"
+  },
+  "question": "五个兄弟，住在一起，名字不同，高矮不同。（打一人体器官）",
+  "answer": "手指",
+  "createdAt": 1779703396457
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aae"
+  },
+  "question": "相比较而言，鲜鸡蛋怎样放不宜坏",
+  "answer": "倒着",
+  "createdAt": 1779703396459
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ab0"
+  },
+  "question": "蔬菜，水果主要向人提供什么营养",
+  "answer": ".膳食纤纬",
+  "createdAt": 1779703396461
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ab2"
+  },
+  "question": "六炫琴是什么乐器的别称",
+  "answer": "吉他",
+  "createdAt": 1779703396464
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ab4"
+  },
+  "question": "比利时著名的撒尿小孩铜像，平时他尿的是自来水，那狂欢节他尿的是",
+  "answer": "啤酒",
+  "createdAt": 1779703396466
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ab6"
+  },
+  "question": "偷什么不犯法",
+  "answer": "偷笑",
+  "createdAt": 1779703396468
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ab8"
+  },
+  "question": "一般来说，声音在多少分贝以下为安静环境",
+  "answer": "50分贝",
+  "createdAt": 1779703396470
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aba"
+  },
+  "question": "海明威的小说《丧钟为谁而鸣》是以哪次战争为背景的",
+  "answer": "西班牙内战",
+  "createdAt": 1779703396471
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3abc"
+  },
+  "question": "万有引力是哪位科学家提出的",
+  "answer": "牛顿",
+  "createdAt": 1779703396473
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3abe"
+  },
+  "question": "最小的物质是",
+  "answer": "分子",
+  "createdAt": 1779703396475
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ac0"
+  },
+  "question": "猴子最讨厌什么线",
+  "answer": "平行线",
+  "createdAt": 1779703396477
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ac2"
+  },
+  "question": "一个黑孩，从不开口，要是开口，掉出舌头。（打一植物果实）",
+  "answer": "瓜子",
+  "createdAt": 1779703396478
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ac4"
+  },
+  "question": "什么牛不吃草",
+  "answer": "蜗牛",
+  "createdAt": 1779703396479
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ac6"
+  },
+  "question": "地球自转方向是自西向什么方向转的",
+  "answer": "东",
+  "createdAt": 1779703396481
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ac8"
+  },
+  "question": "罗丹是伟大的什么",
+  "answer": "雕塑家",
+  "createdAt": 1779703396482
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aca"
+  },
+  "question": "新石器时代是属于石器时代的哪个阶段",
+  "answer": "后期",
+  "createdAt": 1779703396483
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3acc"
+  },
+  "question": "什么东西别人请你吃，但还要你自己掏钱",
+  "answer": "吃官司",
+  "createdAt": 1779703396485
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ace"
+  },
+  "question": "小白加上小白等于什么",
+  "answer": "小白兔",
+  "createdAt": 1779703396486
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ad0"
+  },
+  "question": "蜂王浆中含量最高的是什么",
+  "answer": "蛋白质",
+  "createdAt": 1779703396488
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ad2"
+  },
+  "question": "什么鸡没有翅膀",
+  "answer": "田鸡",
+  "createdAt": 1779703396489
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ad4"
+  },
+  "question": "地球自转一圈需要多长时间",
+  "answer": "24小时",
+  "createdAt": 1779703396490
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ad6"
+  },
+  "question": "用多少温度的水洗澡最好",
+  "answer": "40度",
+  "createdAt": 1779703396492
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ad8"
+  },
+  "question": "杜甫曾任工部待郎，被后人称作什么",
+  "answer": "杜工部",
+  "createdAt": 1779703396494
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ada"
+  },
+  "question": "蟋蟀的“耳朵”长在什么地方",
+  "answer": "小腿上",
+  "createdAt": 1779703396495
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3adc"
+  },
+  "question": "什么人一年只上一天班",
+  "answer": "圣诞老人",
+  "createdAt": 1779703396498
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ade"
+  },
+  "question": "六书指的是",
+  "answer": "造字方法",
+  "createdAt": 1779703396500
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ae0"
+  },
+  "question": "2002年大学生运动会的吉祥物是什么",
+  "answer": "扬子鳄",
+  "createdAt": 1779703396501
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ae2"
+  },
+  "question": "狗眼睛里的世界是什么颜色的",
+  "answer": "黑白灰",
+  "createdAt": 1779703396503
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ae4"
+  },
+  "question": "用什么擦地最干净",
+  "answer": "用力",
+  "createdAt": 1779703396505
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ae6"
+  },
+  "question": "打狗看主人，打虎看什么",
+  "answer": "武松",
+  "createdAt": 1779703396507
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ae8"
+  },
+  "question": "一骑红尘妃子笑，要吃荔枝的妃子指的是谁",
+  "answer": "杨贵妃",
+  "createdAt": 1779703396509
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aea"
+  },
+  "question": "眼镜王蛇的蛇精体是什么颜色的",
+  "answer": "黑色",
+  "createdAt": 1779703396512
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aec"
+  },
+  "question": "什么地方盖了章才能过去",
+  "answer": "印度",
+  "createdAt": 1779703396514
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3aee"
+  },
+  "question": "人一生说的最多的三个字是什么",
+  "answer": "不知道",
+  "createdAt": 1779703396515
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3af0"
+  },
+  "question": "三国历史中被关羽用眼读过的是什么",
+  "answer": "春秋",
+  "createdAt": 1779703396517
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3af2"
+  },
+  "question": "什么动物天天熬夜",
+  "answer": "熊猫",
+  "createdAt": 1779703396519
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3af4"
+  },
+  "question": "算珠的梁上一珠代表几",
+  "answer": "5.0",
+  "createdAt": 1779703396521
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3af6"
+  },
+  "question": "古琴的音色除了散音、泛音，还有那一种",
+  "answer": "按音",
+  "createdAt": 1779703396523
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3af8"
+  },
+  "question": "藕是莲花的什么",
+  "answer": "根茎",
+  "createdAt": 1779703396525
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3afa"
+  },
+  "question": "《忘仙OL》中，宠物升星星需要进行什么操作",
+  "answer": "练妖（实际在游戏中操作的是幻化，这是一个还没修复的答题BUG)",
+  "createdAt": 1779703396526
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3afc"
+  },
+  "question": "\"碧落黄泉中\"的黄泉是指的是什么",
+  "answer": "地下",
+  "createdAt": 1779703396528
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3afe"
+  },
+  "question": "《离骚》诗词的作者是谁",
+  "answer": "屈原",
+  "createdAt": 1779703396529
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b00"
+  },
+  "question": "什么季节的茶最好喝",
+  "answer": "秋季",
+  "createdAt": 1779703396531
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b02"
+  },
+  "question": "战国时期的兵器大多用那种材料制成的",
+  "answer": "青铜",
+  "createdAt": 1779703396532
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b04"
+  },
+  "question": "“户抠不蠹”的“不蠹”是什么意思",
+  "answer": "不生虫",
+  "createdAt": 1779703396533
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b06"
+  },
+  "question": "中国十大名茶 碧螺春的产地是",
+  "answer": "苏州洞庭山",
+  "createdAt": 1779703396534
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b08"
+  },
+  "question": "“月上柳梢头，人约黄昏后。”指的是那一个节日",
+  "answer": "元宵",
+  "createdAt": 1779703396536
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b0a"
+  },
+  "question": "《忘仙OL》中，古城、王城传送符可以在那个NPC购买",
+  "answer": "杂货商",
+  "createdAt": 1779703396537
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b0c"
+  },
+  "question": "指南针为什么不叫指北针",
+  "answer": "面南为尊",
+  "createdAt": 1779703396539
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b0e"
+  },
+  "question": "忘仙ol中，装备颜色品质共有几种",
+  "answer": "7种",
+  "createdAt": 1779703396540
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b10"
+  },
+  "question": "资治通鉴的作者是谁",
+  "answer": "司马光",
+  "createdAt": 1779703396542
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b12"
+  },
+  "question": "《忘仙OL》中，巫皇乘坐着的坐骑是",
+  "answer": "蝎",
+  "createdAt": 1779703396543
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b14"
+  },
+  "question": "《忘仙OL》中，共有几个阵营",
+  "answer": "3个",
+  "createdAt": 1779703396545
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b16"
+  },
+  "question": "《忘仙OL》中，装备练星最高是多少星星",
+  "answer": "20",
+  "createdAt": 1779703396546
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b18"
+  },
+  "question": "一般古琴的琴面为",
+  "answer": "桐木",
+  "createdAt": 1779703396548
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b1a"
+  },
+  "question": "清明上河图是出之于那个朝代",
+  "answer": "北宋",
+  "createdAt": 1779703396549
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b1c"
+  },
+  "question": "安徽众多的茶中什么茶最出名",
+  "answer": "毛峰",
+  "createdAt": 1779703396550
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b1e"
+  },
+  "question": "人参在古代的称为下列哪个不是",
+  "answer": "赤剑",
+  "createdAt": 1779703396552
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b20"
+  },
+  "question": "针灸在古代用的那种工具",
+  "answer": "九针",
+  "createdAt": 1779703396554
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b22"
+  },
+  "question": "元旦指那一天节日",
+  "answer": "春节",
+  "createdAt": 1779703396555
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b24"
+  },
+  "question": "古时用十二生肖，十二地支，辰对应的是",
+  "answer": "龙",
+  "createdAt": 1779703396557
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b26"
+  },
+  "question": "喜好饮酒，自称“酒中仙”的诗人是",
+  "answer": "李白",
+  "createdAt": 1779703396558
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b28"
+  },
+  "question": "《忘仙OL》中，有人宣传代练，称给帐号和密码就可以帮升到满级，遇到这种情况，正确的做法是",
+  "answer": "反映给GM",
+  "createdAt": 1779703396560
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b2a"
+  },
+  "question": "《忘仙OL》中，装备镶嵌的宝石一共有几种",
+  "answer": "9",
+  "createdAt": 1779703396561
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b2c"
+  },
+  "question": "祖冲率先将圆周率精准到小数点后几位",
+  "answer": "7位",
+  "createdAt": 1779703396562
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b2e"
+  },
+  "question": "中国神话古代人类的始祖是",
+  "answer": "女娲",
+  "createdAt": 1779703396563
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b30"
+  },
+  "question": "唐朝的“朝”是由多少比划构成的",
+  "answer": "十二",
+  "createdAt": 1779703396565
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b32"
+  },
+  "question": "什么牛不会吃草",
+  "answer": "蜗牛",
+  "createdAt": 1779703396566
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b34"
+  },
+  "question": "“将相和”中讲的蔺相如和廉颇是战国时期的哪国人",
+  "answer": "赵国",
+  "createdAt": 1779703396567
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b36"
+  },
+  "question": "以草书见长，人称\"草圣的书法家是谁",
+  "answer": "张旭",
+  "createdAt": 1779703396569
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b38"
+  },
+  "question": "五谷中的\"菽\"指的是",
+  "answer": "大豆",
+  "createdAt": 1779703396570
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b3a"
+  },
+  "question": "牛黄在中药里指的是",
+  "answer": "牛的胆囊结石",
+  "createdAt": 1779703396571
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b3c"
+  },
+  "question": "有教无类是谁提出的观点",
+  "answer": "孔子",
+  "createdAt": 1779703396573
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b3e"
+  },
+  "question": "你衣服的姐姐的堂弟的表哥的爸爸是你的什么人",
+  "answer": "亲戚",
+  "createdAt": 1779703396574
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b40"
+  },
+  "question": "忘仙ol中，灵尊乘坐着的坐骑是",
+  "answer": "虎",
+  "createdAt": 1779703396575
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b42"
+  },
+  "question": "忘仙ol中，斗罗乘坐着的坐骑是",
+  "answer": "牛",
+  "createdAt": 1779703396577
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b44"
+  },
+  "question": "忘仙ol中，鬼煞乘坐着的坐骑是",
+  "answer": "狼",
+  "createdAt": 1779703396578
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b46"
+  },
+  "question": "唐太宗李世民的年号是",
+  "answer": "贞观",
+  "createdAt": 1779703396580
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b48"
+  },
+  "question": "乞巧节指的是农历的",
+  "answer": "七月初七",
+  "createdAt": 1779703396581
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b4a"
+  },
+  "question": "《忘仙OL》中，灵尊可以用什么武器",
+  "answer": "笔和宝剑",
+  "createdAt": 1779703396584
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b4c"
+  },
+  "question": "《忘仙OL》中，人物基础技能最高多少级",
+  "answer": "10级",
+  "createdAt": 1779703396586
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b4e"
+  },
+  "question": "中国十大名茶的“白毫银针”原产地是那个地方",
+  "answer": "福建",
+  "createdAt": 1779703396589
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b50"
+  },
+  "question": "珑塔塔一层传送点在什么地图内",
+  "answer": "小隐寺",
+  "createdAt": 1779703396591
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b52"
+  },
+  "question": "三国时期，火烧连营一战对阵的双方是",
+  "answer": "刘备和陆逊",
+  "createdAt": 1779703396597
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b54"
+  },
+  "question": "不宜钓鱼的天气是",
+  "answer": "太阳辐射，水面光线很强",
+  "createdAt": 1779703396599
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b56"
+  },
+  "question": "古代诗词常用折柳，折柳的意思是",
+  "answer": "送别",
+  "createdAt": 1779703396602
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b58"
+  },
+  "question": "“胡蓝之狱”发生在那个朝代",
+  "answer": "明朝",
+  "createdAt": 1779703396604
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b5a"
+  },
+  "question": "下列哪种中药对眼睛有好处",
+  "answer": "决明子",
+  "createdAt": 1779703396607
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b5c"
+  },
+  "question": "被誉为“万园之园”，后被焚毁的是",
+  "answer": "圆明园",
+  "createdAt": 1779703396611
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b5e"
+  },
+  "question": "药用兽皮统称什么",
+  "answer": "晒干的蝉蜕",
+  "createdAt": 1779703396615
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b60"
+  },
+  "question": "古代军队调兵遣将的信物是",
+  "answer": "虎符",
+  "createdAt": 1779703396618
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b62"
+  },
+  "question": "忘仙OL中，鬼煞用的武器是",
+  "answer": "匕首和刺",
+  "createdAt": 1779703396620
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b64"
+  },
+  "question": "泥娃娃“大阿福”产地是",
+  "answer": "无锡",
+  "createdAt": 1779703396622
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b66"
+  },
+  "question": "什么蛋中看不中吃",
+  "answer": "笨蛋",
+  "createdAt": 1779703396624
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b68"
+  },
+  "question": "《写生珍禽》是哪位帝王的亲笔画",
+  "answer": "北宋皇帝宋徽宗赵佶",
+  "createdAt": 1779703396626
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b6a"
+  },
+  "question": "马谡在街亭之战中败给了魏国那个大将",
+  "answer": "张合",
+  "createdAt": 1779703396628
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b6c"
+  },
+  "question": "“海内存知己,天涯共此时。”是哪位诗人的诗句",
+  "answer": "张九龄",
+  "createdAt": 1779703396631
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b6e"
+  },
+  "question": "宫城正门被称为",
+  "answer": "午门",
+  "createdAt": 1779703396633
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b70"
+  },
+  "question": "在我国，桃月是指",
+  "answer": "三月",
+  "createdAt": 1779703396635
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b72"
+  },
+  "question": "活字印刷技术发明人是",
+  "answer": "毕升",
+  "createdAt": 1779703396640
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b74"
+  },
+  "question": "白马寺在那个地区",
+  "answer": "河南 洛阳",
+  "createdAt": 1779703396643
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b76"
+  },
+  "question": "被广大百姓推崇为“国酒”是",
+  "answer": "茅台",
+  "createdAt": 1779703396646
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b78"
+  },
+  "question": "红娘是那部作品的人物",
+  "answer": "西厢记",
+  "createdAt": 1779703396648
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b7a"
+  },
+  "question": "胄是古代士兵的护具，是保护那个部位的",
+  "answer": "头部",
+  "createdAt": 1779703396650
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b7c"
+  },
+  "question": "宋代酒店什么装饰的叫什么门",
+  "answer": "欢门（问题不清楚，待更新)",
+  "createdAt": 1779703396652
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b7e"
+  },
+  "question": "笄礼是古代女子几岁的成人礼",
+  "answer": "15岁",
+  "createdAt": 1779703396653
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b80"
+  },
+  "question": "下列不属于砒霜治疗药物的是",
+  "answer": "草木灰",
+  "createdAt": 1779703396655
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b82"
+  },
+  "question": "《小窗幽记》的作者是谁",
+  "answer": "陈继儒",
+  "createdAt": 1779703396657
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b84"
+  },
+  "question": "古代对厨师的称呼是",
+  "answer": "庖",
+  "createdAt": 1779703396659
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b86"
+  },
+  "question": "我们最早的佛寺是",
+  "answer": "白马寺",
+  "createdAt": 1779703396662
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b88"
+  },
+  "question": "“五禽戏”起源于汉代，它属于什么类型的",
+  "answer": "保健强身的功效",
+  "createdAt": 1779703396665
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b8a"
+  },
+  "question": "三国时代建造“铜雀台”的是谁",
+  "answer": "曹操",
+  "createdAt": 1779703396668
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b8c"
+  },
+  "question": "《忘仙OL》中，收到邮件说你的账号存在问题，需要提供账号和密码，正确的做法是",
+  "answer": "向GM举报",
+  "createdAt": 1779703396671
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b8e"
+  },
+  "question": "华夏名族在那里诞生的",
+  "answer": "黄河流域",
+  "createdAt": 1779703396673
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b90"
+  },
+  "question": "中国第一个奴隶制度的王朝是",
+  "answer": "夏朝",
+  "createdAt": 1779703396677
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b92"
+  },
+  "question": "《史记》的作者是",
+  "answer": "司马迁",
+  "createdAt": 1779703396681
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b94"
+  },
+  "question": "阑尾的作用是",
+  "answer": "没用",
+  "createdAt": 1779703396683
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b96"
+  },
+  "question": "被称为文房四宝的是",
+  "answer": "笔、墨、纸、砚",
+  "createdAt": 1779703396686
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b98"
+  },
+  "question": "三国马超是那个名族",
+  "answer": "羌族",
+  "createdAt": 1779703396688
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b9a"
+  },
+  "question": "以下不是参与玄武门事变的是",
+  "answer": "李元霸",
+  "createdAt": 1779703396690
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b9c"
+  },
+  "question": "川贝母属于什么类型",
+  "answer": "百合科植物",
+  "createdAt": 1779703396691
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3b9e"
+  },
+  "question": "清代著名小说《儒林外史》的作者是",
+  "answer": "吴敬梓",
+  "createdAt": 1779703396693
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ba0"
+  },
+  "question": "词语“同气”是指什么关系",
+  "answer": "兄弟",
+  "createdAt": 1779703396699
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ba2"
+  },
+  "question": "现代第一届夏季奥运会在那举行",
+  "answer": "雅典",
+  "createdAt": 1779703396701
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ba4"
+  },
+  "question": "“长安”两个字共有多少笔画组成",
+  "answer": "10",
+  "createdAt": 1779703396702
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ba6"
+  },
+  "question": "茶叶依发酵程度不同分类是乌龙茶、绿茶和什么",
+  "answer": "红茶",
+  "createdAt": 1779703396704
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3ba8"
+  },
+  "question": "忘仙OL中，千年古城不能修装备的NPC是",
+  "answer": "宝石匠",
+  "createdAt": 1779703396709
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3baa"
+  },
+  "question": "古代发明一工具耒耜，是用在那个行业",
+  "answer": "农业",
+  "createdAt": 1779703396712
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bac"
+  },
+  "question": "中药里的大黄指的是",
+  "answer": "多年生植物",
+  "createdAt": 1779703396713
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bae"
+  },
+  "question": "《忘仙OL》中，屠魔帖使用的最低等级是",
+  "answer": "25级",
+  "createdAt": 1779703396714
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bb0"
+  },
+  "question": "六弦琴是什么乐器的别称",
+  "answer": "吉他",
+  "createdAt": 1779703396722
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bb2"
+  },
+  "question": "清末商人胡雪岩创建的著名药铺叫什么",
+  "answer": "胡庆余堂",
+  "createdAt": 1779703396724
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bb4"
+  },
+  "question": "地壳中含量最高的元素是",
+  "answer": "氧",
+  "createdAt": 1779703396726
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bb6"
+  },
+  "question": "《忘仙OL》是那家公司制作并运营的",
+  "answer": "神奇时代",
+  "createdAt": 1779703396728
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bb8"
+  },
+  "question": "古代成语中“不分皂白”中的皂是什么颜色",
+  "answer": "黑色",
+  "createdAt": 1779703396730
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bba"
+  },
+  "question": "《忘仙OL》中，共有几种职业",
+  "answer": "4种",
+  "createdAt": 1779703396732
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bbc"
+  },
+  "question": "《忘仙OL》中，宠物幻化最高是多少星",
+  "answer": "20星",
+  "createdAt": 1779703396734
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bbe"
+  },
+  "question": "“名不正则言不顺”是那家的思想",
+  "answer": "儒家",
+  "createdAt": 1779703396736
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bc0"
+  },
+  "question": "古代六艺礼、乐、射、御、书、数中的“御”是指的是",
+  "answer": "驾驭马车的技术",
+  "createdAt": 1779703396740
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bc2"
+  },
+  "question": "《忘仙OL》中，角色身上可以穿戴多少件装备",
+  "answer": "10件",
+  "createdAt": 1779703396742
+},
+{
+  "_id": {
+    "$oid": "6a141e649ea803a8b66d3bc4"
+  },
+  "question": "中国最早的表演艺术是",
+  "answer": "杂技",
+  "createdAt": 1779703396743
+},
+{
+  "_id": {
+    "$oid": "6a1421419ea803a8b66d3c4c"
+  },
+  "question": "1",
+  "answer": "2",
+  "createdAt": 1779704129539
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3c95"
+  },
+  "question": "《红楼梦》中葬花指的是谁？",
+  "answer": "林黛玉",
+  "createdAt": 1779704560335
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3c97"
+  },
+  "question": "雪莲花是什么颜色的？",
+  "answer": "白色",
+  "createdAt": 1779704560337
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3c99"
+  },
+  "question": "明月几时有，把酒问青天，是谁的句子？",
+  "answer": "苏东坡",
+  "createdAt": 1779704560339
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3c9b"
+  },
+  "question": "动物园里谁是百兽之王？",
+  "answer": "园长",
+  "createdAt": 1779704560341
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3c9d"
+  },
+  "question": "大家都不想得到？",
+  "answer": "得病",
+  "createdAt": 1779704560345
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3c9f"
+  },
+  "question": "人们最早是从那种动物身上得知咖啡的作用？",
+  "answer": "羊",
+  "createdAt": 1779704560348
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ca1"
+  },
+  "question": "门神一个是蔚迟恭，另一个是？",
+  "answer": "秦琼",
+  "createdAt": 1779704560350
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ca3"
+  },
+  "question": "宋词名句「天不老，情难绝心似双丝网，中有千千结」作者是？",
+  "answer": "张生",
+  "createdAt": 1779704560352
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ca5"
+  },
+  "question": "「冲天香阵透长安，满城尽带黄金甲」是从谁的诗作中摘取的？",
+  "answer": "黄巢",
+  "createdAt": 1779704560355
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ca7"
+  },
+  "question": "泰坦被问候一句什么话后选择了沉默？",
+  "answer": "你可好",
+  "createdAt": 1779704560357
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ca9"
+  },
+  "question": "一把刀顺水漂，有眼睛，没眉毛是什么？",
+  "answer": "鱼",
+  "createdAt": 1779704560359
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cab"
+  },
+  "question": "地球上什么动物最大？",
+  "answer": "蓝鲸",
+  "createdAt": 1779704560362
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cad"
+  },
+  "question": "一般金婚是纪念结婚？",
+  "answer": "50年",
+  "createdAt": 1779704560366
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3caf"
+  },
+  "question": "「碧云天，黄叶地，北雁南飞」是语出？",
+  "answer": "西厢记",
+  "createdAt": 1779704560368
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cb1"
+  },
+  "question": "和张旭齐名，被称「素狂」的是？",
+  "answer": "怀素",
+  "createdAt": 1779704560370
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cb3"
+  },
+  "question": "人类最古老的绘画形式是？",
+  "answer": "壁画",
+  "createdAt": 1779704560374
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cb5"
+  },
+  "question": "什么东西不能用放大镜放大？",
+  "answer": "角度",
+  "createdAt": 1779704560377
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cb7"
+  },
+  "question": "人类创造的第一个超过音速的东西是？",
+  "answer": "鞭子",
+  "createdAt": 1779704560379
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cb9"
+  },
+  "question": "以下哪种室内盆载植物是常年开花的？",
+  "answer": "紫罗兰",
+  "createdAt": 1779704560381
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cbb"
+  },
+  "question": "本身元素与金刚石一样的矿物质是？",
+  "answer": "煤",
+  "createdAt": 1779704560384
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cbd"
+  },
+  "question": "好莱坞位于美国那个洲？",
+  "answer": "加利福尼亚州",
+  "createdAt": 1779704560386
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cbf"
+  },
+  "question": "飞机的机翼是用来？",
+  "answer": "增加升级",
+  "createdAt": 1779704560387
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cc1"
+  },
+  "question": "鲨鱼的皮肤是？",
+  "answer": "粗糟的",
+  "createdAt": 1779704560389
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cc3"
+  },
+  "question": "下列鱼种，对水中氧气要求最高的是？",
+  "answer": "海水热带鱼",
+  "createdAt": 1779704560391
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cc5"
+  },
+  "question": "人生果又名？",
+  "answer": "长寿果",
+  "createdAt": 1779704560393
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cc7"
+  },
+  "question": "什么地方没有佛？",
+  "answer": "南",
+  "createdAt": 1779704560396
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cc9"
+  },
+  "question": "老天有了什么也会变老？",
+  "answer": "有情",
+  "createdAt": 1779704560398
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ccb"
+  },
+  "question": "「初出茅庐」的「茅庐」本意是指谁的住处？",
+  "answer": "诸葛亮",
+  "createdAt": 1779704560400
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ccd"
+  },
+  "question": "最不耐酸的织品是？",
+  "answer": "棉织品",
+  "createdAt": 1779704560402
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ccf"
+  },
+  "question": "鱼是用身体哪一部分保持平衡的？",
+  "answer": "鱼鳍",
+  "createdAt": 1779704560403
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cd1"
+  },
+  "question": "「东山再起」的典故是出自于？",
+  "answer": "谢安",
+  "createdAt": 1779704560405
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cd3"
+  },
+  "question": "蟋蟀是靠什么发出鸣叫声的？",
+  "answer": "翅膀",
+  "createdAt": 1779704560406
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cd5"
+  },
+  "question": "和尚打着一把伞，是一个什么成语？",
+  "answer": "无法无天",
+  "createdAt": 1779704560408
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cd7"
+  },
+  "question": "屈原是春秋时代哪国人？",
+  "answer": "楚国",
+  "createdAt": 1779704560409
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cd9"
+  },
+  "question": "鸢又俗称是？",
+  "answer": "老鹰",
+  "createdAt": 1779704560410
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cdb"
+  },
+  "question": "一般来说治疗伤风感冒的解药以及清热药、芳香药宜用什么火煎？",
+  "answer": "武火",
+  "createdAt": 1779704560412
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cdd"
+  },
+  "question": "鸡蛋用哪种吃法最能保持维生素B2?",
+  "answer": "白煮",
+  "createdAt": 1779704560413
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cdf"
+  },
+  "question": "果汁在什么温度饮用最适宜？",
+  "answer": "10度",
+  "createdAt": 1779704560414
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ce1"
+  },
+  "question": "一堆西瓜，一半的一半比一半的一半的一半少半个，请问这堆西瓜有多少个？",
+  "answer": "2个",
+  "createdAt": 1779704560416
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ce3"
+  },
+  "question": "饮酒时不宜多吃凉粉，是因为凉粉中含有？",
+  "answer": "白矾",
+  "createdAt": 1779704560417
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ce5"
+  },
+  "question": "烹调海参不宜加什么？",
+  "answer": "醋",
+  "createdAt": 1779704560419
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ce7"
+  },
+  "question": "万寿山五庄观的镇元子在自己的大殿之上供奉的是？",
+  "answer": "天地二字",
+  "createdAt": 1779704560420
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ce9"
+  },
+  "question": "在三國中，诸葛亮欠了谁的东西没有还？",
+  "answer": "东风",
+  "createdAt": 1779704560422
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ceb"
+  },
+  "question": "蚊订虫咬涂什么没用？",
+  "answer": "黄酒",
+  "createdAt": 1779704560424
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ced"
+  },
+  "question": "用哪个季节的竹子做出的竹席质量最好？",
+  "answer": "夏",
+  "createdAt": 1779704560426
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cef"
+  },
+  "question": "《三国演义》中，张颌的死因？",
+  "answer": "中箭而死",
+  "createdAt": 1779704560428
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cf1"
+  },
+  "question": "什么样的人见到阳光，会消失的无影无踪？",
+  "answer": "雪人",
+  "createdAt": 1779704560431
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cf3"
+  },
+  "question": "一个人想要在一夜里变成百万富翁，他应该马上怎么办？",
+  "answer": "做梦",
+  "createdAt": 1779704560433
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cf5"
+  },
+  "question": "希腊神话中，战争女神和智慧女神是？",
+  "answer": "雅迪娜",
+  "createdAt": 1779704560434
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cf7"
+  },
+  "question": "热咖啡在多少度才香甜可口？",
+  "answer": "70度",
+  "createdAt": 1779704560437
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cf9"
+  },
+  "question": "鲸是世界上最大的鱼，对吗？",
+  "answer": "不对",
+  "createdAt": 1779704560439
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cfb"
+  },
+  "question": "什么票最危险？",
+  "answer": "绑票",
+  "createdAt": 1779704560440
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cfd"
+  },
+  "question": "钢铁工人在炼钢时，穿了一种不怕烧，不怕钢水，火星的衣服请问它是什么材质做成的？",
+  "answer": "石棉",
+  "createdAt": 1779704560442
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3cff"
+  },
+  "question": "什么门是打不开也关不上的？",
+  "answer": "球门",
+  "createdAt": 1779704560443
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d01"
+  },
+  "question": "现代第一届夏季运动会在哪举行？",
+  "answer": "雅典",
+  "createdAt": 1779704560444
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d03"
+  },
+  "question": "围棋棋盘共有几个交叉点？",
+  "answer": "361.0",
+  "createdAt": 1779704560446
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d05"
+  },
+  "question": "狼来了——猜一水果名？",
+  "answer": "杨桃",
+  "createdAt": 1779704560447
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d07"
+  },
+  "question": "相比较而言，鲜鸡蛋怎样放不宜坏？",
+  "answer": "倒着",
+  "createdAt": 1779704560448
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d09"
+  },
+  "question": "蔬菜，水果主要向人提供什么营养？",
+  "answer": ".膳食纤纬",
+  "createdAt": 1779704560450
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d0b"
+  },
+  "question": "六炫琴是什么乐器的别称？",
+  "answer": "吉他",
+  "createdAt": 1779704560451
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d0d"
+  },
+  "question": "比利时著名的撒尿小孩铜像，平时他尿的是自来水，那狂欢节他尿的是？",
+  "answer": "啤酒",
+  "createdAt": 1779704560453
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d0f"
+  },
+  "question": "偷什么不犯法？",
+  "answer": "偷笑",
+  "createdAt": 1779704560454
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d11"
+  },
+  "question": "一般来说，声音在多少分贝以下为安静环境？",
+  "answer": "50分贝",
+  "createdAt": 1779704560456
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d13"
+  },
+  "question": "海明威的小说《丧钟为谁而鸣》是以哪次战争为背景的？",
+  "answer": "西班牙内战",
+  "createdAt": 1779704560457
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d15"
+  },
+  "question": "万有引力是哪位科学家提出的？",
+  "answer": "牛顿",
+  "createdAt": 1779704560459
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d17"
+  },
+  "question": "最小的物质是？",
+  "answer": "分子",
+  "createdAt": 1779704560460
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d19"
+  },
+  "question": "猴子最讨厌什么线？",
+  "answer": "平行线",
+  "createdAt": 1779704560461
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d1b"
+  },
+  "question": "什么牛不吃草？",
+  "answer": "蜗牛",
+  "createdAt": 1779704560462
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d1d"
+  },
+  "question": "地球自转方向是自西向什么方向转的？",
+  "answer": "东",
+  "createdAt": 1779704560463
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d1f"
+  },
+  "question": "罗丹是伟大的什么？",
+  "answer": "雕塑家",
+  "createdAt": 1779704560465
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d21"
+  },
+  "question": "新石器时代是属于石器时代的哪个阶段？",
+  "answer": "后期",
+  "createdAt": 1779704560468
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d23"
+  },
+  "question": "什么东西别人请你吃，但还要你自己掏钱？",
+  "answer": "吃官司",
+  "createdAt": 1779704560469
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d25"
+  },
+  "question": "小白加上小白等于什么？",
+  "answer": "小白兔",
+  "createdAt": 1779704560472
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d27"
+  },
+  "question": "蜂王浆中含量最高的是什么？",
+  "answer": "蛋白质",
+  "createdAt": 1779704560474
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d29"
+  },
+  "question": "什么鸡没有翅膀？",
+  "answer": "田鸡",
+  "createdAt": 1779704560476
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d2b"
+  },
+  "question": "地球自转一圈需要多长时间？",
+  "answer": "24小时",
+  "createdAt": 1779704560478
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d2d"
+  },
+  "question": "用多少温度的水洗澡最好？",
+  "answer": "40度",
+  "createdAt": 1779704560480
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d2f"
+  },
+  "question": "杜甫曾任工部待郎，被后人称作什么？",
+  "answer": "杜工部",
+  "createdAt": 1779704560482
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d31"
+  },
+  "question": "蟋蟀的「耳朵」长在什么地方？",
+  "answer": "小腿上",
+  "createdAt": 1779704560483
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d33"
+  },
+  "question": "什么人一年只上一天班？",
+  "answer": "圣诞老人",
+  "createdAt": 1779704560485
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d35"
+  },
+  "question": "六书指的是？",
+  "answer": "造字方法",
+  "createdAt": 1779704560486
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d37"
+  },
+  "question": "2002年**运动会的吉祥物是什么？",
+  "answer": "扬子鳄",
+  "createdAt": 1779704560489
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d39"
+  },
+  "question": "狗眼睛里的世界是什么颜色的？",
+  "answer": "黑白灰",
+  "createdAt": 1779704560491
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d3b"
+  },
+  "question": "用什么擦地最干净？",
+  "answer": "用力",
+  "createdAt": 1779704560493
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d3d"
+  },
+  "question": "打狗看主人，打虎看什么？",
+  "answer": "武松",
+  "createdAt": 1779704560495
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d3f"
+  },
+  "question": "一骑红尘妃子笑，要吃荔枝的妃子指的是谁？",
+  "answer": "杨贵妃",
+  "createdAt": 1779704560498
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d41"
+  },
+  "question": "眼镜王蛇的蛇精体是什么颜色的？",
+  "answer": "黄色",
+  "createdAt": 1779704560501
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d43"
+  },
+  "question": "什么地方盖了章才能过去？",
+  "answer": "印度",
+  "createdAt": 1779704560502
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d45"
+  },
+  "question": "人一生说的最多的三个字是什么？",
+  "answer": "不知道",
+  "createdAt": 1779704560506
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d47"
+  },
+  "question": "三国历史中被关羽用眼读过的是什么？",
+  "answer": "春秋",
+  "createdAt": 1779704560509
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d49"
+  },
+  "question": "什么动物天天熬夜？",
+  "answer": "熊猫",
+  "createdAt": 1779704560510
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d4b"
+  },
+  "question": "算珠的梁上一珠代表几？",
+  "answer": "5.0",
+  "createdAt": 1779704560512
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d4d"
+  },
+  "question": "古琴的音色除了散音、泛音，还有那一种？",
+  "answer": "按音",
+  "createdAt": 1779704560514
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d4f"
+  },
+  "question": "藕是莲花的什么？",
+  "answer": "根茎",
+  "createdAt": 1779704560516
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d51"
+  },
+  "question": "《忘仙OL》中，宠物升星星需要进行什么操作？",
+  "answer": "练妖（实际在游戏中操作的是幻化，这是一个还没修复的答题BUG)",
+  "createdAt": 1779704560517
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d53"
+  },
+  "question": "\"碧落黄泉中\"的黄泉是指的是什么？",
+  "answer": "地下",
+  "createdAt": 1779704560518
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d55"
+  },
+  "question": "《离骚》诗词的作者是谁？",
+  "answer": "屈原",
+  "createdAt": 1779704560519
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d57"
+  },
+  "question": "什么季节的茶最好喝？",
+  "answer": "秋季",
+  "createdAt": 1779704560520
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d59"
+  },
+  "question": "战国时期的兵器大多用那种材料制成的？",
+  "answer": "青铜",
+  "createdAt": 1779704560522
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d5b"
+  },
+  "question": "「户抠不蠹」的「不蠹」是什么意思？",
+  "answer": "不生虫",
+  "createdAt": 1779704560523
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d5d"
+  },
+  "question": "中国十大名茶 碧螺春的产地是？",
+  "answer": "苏州洞庭山",
+  "createdAt": 1779704560524
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d5f"
+  },
+  "question": "「月上柳梢头，人约黄昏后。」指的是那一个节日？",
+  "answer": "元宵",
+  "createdAt": 1779704560525
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d61"
+  },
+  "question": "《忘仙OL》中，古城、王城传送符可以在那个NPC购买？",
+  "answer": "杂货商",
+  "createdAt": 1779704560527
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d63"
+  },
+  "question": "指南针为什么不叫指北针？",
+  "answer": "面南为尊",
+  "createdAt": 1779704560529
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d65"
+  },
+  "question": "忘仙ol中，装备颜色品质共有几种？",
+  "answer": "7种",
+  "createdAt": 1779704560531
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d67"
+  },
+  "question": "资治通鉴的作者是谁？",
+  "answer": "司马光",
+  "createdAt": 1779704560533
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d69"
+  },
+  "question": "《忘仙OL》中，巫皇乘坐着的坐骑是？",
+  "answer": "蝎",
+  "createdAt": 1779704560534
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d6b"
+  },
+  "question": "《忘仙OL》中，共有几个阵营？",
+  "answer": "3个",
+  "createdAt": 1779704560536
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d6d"
+  },
+  "question": "《忘仙OL》中，装备练星最高是多少星星？",
+  "answer": "20",
+  "createdAt": 1779704560539
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d6f"
+  },
+  "question": "一般古琴的琴面为？",
+  "answer": "桐木",
+  "createdAt": 1779704560542
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d71"
+  },
+  "question": "清明上河图是出之于那个朝代？",
+  "answer": "北宋",
+  "createdAt": 1779704560544
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d73"
+  },
+  "question": "衣包湿寒的意思？",
+  "answer": "没有恒心（问题不清楚，待编辑）",
+  "createdAt": 1779704560547
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d75"
+  },
+  "question": "安徽众多的茶中什么茶最出名？",
+  "answer": "毛峰",
+  "createdAt": 1779704560549
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d77"
+  },
+  "question": "人参在古代的称为下列哪个不是？",
+  "answer": "赤剑",
+  "createdAt": 1779704560550
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d79"
+  },
+  "question": "针灸在古代用的那种工具？",
+  "answer": "九针",
+  "createdAt": 1779704560552
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d7b"
+  },
+  "question": "元旦指那一天节日？",
+  "answer": "春节",
+  "createdAt": 1779704560554
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d7d"
+  },
+  "question": "「颜筋柳骨」是指那朝人？",
+  "answer": "唐朝（问题不清楚，待编辑）",
+  "createdAt": 1779704560556
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d7f"
+  },
+  "question": "古时用十二生肖，十二地支，辰对应的是？",
+  "answer": "龙",
+  "createdAt": 1779704560558
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d81"
+  },
+  "question": "喜好饮酒，自称「酒中仙」的诗人是？",
+  "answer": "李白",
+  "createdAt": 1779704560562
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d83"
+  },
+  "question": "《忘仙OL》中，有人宣传代练，称给帐号和密码就可以帮升到满级，遇到这种情况，正确的做法是？",
+  "answer": "反映给GM",
+  "createdAt": 1779704560564
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d85"
+  },
+  "question": "《忘仙OL》中，装备镶嵌的宝石一共有几种？",
+  "answer": "9",
+  "createdAt": 1779704560566
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d87"
+  },
+  "question": "祖冲之率先将圆周率精准到小数点后几位？",
+  "answer": "7位",
+  "createdAt": 1779704560567
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d89"
+  },
+  "question": "中国神话古代人类的始祖是？",
+  "answer": "女娲",
+  "createdAt": 1779704560568
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d8b"
+  },
+  "question": "唐朝的「朝」是由多少比划构成的？",
+  "answer": "十二",
+  "createdAt": 1779704560569
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d8d"
+  },
+  "question": "什么牛不会吃草？",
+  "answer": "蜗牛",
+  "createdAt": 1779704560571
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d8f"
+  },
+  "question": "「将相和」中讲的蔺相如和廉颇是战国时期的哪国人？",
+  "answer": "赵国",
+  "createdAt": 1779704560573
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d91"
+  },
+  "question": "以草书见长，人称\"草圣的书法家是谁？",
+  "answer": "张旭",
+  "createdAt": 1779704560575
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d93"
+  },
+  "question": "五谷中的\"菽\"指的是？",
+  "answer": "大豆",
+  "createdAt": 1779704560576
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d95"
+  },
+  "question": "牛黄在中药里指的是？",
+  "answer": "牛的胆囊结石",
+  "createdAt": 1779704560577
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d97"
+  },
+  "question": "有教无类是谁提出的观点？",
+  "answer": "孔子",
+  "createdAt": 1779704560579
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d99"
+  },
+  "question": "你衣服的姐姐的堂弟的表哥的爸爸是你的什么人？",
+  "answer": "亲戚",
+  "createdAt": 1779704560580
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d9b"
+  },
+  "question": "忘仙ol中，灵尊乘坐着的坐骑是？",
+  "answer": "虎",
+  "createdAt": 1779704560580
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d9d"
+  },
+  "question": "忘仙ol中，斗罗乘坐着的坐骑是？",
+  "answer": "牛",
+  "createdAt": 1779704560582
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3d9f"
+  },
+  "question": "忘仙ol中，鬼煞乘坐着的坐骑是？",
+  "answer": "狼",
+  "createdAt": 1779704560583
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3da1"
+  },
+  "question": "唐太宗李世民的年号是？",
+  "answer": "贞观",
+  "createdAt": 1779704560584
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3da3"
+  },
+  "question": "乞巧节指的是农历的?",
+  "answer": "七月初七",
+  "createdAt": 1779704560585
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3da5"
+  },
+  "question": "《忘仙OL》中，灵尊可以用什么武器？",
+  "answer": "笔和宝剑",
+  "createdAt": 1779704560586
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3da7"
+  },
+  "question": "《忘仙OL》中，人物基础技能最高多少级？",
+  "answer": "10级",
+  "createdAt": 1779704560587
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3da9"
+  },
+  "question": "中国十大名茶的「白毫银针」原产地是那个地方？",
+  "answer": "福建",
+  "createdAt": 1779704560589
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dab"
+  },
+  "question": "珑塔塔一层传送点在什么地图内？",
+  "answer": "小隐寺",
+  "createdAt": 1779704560591
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dad"
+  },
+  "question": "三国时期，火烧连营一战对阵的双方是？",
+  "answer": "刘备和陆逊",
+  "createdAt": 1779704560593
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3daf"
+  },
+  "question": "不宜钓鱼的天气是？",
+  "answer": "太阳辐射，水面光线很强",
+  "createdAt": 1779704560595
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3db1"
+  },
+  "question": "古代诗词常用折柳，折柳的意思是？",
+  "answer": "送别",
+  "createdAt": 1779704560598
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3db3"
+  },
+  "question": "「胡蓝之狱」发生在那個朝代？",
+  "answer": "明朝",
+  "createdAt": 1779704560601
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3db5"
+  },
+  "question": "下列哪种中药对眼睛有好处？",
+  "answer": "决明子",
+  "createdAt": 1779704560602
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3db7"
+  },
+  "question": "被誉为「万园之园」，后被焚毁的是？",
+  "answer": "圆明园",
+  "createdAt": 1779704560604
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3db9"
+  },
+  "question": "药用兽皮统称什么？",
+  "answer": "晒干的蝉蜕",
+  "createdAt": 1779704560605
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dbb"
+  },
+  "question": "古代军队调兵遣将的信物是？",
+  "answer": "虎符",
+  "createdAt": 1779704560606
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dbd"
+  },
+  "question": "忘仙OL中，鬼煞用的武器是？",
+  "answer": "匕首和刺",
+  "createdAt": 1779704560607
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dbf"
+  },
+  "question": "泥娃娃「大阿福」产地是？",
+  "answer": "无锡",
+  "createdAt": 1779704560608
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dc1"
+  },
+  "question": "什么蛋中看不中吃？",
+  "answer": "笨蛋",
+  "createdAt": 1779704560610
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dc3"
+  },
+  "question": "《写生珍禽》是哪位帝王的亲笔画？",
+  "answer": "北宋皇帝宋徽宗赵佶",
+  "createdAt": 1779704560613
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dc5"
+  },
+  "question": "马谡在街亭之战中败给了魏国那个大将？",
+  "answer": "张合",
+  "createdAt": 1779704560616
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dc7"
+  },
+  "question": "「海内存知己,天涯共此时。」是哪位诗人的诗句?",
+  "answer": "张九龄",
+  "createdAt": 1779704560618
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dcb"
+  },
+  "question": "宫城正门被称为？",
+  "answer": "午门",
+  "createdAt": 1779704560621
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dcd"
+  },
+  "question": "在我国，桃月是指？",
+  "answer": "三月",
+  "createdAt": 1779704560622
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dcf"
+  },
+  "question": "活字印刷技术发明人是？",
+  "answer": "毕昇",
+  "createdAt": 1779704560623
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dd1"
+  },
+  "question": "白马寺在那个地区？",
+  "answer": "河南 洛阳",
+  "createdAt": 1779704560625
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dd3"
+  },
+  "question": "被广大百姓推崇为「国酒」是？",
+  "answer": "茅台",
+  "createdAt": 1779704560627
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dd5"
+  },
+  "question": "红娘是那部作品的人物？",
+  "answer": "西厢记",
+  "createdAt": 1779704560630
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dd7"
+  },
+  "question": "胄是古代士兵的护具，是保护那个部位的？",
+  "answer": "头部",
+  "createdAt": 1779704560631
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dd9"
+  },
+  "question": "宋代酒店什么装饰的叫什么门？",
+  "answer": "欢门（问题不清楚，待更新)",
+  "createdAt": 1779704560633
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ddb"
+  },
+  "question": "笄礼是古代女子几岁的成人礼？",
+  "answer": "15岁",
+  "createdAt": 1779704560634
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ddd"
+  },
+  "question": "下列不属于砒霜治疗药物的是？",
+  "answer": "草木灰",
+  "createdAt": 1779704560635
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ddf"
+  },
+  "question": "《小窗幽记》的作者是谁？",
+  "answer": "陈继儒",
+  "createdAt": 1779704560637
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3de1"
+  },
+  "question": "古代对厨师的称呼是？",
+  "answer": "庖",
+  "createdAt": 1779704560639
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3de3"
+  },
+  "question": "我们最早的佛寺是？",
+  "answer": "白马寺",
+  "createdAt": 1779704560641
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3de5"
+  },
+  "question": "「五禽戏」起源于汉代，它属于什么类型的？",
+  "answer": "保健强身的功效",
+  "createdAt": 1779704560643
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3de7"
+  },
+  "question": "三国时代建造「铜雀台」的是谁？",
+  "answer": "曹操",
+  "createdAt": 1779704560645
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3de9"
+  },
+  "question": "《忘仙OL》中，收到邮件说你的账号存在问题，需要提供账号和密码，正确的做法是？",
+  "answer": "向GM举报",
+  "createdAt": 1779704560648
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3deb"
+  },
+  "question": "华夏名族在那里诞生的？",
+  "answer": "黄河流域",
+  "createdAt": 1779704560650
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ded"
+  },
+  "question": "中国第一个**隶制度的王朝是？",
+  "answer": "夏朝",
+  "createdAt": 1779704560652
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3def"
+  },
+  "question": "《史记》的作者是？",
+  "answer": "司马迁",
+  "createdAt": 1779704560654
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3df1"
+  },
+  "question": "阑尾的作用是？",
+  "answer": "没用",
+  "createdAt": 1779704560657
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3df3"
+  },
+  "question": "被称为文房四宝的是？",
+  "answer": "笔、墨、纸、砚",
+  "createdAt": 1779704560659
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3df5"
+  },
+  "question": "三国马超是那个名族？",
+  "answer": "羌族",
+  "createdAt": 1779704560662
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3df7"
+  },
+  "question": "以下不是参与玄武门事变的是？",
+  "answer": "李元霸",
+  "createdAt": 1779704560664
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3df9"
+  },
+  "question": "川贝母属于什么类型？",
+  "answer": "百合科植物",
+  "createdAt": 1779704560665
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dfb"
+  },
+  "question": "清代著名小说《儒林外史》的作者是?",
+  "answer": "吴敬梓",
+  "createdAt": 1779704560666
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dfd"
+  },
+  "question": "词语「同气」是指什么关系？",
+  "answer": "兄弟",
+  "createdAt": 1779704560667
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3dff"
+  },
+  "question": "现代第一届夏季奥运会在那举行？",
+  "answer": "雅典",
+  "createdAt": 1779704560668
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e01"
+  },
+  "question": "「长安」两个字共有多少笔画组成？",
+  "answer": "10",
+  "createdAt": 1779704560670
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e03"
+  },
+  "question": "茶叶依发酵程度不同分类是乌龙茶、绿茶和什么？",
+  "answer": "红茶",
+  "createdAt": 1779704560671
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e05"
+  },
+  "question": "忘仙OL中，千年古城不能修装备的NPC是？",
+  "answer": "宝石匠",
+  "createdAt": 1779704560673
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e07"
+  },
+  "question": "古代发明一工具耒耜，是用在那个行业？",
+  "answer": "农业",
+  "createdAt": 1779704560674
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e09"
+  },
+  "question": "下列书法家中，哪位是明代的？",
+  "answer": "（答案不确定，待编辑）",
+  "createdAt": 1779704560677
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e0b"
+  },
+  "question": "中药里的大黄指的是？",
+  "answer": "多年生植物",
+  "createdAt": 1779704560679
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e0d"
+  },
+  "question": "《忘仙OL》中，屠魔帖使用的最低等级是？",
+  "answer": "25级",
+  "createdAt": 1779704560681
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e0f"
+  },
+  "question": "六弦琴是什么乐器的别称？",
+  "answer": "吉他",
+  "createdAt": 1779704560683
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e11"
+  },
+  "question": "清末商人胡雪岩创建的著名药铺叫什么？",
+  "answer": "胡庆余堂",
+  "createdAt": 1779704560686
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e13"
+  },
+  "question": "地壳中含量最高的元素是？",
+  "answer": "氧",
+  "createdAt": 1779704560689
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e15"
+  },
+  "question": "《忘仙OL》是那家公司制作并运营的？",
+  "answer": "神奇时代",
+  "createdAt": 1779704560691
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e17"
+  },
+  "question": "古代成语中「不分皂白」中的皂是什么颜色？",
+  "answer": "黑色",
+  "createdAt": 1779704560693
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e1b"
+  },
+  "question": "《忘仙OL》中，共有几种职业？",
+  "answer": "4种",
+  "createdAt": 1779704560697
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e1d"
+  },
+  "question": "《忘仙OL》中，宠物幻化最高是多少星？",
+  "answer": "20星",
+  "createdAt": 1779704560699
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e1f"
+  },
+  "question": "「名不正则言不顺」是那家的思想？",
+  "answer": "儒家",
+  "createdAt": 1779704560702
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e21"
+  },
+  "question": "古代六艺礼、乐、射、御、书、数中的「御」是指的是？",
+  "answer": "驾驭马车的技术",
+  "createdAt": 1779704560704
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e23"
+  },
+  "question": "《忘仙OL》中，角色身上可以穿戴多少件装备？",
+  "answer": "10件",
+  "createdAt": 1779704560705
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e25"
+  },
+  "question": "中国最早的表演艺术是？",
+  "answer": "杂技",
+  "createdAt": 1779704560706
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e27"
+  },
+  "question": "以下哪种菜肴是湖南风味？",
+  "answer": "东安子鸡",
+  "createdAt": 1779704560707
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e29"
+  },
+  "question": "西欧农奴有以下哪种权利义务？",
+  "answer": "为封建主服劳役",
+  "createdAt": 1779704560711
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e2b"
+  },
+  "question": "海明威的小说《丧钟为谁而鸣》是以哪次战争为历史背景的？",
+  "answer": "西班牙内战",
+  "createdAt": 1779704560713
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e2d"
+  },
+  "question": "罗丹是伟大的？",
+  "answer": "雕塑家",
+  "createdAt": 1779704560715
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e2f"
+  },
+  "question": "三国历史中，被关羽用眼读过的是？",
+  "answer": "春秋",
+  "createdAt": 1779704560717
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e31"
+  },
+  "question": "小白加上小白等于很忙？",
+  "answer": "小白兔",
+  "createdAt": 1779704560718
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e33"
+  },
+  "question": "什么样的人见到阳光会躲得无影无踪？",
+  "answer": "雪人",
+  "createdAt": 1779704560719
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e35"
+  },
+  "question": "什么数字最听话？",
+  "answer": "100",
+  "createdAt": 1779704560721
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e37"
+  },
+  "question": "和尚打着一把伞，是一个什么成语?",
+  "answer": "无法无天",
+  "createdAt": 1779704560724
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e39"
+  },
+  "question": "和张旭齐名，称素狂的是谁？",
+  "answer": "怀素",
+  "createdAt": 1779704560727
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e3b"
+  },
+  "question": "宋词名句天不老，情难绝，心似双丝网，中有千千结、的作者是",
+  "answer": "张生",
+  "createdAt": 1779704560729
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e3d"
+  },
+  "question": "不宜钓鱼的天气是?",
+  "answer": "太阳逼射，水面光线很强",
+  "createdAt": 1779704560731
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e3f"
+  },
+  "question": "一公斤铁和一公斤棉花哪一个轻?",
+  "answer": "一样轻",
+  "createdAt": 1779704560732
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e41"
+  },
+  "question": "本身的元素与金刚石一样的矿物质是?",
+  "answer": "煤",
+  "createdAt": 1779704560734
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e43"
+  },
+  "question": "什么球不能踢？",
+  "answer": "火球",
+  "createdAt": 1779704560735
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e45"
+  },
+  "question": "什么票最危险?",
+  "answer": "绑票",
+  "createdAt": 1779704560737
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e47"
+  },
+  "question": "鱼是用身体的哪一部分来保持平衡的？",
+  "answer": "鱼鳍",
+  "createdAt": 1779704560738
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e49"
+  },
+  "question": "什么果不能吃？",
+  "answer": "后果",
+  "createdAt": 1779704560739
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e4b"
+  },
+  "question": "一个人想在一夜里变成百万富翁，他该马上怎么办？",
+  "answer": "做梦",
+  "createdAt": 1779704560741
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e4d"
+  },
+  "question": "用温度多高的水洗澡最好?",
+  "answer": "40度",
+  "createdAt": 1779704560743
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e4f"
+  },
+  "question": "比利时著名的撒尿小孩铜雕,平时他尿的是自来水,那狂欢节他尿的是什么?",
+  "answer": "啤酒",
+  "createdAt": 1779704560747
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e51"
+  },
+  "question": "以下哪种室内盆栽植物是常年开花的?",
+  "answer": "紫罗兰",
+  "createdAt": 1779704560749
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e53"
+  },
+  "question": "杜甫曾任工部侍郎，所以后人称他为？",
+  "answer": "杜工部",
+  "createdAt": 1779704560750
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e55"
+  },
+  "question": "眼镜王蛇的蛇毒结晶是什么颜色的？",
+  "answer": "黄色",
+  "createdAt": 1779704560752
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e57"
+  },
+  "question": "什么地方盖了章才过得去？",
+  "answer": "印度",
+  "createdAt": 1779704560753
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e59"
+  },
+  "question": "什么东西别人请你吃，但你自己还是要付钱？",
+  "answer": "吃官司",
+  "createdAt": 1779704560754
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e5b"
+  },
+  "question": "笄礼是古代女子几岁成年的插笄仪式？",
+  "answer": "15",
+  "createdAt": 1779704560757
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e5d"
+  },
+  "question": "被称为天下第一行书的是？",
+  "answer": "《兰亭序》",
+  "createdAt": 1779704560758
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e5f"
+  },
+  "question": "唐朝古琴有几根弦",
+  "answer": "7根",
+  "createdAt": 1779704560760
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e61"
+  },
+  "question": "提出望闻问切等医疗手段的是？",
+  "answer": "扁鹊",
+  "createdAt": 1779704560762
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e63"
+  },
+  "question": "下列不属于治疗砒霜中毒的急救药物的是？",
+  "answer": "草木灰",
+  "createdAt": 1779704560763
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e65"
+  },
+  "question": "词语芊芊代表什么颜色",
+  "answer": "翠绿色",
+  "createdAt": 1779704560766
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e67"
+  },
+  "question": "不为五斗米折腰的古代人物是？",
+  "answer": "陶渊明",
+  "createdAt": 1779704560767
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e69"
+  },
+  "question": "玄英是哪个季节的别称",
+  "answer": "冬季",
+  "createdAt": 1779704560769
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e6b"
+  },
+  "question": "健胃类的中药一般怎样服用有利于药效的发挥？",
+  "answer": "饭前服用",
+  "createdAt": 1779704560771
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e6d"
+  },
+  "question": "藕是莲的",
+  "answer": "根茎",
+  "createdAt": 1779704560774
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e6f"
+  },
+  "question": "古代名画洛神赋图的作者是谁？",
+  "answer": "顾恺之",
+  "createdAt": 1779704560776
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e71"
+  },
+  "question": "哪位君主采纳废黜百家,独尊儒术的建议?",
+  "answer": "汉武帝",
+  "createdAt": 1779704560778
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e73"
+  },
+  "question": "以下作品中，哪幅画不属于徐悲鸿的作品？",
+  "answer": "荷花",
+  "createdAt": 1779704560780
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e75"
+  },
+  "question": "茶叶依发酵程度不同分为绿茶、乌龙茶和什么？",
+  "answer": "红茶",
+  "createdAt": 1779704560781
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e77"
+  },
+  "question": "清末商人胡雪岩创办的著名中药堂名叫？",
+  "answer": "胡庆余堂",
+  "createdAt": 1779704560782
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e79"
+  },
+  "question": "交杯酒一般出现在哪种场合？",
+  "answer": "结婚喜宴",
+  "createdAt": 1779704560785
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e7b"
+  },
+  "question": "忘仙二个字一共有多少笔画组成",
+  "answer": "十二画",
+  "createdAt": 1779704560787
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e7d"
+  },
+  "question": "以下三个皇帝按时间先后顺序排列正确的是？",
+  "answer": "康熙、雍正、乾隆",
+  "createdAt": 1779704560788
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e7f"
+  },
+  "question": "古代建筑中有顶的被称为?",
+  "answer": "廊",
+  "createdAt": 1779704560789
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e81"
+  },
+  "question": "喜好饮酒，自称酒中仙的著名诗人是？",
+  "answer": "李白",
+  "createdAt": 1779704560791
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e83"
+  },
+  "question": "以下谁不是玄武门之变的参与者?",
+  "answer": "李元霸",
+  "createdAt": 1779704560793
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e85"
+  },
+  "question": "火把节的日期哪天？",
+  "answer": "六月二十四日",
+  "createdAt": 1779704560795
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e87"
+  },
+  "question": "成语鸡鸣狗盗与战国四君子哪位有所关联？",
+  "answer": "孟尝君",
+  "createdAt": 1779704560797
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e89"
+  },
+  "question": "得道多助失道寡助是谁的观点？",
+  "answer": "孟子",
+  "createdAt": 1779704560799
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e8b"
+  },
+  "question": "中药里的牛黄指的是?",
+  "answer": "牛的胆囊结石",
+  "createdAt": 1779704560801
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e8d"
+  },
+  "question": "乞巧节指的是农历?",
+  "answer": "七月初七",
+  "createdAt": 1779704560802
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e8f"
+  },
+  "question": "以画竹子著称的書画家郑板桥是哪个朝代的人？",
+  "answer": "清朝",
+  "createdAt": 1779704560803
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e91"
+  },
+  "question": "中药膨大海的主要功效是？",
+  "answer": "润喉止咳",
+  "createdAt": 1779704560805
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e93"
+  },
+  "question": "熬制中药一般常用的器具是",
+  "answer": "砂锅砂壶",
+  "createdAt": 1779704560806
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e95"
+  },
+  "question": "平遥古城位于?",
+  "answer": "山西省中部",
+  "createdAt": 1779704560808
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e97"
+  },
+  "question": "唐朝的朝字由多少笔画组成？",
+  "answer": "十二画",
+  "createdAt": 1779704560809
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e99"
+  },
+  "question": "清朝入关后的第一位皇帝是？",
+  "answer": "顺治",
+  "createdAt": 1779704560811
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e9b"
+  },
+  "question": "《二十四品诗》的作者是谁？",
+  "answer": "司马图",
+  "createdAt": 1779704560814
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e9d"
+  },
+  "question": "古代许多诗句中都有折柳二字，这是什么情况下的习俗?",
+  "answer": "送别",
+  "createdAt": 1779704560815
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3e9f"
+  },
+  "question": "战国时期，与合纵连横这一外交军事政策关联的人物是？",
+  "answer": "苏秦与张仪",
+  "createdAt": 1779704560817
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ea1"
+  },
+  "question": "古代成语碧落黄泉中的碧落是指？",
+  "answer": "天界",
+  "createdAt": 1779704560818
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ea3"
+  },
+  "question": "中医的针灸对人体空位有很深的研究，人体有一处四白穴位于哪里？",
+  "answer": "头部",
+  "createdAt": 1779704560819
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ea5"
+  },
+  "question": "被称为七绝圣手的唐代诗人是谁?",
+  "answer": "王昌龄",
+  "createdAt": 1779704560820
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ea7"
+  },
+  "question": "太平天国起义核心人物之一，被称为北王的?",
+  "answer": "韦昌辉",
+  "createdAt": 1779704560822
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ea9"
+  },
+  "question": "清代著名小说《儒林外史》的作者是？",
+  "answer": "吴敬梓",
+  "createdAt": 1779704560824
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eab"
+  },
+  "question": "古代用沉鱼落雁，闭月羞花形容女性之美，其中沉鱼是指?",
+  "answer": "西施",
+  "createdAt": 1779704560825
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ead"
+  },
+  "question": "中国第一个奴隶制度的王朝是?",
+  "answer": "夏朝",
+  "createdAt": 1779704560826
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eaf"
+  },
+  "question": "孝文帝拓拔宏属于以下哪个民族？",
+  "answer": "鲜卑族",
+  "createdAt": 1779704560827
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eb1"
+  },
+  "question": "古代成语长绳系日的寓意是",
+  "answer": "想留住时光",
+  "createdAt": 1779704560829
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eb3"
+  },
+  "question": "古代成语一曝十寒的意思是？",
+  "answer": "形容没有恒心",
+  "createdAt": 1779704560831
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eb5"
+  },
+  "question": "词语同气是指什么关系？",
+  "answer": "兄弟",
+  "createdAt": 1779704560832
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eb7"
+  },
+  "question": "嫘祖为我们所熟知，是因为她",
+  "answer": "养蚕制衣",
+  "createdAt": 1779704560833
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eb9"
+  },
+  "question": "清朝推行摊丁入亩制度的皇帝是？",
+  "answer": "雍正",
+  "createdAt": 1779704560834
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ebb"
+  },
+  "question": "被称为万园之园，后被焚毁的建筑是？",
+  "answer": "圆明园",
+  "createdAt": 1779704560835
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ebd"
+  },
+  "question": "中国十位名画家各有其长，擅长画虎的是？",
+  "answer": "张大千",
+  "createdAt": 1779704560837
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ebf"
+  },
+  "question": "以草书见长，人称草圣的书法家是谁？",
+  "answer": "张旭",
+  "createdAt": 1779704560838
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ec1"
+  },
+  "question": "中国十大名茶之一的龙井茶原产地在哪个省？",
+  "answer": "浙江",
+  "createdAt": 1779704560838
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ec3"
+  },
+  "question": "中医的针灸对人体穴位有很深的研究，人体有一处曲池穴位于？",
+  "answer": "肘部",
+  "createdAt": 1779704560840
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ec5"
+  },
+  "question": "中医的针灸对人体穴位有很深的研究，人体有一处涌泉穴在哪儿？",
+  "answer": "足底",
+  "createdAt": 1779704560842
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ec7"
+  },
+  "question": "《忘仙OL》中，巫皇骑乘的坐骑是什么？",
+  "answer": "蝎",
+  "createdAt": 1779704560843
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ec9"
+  },
+  "question": "《忘仙OL》中，宠物每提升一级，会给几点属性点？",
+  "answer": "5点",
+  "createdAt": 1779704560844
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ecb"
+  },
+  "question": "《忘仙OL》中，巫皇可使用什么武器？",
+  "answer": "法杖和幡",
+  "createdAt": 1779704560845
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ecd"
+  },
+  "question": "《忘仙OL》中，朋友向你索要账号密码，为了账号安全，应该怎么样做？",
+  "answer": "婉拒对方",
+  "createdAt": 1779704560846
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ecf"
+  },
+  "question": "《忘仙OL》中，有人宣传代练，提供账号密码就可满级。正确做法是？",
+  "answer": "向GM举报",
+  "createdAt": 1779704560847
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ed1"
+  },
+  "question": "《忘仙OL》中，红名角色使用什么道具减少罪恶值？",
+  "answer": "免罪金牌",
+  "createdAt": 1779704560849
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ed3"
+  },
+  "question": "《忘仙OL》中，屠魔帖·水晶，物品的最低使用等级是多少级？",
+  "answer": "105级",
+  "createdAt": 1779704560849
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ed5"
+  },
+  "question": "《忘仙OL》中，能够召集所有家族成员到身边的令牌是什么？",
+  "answer": "族长令",
+  "createdAt": 1779704560850
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ed7"
+  },
+  "question": "《忘仙OL》中，装备练星最高是多少星？",
+  "answer": "20星",
+  "createdAt": 1779704560851
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ed9"
+  },
+  "question": "《忘仙OL》中，玲珑塔一层传送点在哪副地图内？",
+  "answer": "小隐寺",
+  "createdAt": 1779704560853
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3edb"
+  },
+  "question": "进入挂机地图需要和哪个NPC对话？",
+  "answer": "沙步丸",
+  "createdAt": 1779704560854
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3edd"
+  },
+  "question": "现代第一届夏季奥运会在哪举行？",
+  "answer": "雅典",
+  "createdAt": 1779704560856
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3edf"
+  },
+  "question": "人类创造的第一个超过音速的东西是什么？",
+  "answer": "鞭子",
+  "createdAt": 1779704560858
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ee1"
+  },
+  "question": "下列鱼中，对水中的氧气含量要求最高的是？",
+  "answer": "海水热带鱼",
+  "createdAt": 1779704560860
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ee3"
+  },
+  "question": "三师指的是：太师、太傅和什么?",
+  "answer": "太保",
+  "createdAt": 1779704560862
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ee5"
+  },
+  "question": "为什么暑假一定比寒假长？",
+  "answer": "热胀冷缩",
+  "createdAt": 1779704560863
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ee7"
+  },
+  "question": "五个兄弟，住在一起，名字不同，高矮不齐。（打一人体器官）",
+  "answer": "手指",
+  "createdAt": 1779704560865
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ee9"
+  },
+  "question": "冲天香阵透长安，满城尽带黄金价是从谁的诗作中诗作中摘录的？",
+  "answer": "黄巢",
+  "createdAt": 1779704560867
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eeb"
+  },
+  "question": "新石器时代属于石器时代的哪个时期?",
+  "answer": "晚期",
+  "createdAt": 1779704560871
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eed"
+  },
+  "question": "蔬菜、水果主要向人们提供什么营养?",
+  "answer": "膳食纤维",
+  "createdAt": 1779704560872
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eef"
+  },
+  "question": "人们最早是从哪种动物身上得知咖啡的作用的?",
+  "answer": "羊",
+  "createdAt": 1779704560874
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ef1"
+  },
+  "question": "最不耐酸的织品是什么织品?",
+  "answer": "棉织品",
+  "createdAt": 1779704560876
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ef3"
+  },
+  "question": "一般金婚是纪念结婚多少周年?",
+  "answer": "50周年",
+  "createdAt": 1779704560878
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ef5"
+  },
+  "question": "热咖啡在什么温度时才香甜可口?",
+  "answer": "70度",
+  "createdAt": 1779704560880
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ef7"
+  },
+  "question": "一般来说,治疗伤风感冒的解表药以及清热药、芳香药,宜用什么火煎?",
+  "answer": "武火",
+  "createdAt": 1779704560883
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3ef9"
+  },
+  "question": "万有引力是哪一位科学家提出的?",
+  "answer": "牛顿",
+  "createdAt": 1779704560885
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3efb"
+  },
+  "question": "哪一类茶属于发酵茶?",
+  "answer": "红茶",
+  "createdAt": 1779704560888
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3efd"
+  },
+  "question": "钢铁工人在炼钢时,穿了一种不怕烧,不怕钢水,火星的衣服,请问它是用什么作成的?",
+  "answer": "石棉",
+  "createdAt": 1779704560889
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3eff"
+  },
+  "question": "果汁在什么温度饮用时最适宜?",
+  "answer": "10度",
+  "createdAt": 1779704560891
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f01"
+  },
+  "question": "人参果又名什么？",
+  "answer": "长寿果",
+  "createdAt": 1779704560892
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f03"
+  },
+  "question": "地壳中含量最多的元素是？",
+  "answer": "氧",
+  "createdAt": 1779704560896
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f05"
+  },
+  "question": "一朵插在牛粪上的鲜花是什么花？",
+  "answer": "牵牛花",
+  "createdAt": 1779704560898
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f07"
+  },
+  "question": "一般说来，声音在多少分贝以下，环境是安静的？",
+  "answer": "50分贝",
+  "createdAt": 1779704560899
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f09"
+  },
+  "question": "三国时期火烧连营一战的对阵双方是？",
+  "answer": "陆逊VS刘备",
+  "createdAt": 1779704560900
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f0b"
+  },
+  "question": "世界上最早记载哈雷彗星的书是？",
+  "answer": "《春秋》",
+  "createdAt": 1779704560901
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f0d"
+  },
+  "question": "古诗风、雅、颂中的风是指？",
+  "answer": "《国风》",
+  "createdAt": 1779704560902
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f0f"
+  },
+  "question": "与木兰辞并称乐府双璧的是?",
+  "answer": "《孔雀东南飞》",
+  "createdAt": 1779704560903
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f11"
+  },
+  "question": "下列著作中，出自孙思邈之手的是？",
+  "answer": "《千金方》",
+  "createdAt": 1779704560904
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f13"
+  },
+  "question": "清代号雪芹所著的小说《红楼梦》最初时命名为？",
+  "answer": "《石头记》",
+  "createdAt": 1779704560905
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f15"
+  },
+  "question": "古琴的音色有泛音，散音和什么？",
+  "answer": "按音",
+  "createdAt": 1779704560906
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f17"
+  },
+  "question": "古代成语剖腹藏珠的意思是？",
+  "answer": "比喻爱财如命",
+  "createdAt": 1779704560907
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f19"
+  },
+  "question": "康熙和乾隆所题名的七十二景位于哪里？",
+  "answer": "避暑山庄",
+  "createdAt": 1779704560908
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f1b"
+  },
+  "question": "户枢不蠹的不蠹是什么意思?",
+  "answer": "不生虫",
+  "createdAt": 1779704560910
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f1d"
+  },
+  "question": "何以解忧，惟有杜康的作者是谁？",
+  "answer": "曹操",
+  "createdAt": 1779704560911
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f1f"
+  },
+  "question": "《小窗幽记》的作者是谁?",
+  "answer": "陈继儒",
+  "createdAt": 1779704560912
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f21"
+  },
+  "question": "古代人参有多种雅称，以下不属于人参雅称的是：",
+  "answer": "赤箭",
+  "createdAt": 1779704560913
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f23"
+  },
+  "question": "神医扁鹊是哪个朝代人?",
+  "answer": "春秋战国",
+  "createdAt": 1779704560914
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f25"
+  },
+  "question": "沉鱼落雁闭月羞花中，闭月指谁？",
+  "answer": "貂蝉",
+  "createdAt": 1779704560914
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f27"
+  },
+  "question": "造纸术大约是在什么朝代发明的？",
+  "answer": "东汉",
+  "createdAt": 1779704560915
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f29"
+  },
+  "question": "有漏皆苦中的漏意思为",
+  "answer": "烦恼",
+  "createdAt": 1779704560916
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f2b"
+  },
+  "question": "适量合理地饮用葡萄酒，对人体有什么好处？",
+  "answer": "防治心血管病",
+  "createdAt": 1779704560917
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f2d"
+  },
+  "question": "茅台酒以什么原料制成的？",
+  "answer": "高粱",
+  "createdAt": 1779704560918
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f2f"
+  },
+  "question": "中医所说的白虎历节指的是哪种症状?",
+  "answer": "关节肿痛",
+  "createdAt": 1779704560919
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f31"
+  },
+  "question": "唐朝高等学府是？",
+  "answer": "国子监",
+  "createdAt": 1779704560920
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f33"
+  },
+  "question": "南宋都城临安.是现今何处?",
+  "answer": "杭州",
+  "createdAt": 1779704560922
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f35"
+  },
+  "question": "配制世界上最早的麻醉药剂麻沸散的是？",
+  "answer": "华佗",
+  "createdAt": 1779704560924
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f37"
+  },
+  "question": "古琴琴面镶嵌的十三个螺钿的圆点叫作什么？",
+  "answer": "徽",
+  "createdAt": 1779704560926
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f39"
+  },
+  "question": "清明寒食是吴王为了纪念哪一个大臣设的规矩?",
+  "answer": "介子推",
+  "createdAt": 1779704560929
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f3b"
+  },
+  "question": "北宋建国时所定的京都（首都）是？",
+  "answer": "开封",
+  "createdAt": 1779704560931
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f3d"
+  },
+  "question": "从我国古代的神话传说来看，以下与月亮无关的是？",
+  "answer": "夸父",
+  "createdAt": 1779704560932
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f3f"
+  },
+  "question": "李龟年是唐朝的？",
+  "answer": "乐师",
+  "createdAt": 1779704560933
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f41"
+  },
+  "question": "《温泉铭》是哪位帝王撰写的？",
+  "answer": "李世民",
+  "createdAt": 1779704560934
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f43"
+  },
+  "question": "金屋藏娇说的是哪一位皇帝？",
+  "answer": "刘彻",
+  "createdAt": 1779704560934
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f45"
+  },
+  "question": "古时用十二生肖对应十二地支，其中与辰对应的是？",
+  "answer": "龙",
+  "createdAt": 1779704560935
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f47"
+  },
+  "question": "诗歌鹅的作者是谁？",
+  "answer": "骆宾王",
+  "createdAt": 1779704560937
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f49"
+  },
+  "question": "为徐敬业讨伐武则天的义兵起草了《讨武氏檄》的诗人是",
+  "answer": "骆宾王",
+  "createdAt": 1779704560938
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f4b"
+  },
+  "question": "被广大百姓推崇为中国国酒的是什么？",
+  "answer": "茅台",
+  "createdAt": 1779704560939
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f4d"
+  },
+  "question": "著有《徐霞客游记》的徐霞客是哪个朝代的人？",
+  "answer": "明朝",
+  "createdAt": 1779704560940
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f4f"
+  },
+  "question": "太平天国起义的核心领导人中，冯云山被封为？",
+  "answer": "南王",
+  "createdAt": 1779704560941
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f51"
+  },
+  "question": "古人发明的一咱工具耒耜（读leisi）用在哪个行业？",
+  "answer": "农业",
+  "createdAt": 1779704560942
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f53"
+  },
+  "question": "苏州评弹是哪两种表演形式的统称?",
+  "answer": "评话和弹词",
+  "createdAt": 1779704560943
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f55"
+  },
+  "question": "清代官服上绣有方形图案，称为补子，其中一品武官的图案是？",
+  "answer": "麒麟",
+  "createdAt": 1779704560945
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f57"
+  },
+  "question": "名不正则言不顺是哪家的思想",
+  "answer": "儒家",
+  "createdAt": 1779704560947
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f59"
+  },
+  "question": "古人泡茶注重用水，以下被视为上等茶水的是？",
+  "answer": "山泉水",
+  "createdAt": 1779704560948
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f5b"
+  },
+  "question": "四羊方尊是哪个朝代的文物？",
+  "answer": "商",
+  "createdAt": 1779704560949
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f5d"
+  },
+  "question": "古代中药里俗称:当门子指的是什么?",
+  "answer": "麝香",
+  "createdAt": 1779704560951
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f5f"
+  },
+  "question": "隋朝的隋字由多少笔画组成？",
+  "answer": "十一画",
+  "createdAt": 1779704560952
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f61"
+  },
+  "question": "世界上发现的最大的青铜器是",
+  "answer": "司母戊鼎",
+  "createdAt": 1779704560953
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f63"
+  },
+  "question": "在中国，自古就有天府之国美誉的地区是",
+  "answer": "四川盆地",
+  "createdAt": 1779704560955
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f65"
+  },
+  "question": "中国十大名茶中碧螺春的产地是？",
+  "answer": "苏州洞庭山",
+  "createdAt": 1779704560956
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f67"
+  },
+  "question": "柳公权是哪个朝代人?",
+  "answer": "唐朝人",
+  "createdAt": 1779704560957
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f69"
+  },
+  "question": "下面哪类不是绿茶？",
+  "answer": "铁观音",
+  "createdAt": 1779704560958
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f6b"
+  },
+  "question": "农田水利法是历史上哪次变法中提出的兴农措施？",
+  "answer": "王安石变法",
+  "createdAt": 1779704560959
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f6d"
+  },
+  "question": "古代成语望其项背的近义词是",
+  "answer": "望其肩项",
+  "createdAt": 1779704560960
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f6f"
+  },
+  "question": "福建名茶大红袍属于哪类茶？",
+  "answer": "乌龙茶",
+  "createdAt": 1779704560961
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f71"
+  },
+  "question": "仲夏在古代时令中是指农历几月？",
+  "answer": "五月",
+  "createdAt": 1779704560963
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f73"
+  },
+  "question": "算盘是古代的计算用具，正规的算盘中间用档木把算珠分为两栏，上栏每列两珠，下栏每列的珠数是？",
+  "answer": "五珠",
+  "createdAt": 1779704560964
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f75"
+  },
+  "question": "宫城的正门被称为?",
+  "answer": "午门",
+  "createdAt": 1779704560965
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f77"
+  },
+  "question": "现代杰出画家中，齐白石最擅长画什么？",
+  "answer": "虾",
+  "createdAt": 1779704560968
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f79"
+  },
+  "question": "杜康是哪个朝代的人？",
+  "answer": "夏朝",
+  "createdAt": 1779704560970
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f7b"
+  },
+  "question": "清代官服上绣有方形图案，称为补子，其中一品文官的图案是？",
+  "answer": "仙鹤",
+  "createdAt": 1779704560972
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f7d"
+  },
+  "question": "一般情况下，用什么材质的桶贮藏葡萄酒？",
+  "answer": "橡木",
+  "createdAt": 1779704560974
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f7f"
+  },
+  "question": "有一味中药名为全虫，这里的虫是指？",
+  "answer": "蝎子",
+  "createdAt": 1779704560975
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f81"
+  },
+  "question": "古代成语噤若寒蝉的意思是？",
+  "answer": "形容沉默不语",
+  "createdAt": 1779704560977
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f83"
+  },
+  "question": "古代成语沐猴而冠的意思是？",
+  "answer": "形容虚有其表",
+  "createdAt": 1779704560978
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f85"
+  },
+  "question": "古代名画步辇图的作者是谁？",
+  "answer": "阎立本",
+  "createdAt": 1779704560979
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f87"
+  },
+  "question": "川贝母属于？",
+  "answer": "野生药用植物",
+  "createdAt": 1779704560981
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f89"
+  },
+  "question": "古代成语爱鹤失众的寓意是？",
+  "answer": "因小失大",
+  "createdAt": 1779704560982
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f8b"
+  },
+  "question": "著名的棉纺织革新家黄道婆是哪个朝代的人？",
+  "answer": "元朝",
+  "createdAt": 1779704560983
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f8d"
+  },
+  "question": "普洱茶的产地在哪儿？",
+  "answer": "云南",
+  "createdAt": 1779704560984
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f8f"
+  },
+  "question": "古代成语含沙射影的意思是？",
+  "answer": "造谣陷害",
+  "createdAt": 1779704560985
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f91"
+  },
+  "question": "战国时期，各国都有自己独特的货币，其中使用铲形币的是？",
+  "answer": "赵国",
+  "createdAt": 1779704560986
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f93"
+  },
+  "question": "元曲四大家除了关汉卿、白朴、马致远外还有？",
+  "answer": "郑光祖",
+  "createdAt": 1779704560987
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f95"
+  },
+  "question": "《忘仙OL》中，灵尊骑乘的坐骑是什么？",
+  "answer": "虎",
+  "createdAt": 1779704560988
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f97"
+  },
+  "question": "《忘仙OL》中，宠物炼妖使用的道具是什么？",
+  "answer": "炼妖石",
+  "createdAt": 1779704560989
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f99"
+  },
+  "question": "《忘仙OL》中，人物心法有几种？",
+  "answer": "5种",
+  "createdAt": 1779704560990
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f9b"
+  },
+  "question": "《忘仙OL》中，背包初始有几格？",
+  "answer": "40格",
+  "createdAt": 1779704560992
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f9d"
+  },
+  "question": "《忘仙OL》中，快捷键有几个？",
+  "answer": "6个",
+  "createdAt": 1779704560994
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3f9f"
+  },
+  "question": "《忘仙OL》中，灵尊可使用什么武器？",
+  "answer": "宝剑和笔",
+  "createdAt": 1779704560996
+},
+{
+  "_id": {
+    "$oid": "6a1422f09ea803a8b66d3fa1"
+  },
+  "question": "《忘仙OL》中，装备颜色品质有几种？",
+  "answer": "7种",
+  "createdAt": 1779704560998
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fa3"
+  },
+  "question": "《忘仙OL》中，宠物行为不包括以下哪个？",
+  "answer": "协助",
+  "createdAt": 1779704561018
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fa5"
+  },
+  "question": "《忘仙OL》中，有人提供外挂，但需要先付款，正确做法是？",
+  "answer": "向GM举报",
+  "createdAt": 1779704561037
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fa7"
+  },
+  "question": "《忘仙OL》中，离开仙府地图找哪个NPC？",
+  "answer": "村长",
+  "createdAt": 1779704561046
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fa9"
+  },
+  "question": "《忘仙OL》中，角色身上可穿戴多少件装备？",
+  "answer": "10件",
+  "createdAt": 1779704561056
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fab"
+  },
+  "question": "《忘仙OL》中，多少文等于1两银子？",
+  "answer": "一千文",
+  "createdAt": 1779704561063
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fad"
+  },
+  "question": "《忘仙OL》中，一锭银子等于多少两银子？",
+  "answer": "一千两",
+  "createdAt": 1779704561077
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3faf"
+  },
+  "question": "《忘仙OL》中，屠魔帖·逍遥，物品的最低使用等级是多少级？",
+  "answer": "45级",
+  "createdAt": 1779704561082
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fb1"
+  },
+  "question": "《忘仙OL》中，屠魔帖·霸者，物品的最低使用等级是多少级？",
+  "answer": "65级",
+  "createdAt": 1779704561088
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fb3"
+  },
+  "question": "《忘仙OL》中，能够召集修真伴侣到身边的令牌是什么？",
+  "answer": "比翼令",
+  "createdAt": 1779704561095
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fb5"
+  },
+  "question": "海内存知己，天涯若比邻出自何人之手？",
+  "answer": "王勃",
+  "createdAt": 1779704561100
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fb7"
+  },
+  "question": "2002年大学生运动会的吉祥物是什么？",
+  "answer": "扬子鳄",
+  "createdAt": 1779704561105
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fb9"
+  },
+  "question": "好莱坞位于美国什么州？",
+  "answer": "加利福尼亚州",
+  "createdAt": 1779704561110
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fbb"
+  },
+  "question": "初出茅庐中的茅庐本意是指谁的的住处？",
+  "answer": "诸葛亮",
+  "createdAt": 1779704561116
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fbd"
+  },
+  "question": "《红楼梦》中葬花的是谁？",
+  "answer": "林黛玉",
+  "createdAt": 1779704561118
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fbf"
+  },
+  "question": "《三国演义》中，张颌的死因是？",
+  "answer": "中箭而死",
+  "createdAt": 1779704561119
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fc1"
+  },
+  "question": "神曲是谁的长诗？",
+  "answer": "但丁",
+  "createdAt": 1779704561121
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fc3"
+  },
+  "question": "希腊神话中，智慧和战争女神是？",
+  "answer": "雅典娜",
+  "createdAt": 1779704561123
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fc5"
+  },
+  "question": "人类最古老的绘画形式是?",
+  "answer": "壁画",
+  "createdAt": 1779704561126
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fc7"
+  },
+  "question": "蟋蟀的耳朵长在？",
+  "answer": "前足的小腿节上",
+  "createdAt": 1779704561129
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fc9"
+  },
+  "question": "表现力最丰富的乐器是?",
+  "answer": "小提琴",
+  "createdAt": 1779704561132
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fcb"
+  },
+  "question": "门神一个是尉迟恭另一个是？",
+  "answer": "秦琼",
+  "createdAt": 1779704561134
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fcd"
+  },
+  "question": "一把刀顺水漂，有眼睛，没眉毛，是什么？",
+  "answer": "鱼",
+  "createdAt": 1779704561135
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fcf"
+  },
+  "question": "飞机的机翼用来？",
+  "answer": "增加升力",
+  "createdAt": 1779704561137
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fd1"
+  },
+  "question": "明月几时有？把酒问青天。是谁的诗词？",
+  "answer": "苏东坡",
+  "createdAt": 1779704561139
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fd3"
+  },
+  "question": "鲨鱼的皮肤是?",
+  "answer": "粗糙的",
+  "createdAt": 1779704561140
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fd5"
+  },
+  "question": "吃海鲜最好不要喝什么?",
+  "answer": "啤酒",
+  "createdAt": 1779704561142
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fd7"
+  },
+  "question": "用哪个季节的竹子做出的竹席质量最好?",
+  "answer": "夏季",
+  "createdAt": 1779704561143
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fd9"
+  },
+  "question": "烹调海参不宜加什么?",
+  "answer": "醋",
+  "createdAt": 1779704561144
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fdb"
+  },
+  "question": "小儿在父母之间睡觉好吗?",
+  "answer": "不好",
+  "createdAt": 1779704561145
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fdd"
+  },
+  "question": "鲸是世界上最大的鱼,对还是不对?",
+  "answer": "不对",
+  "createdAt": 1779704561146
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fdf"
+  },
+  "question": "你姨夫的姐姐的堂弟的表哥的爸爸是你的什么人？",
+  "answer": "亲戚",
+  "createdAt": 1779704561147
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fe1"
+  },
+  "question": "地球自转一周大约要多少时间？",
+  "answer": "24小时",
+  "createdAt": 1779704561149
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fe3"
+  },
+  "question": "《西厢记》脱胎于唐代传奇故事",
+  "answer": "《会真记》",
+  "createdAt": 1779704561150
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fe5"
+  },
+  "question": "洛阳纸贵指的作品的下面哪一部？",
+  "answer": "《三都赋》",
+  "createdAt": 1779704561151
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fe7"
+  },
+  "question": "我国最早的一部药物学著作是？",
+  "answer": "《神农本草经》",
+  "createdAt": 1779704561153
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fe9"
+  },
+  "question": "被称为文房四宝的是什么？",
+  "answer": "笔、墨、纸、砚",
+  "createdAt": 1779704561155
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3feb"
+  },
+  "question": "后代医家奉之为脉学之宗的人是",
+  "answer": "扁鹊",
+  "createdAt": 1779704561156
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fed"
+  },
+  "question": "传说中文字是谁发明的？",
+  "answer": "仓颉",
+  "createdAt": 1779704561158
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fef"
+  },
+  "question": "铜权是古代常见的金属器物，后来被俗称为？",
+  "answer": "秤砣",
+  "createdAt": 1779704561159
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ff1"
+  },
+  "question": "人参在古代有很多雅称以下哪个不是人参的雅称？",
+  "answer": "赤箭",
+  "createdAt": 1779704561161
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ff3"
+  },
+  "question": "历史知识不鸣则已,一鸣惊人这句成语源自于谁的典故？",
+  "answer": "楚庄王",
+  "createdAt": 1779704561163
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ff5"
+  },
+  "question": "中国古代人们所说的元旦是指哪一天？",
+  "answer": "春节",
+  "createdAt": 1779704561164
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ff7"
+  },
+  "question": "与针灸无关的是？",
+  "answer": "顶针",
+  "createdAt": 1779704561166
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ff9"
+  },
+  "question": "中国十大名茶之一的白毫银针原产地在哪个省?",
+  "answer": "福建",
+  "createdAt": 1779704561168
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ffb"
+  },
+  "question": "北宋的两个著名词人晏殊和晏几道是什么关系",
+  "answer": "父子",
+  "createdAt": 1779704561171
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3ffd"
+  },
+  "question": "中草药里三七的入药部分实际是植物的？",
+  "answer": "根",
+  "createdAt": 1779704561173
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d3fff"
+  },
+  "question": "古代发明的云梯按用途来讲属于？",
+  "answer": "攻城器械",
+  "createdAt": 1779704561174
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4001"
+  },
+  "question": "韩熙载夜宴图的作者是谁？",
+  "answer": "顾闳中",
+  "createdAt": 1779704561175
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4003"
+  },
+  "question": "词语司空见惯中的司空指的是",
+  "answer": "官职",
+  "createdAt": 1779704561176
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4005"
+  },
+  "question": "中国古代历法名著《授时历》的作者是谁？",
+  "answer": "郭守敬",
+  "createdAt": 1779704561177
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4007"
+  },
+  "question": "白马寺在哪个地区？",
+  "answer": "河南",
+  "createdAt": 1779704561178
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4009"
+  },
+  "question": "下列中甜纯型的茶是？",
+  "answer": "红茶",
+  "createdAt": 1779704561179
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d400b"
+  },
+  "question": "唐朝灭亡后，中原一带先后出现了五个朝代，史称五代，除后梁、后唐、后晋、后汉外还有？",
+  "answer": "后周",
+  "createdAt": 1779704561180
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d400d"
+  },
+  "question": "唐代长安城大街上种植的树是？",
+  "answer": "槐树",
+  "createdAt": 1779704561181
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d400f"
+  },
+  "question": "华夏民族在哪里诞生",
+  "answer": "黄河流域",
+  "createdAt": 1779704561182
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4011"
+  },
+  "question": "床前明月光的床是什么意思？",
+  "answer": "井栏",
+  "createdAt": 1779704561183
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4013"
+  },
+  "question": "古代重阳节里有饮酒的习俗，所饮的酒是？",
+  "answer": "菊花酒",
+  "createdAt": 1779704561184
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4015"
+  },
+  "question": "中药里的雄黄属于？",
+  "answer": "矿物",
+  "createdAt": 1779704561185
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4017"
+  },
+  "question": "中医的针灸对人体穴位有很深的研究，以下位于人体手部的穴位为？",
+  "answer": "劳宫穴",
+  "createdAt": 1779704561187
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4019"
+  },
+  "question": "古代成语投桃报李的意思是？",
+  "answer": "礼尚往来",
+  "createdAt": 1779704561189
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d401b"
+  },
+  "question": "寒蝉凄切，对长亭晚，骤雨初歇这首词的作者是谁？",
+  "answer": "柳永",
+  "createdAt": 1779704561190
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d401d"
+  },
+  "question": "按照一般市场行情，同样重量的以下中药（例如同为一两）最为贵重的是？",
+  "answer": "鹿茸",
+  "createdAt": 1779704561191
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d401f"
+  },
+  "question": "碧螺春是什么茶？",
+  "answer": "绿茶",
+  "createdAt": 1779704561192
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4021"
+  },
+  "question": "明代的小说有很高的艺术成就，著成《三国演义》的是？",
+  "answer": "罗贯中",
+  "createdAt": 1779704561193
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4023"
+  },
+  "question": "古代的走马灯是一种什么类型的灯？",
+  "answer": "能够旋转的装饰灯",
+  "createdAt": 1779704561194
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4025"
+  },
+  "question": "《三国演义》中的凤雏是？",
+  "answer": "庞统",
+  "createdAt": 1779704561195
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4027"
+  },
+  "question": "古时对厨师职业的人称为？",
+  "answer": "庖",
+  "createdAt": 1779704561196
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4029"
+  },
+  "question": "战国时期，各国都有自己独特的货币，其中用半两的是？",
+  "answer": "秦国",
+  "createdAt": 1779704561198
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d402b"
+  },
+  "question": "战国时期的兵器大多用哪种材料制成？",
+  "answer": "青铜",
+  "createdAt": 1779704561199
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d402d"
+  },
+  "question": "中药很早就有忌口的说法，以下不是常见的忌口食物是什么？",
+  "answer": "清淡食物",
+  "createdAt": 1779704561200
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d402f"
+  },
+  "question": "古代成语瓜田李下的意思是？",
+  "answer": "容易引起误会",
+  "createdAt": 1779704561201
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4031"
+  },
+  "question": "煮酒论英雄的典故发生在哪个时期？",
+  "answer": "三国时期",
+  "createdAt": 1779704561202
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4033"
+  },
+  "question": "中药里所说的陈皮是指？",
+  "answer": "晒干的橘皮",
+  "createdAt": 1779704561202
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4035"
+  },
+  "question": "中国第一部完整的药物学著作是？",
+  "answer": "神农本草经",
+  "createdAt": 1779704561203
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4037"
+  },
+  "question": "唐朝的唐字由多少笔画组成？",
+  "answer": "十画",
+  "createdAt": 1779704561204
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4039"
+  },
+  "question": "长安两字一共由多少笔画组成",
+  "answer": "十画",
+  "createdAt": 1779704561205
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d403b"
+  },
+  "question": "中国古代乐器磬的材料主要是",
+  "answer": "石灰石",
+  "createdAt": 1779704561206
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d403d"
+  },
+  "question": "天府之国是哪？",
+  "answer": "四川",
+  "createdAt": 1779704561207
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d403f"
+  },
+  "question": "世称颜筋柳骨的书法大家柳公权，他是哪个朝代人士？",
+  "answer": "唐朝",
+  "createdAt": 1779704561208
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4041"
+  },
+  "question": "有画圣美誉的吴道子是哪朝人？",
+  "answer": "唐朝",
+  "createdAt": 1779704561209
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4043"
+  },
+  "question": "被誉为茶仙、茶圣等称谓的陆羽是哪朝人？",
+  "answer": "唐朝",
+  "createdAt": 1779704561210
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4045"
+  },
+  "question": "手绢是由古代的什么演化而来?",
+  "answer": "头巾",
+  "createdAt": 1779704561211
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4047"
+  },
+  "question": "被誉为书圣的是哪位书法名家？",
+  "answer": "王羲之",
+  "createdAt": 1779704561212
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4049"
+  },
+  "question": "古代成语白龙鱼服的意思是？",
+  "answer": "微服出巡的危险",
+  "createdAt": 1779704561213
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d404b"
+  },
+  "question": "《天王送子图》是何人所作？",
+  "answer": "吴道子",
+  "createdAt": 1779704561214
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d404d"
+  },
+  "question": "红娘是哪部作品中的人物？",
+  "answer": "西厢记",
+  "createdAt": 1779704561215
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d404f"
+  },
+  "question": "唐太宗精擅书法，经常以什么字体写碑？",
+  "answer": "行书",
+  "createdAt": 1779704561216
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4051"
+  },
+  "question": "古代成语兵不血刃的意思是？",
+  "answer": "形容不战而胜",
+  "createdAt": 1779704561217
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4053"
+  },
+  "question": "古代成语门可罗雀的意思是？",
+  "answer": "形容门庭冷落",
+  "createdAt": 1779704561217
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4055"
+  },
+  "question": "古代成语一衣带水的意思是？",
+  "answer": "形容一水之隔",
+  "createdAt": 1779704561219
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4057"
+  },
+  "question": "走马荐诸葛的人",
+  "answer": "徐庶",
+  "createdAt": 1779704561221
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4059"
+  },
+  "question": "古代有一种名为珮的首饰，一般是佩带在哪里",
+  "answer": "腰",
+  "createdAt": 1779704561222
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d405b"
+  },
+  "question": "中药里的玳瑁具有很好的清热解毒功效，它取材于?",
+  "answer": "一种海洋植物",
+  "createdAt": 1779704561224
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d405d"
+  },
+  "question": "古代所称的杏林高手是指？",
+  "answer": "医术高明之人",
+  "createdAt": 1779704561225
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d405f"
+  },
+  "question": "下列哪个字具有汉字的八种基本笔画点、横、竖、撇、捺、折、钩、提",
+  "answer": "永",
+  "createdAt": 1779704561226
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4061"
+  },
+  "question": "东汉时期的黄巾起义领导者是？",
+  "answer": "张角",
+  "createdAt": 1779704561227
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4063"
+  },
+  "question": "古代医学著作《伤寒杂病论》的作者是？",
+  "answer": "张仲景",
+  "createdAt": 1779704561228
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4065"
+  },
+  "question": "战国时期哪个国家使用铲型币？",
+  "answer": "赵国",
+  "createdAt": 1779704561229
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4067"
+  },
+  "question": "将相和讲的是廉颇和蔺相如的故事，他们是战国时期的哪过?",
+  "answer": "赵国",
+  "createdAt": 1779704561230
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4069"
+  },
+  "question": "《明堂人形图》的作者是？",
+  "answer": "甄权",
+  "createdAt": 1779704561231
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d406b"
+  },
+  "question": "中药羊蹄按取材分类应该属于？",
+  "answer": "植物类",
+  "createdAt": 1779704561232
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d406d"
+  },
+  "question": "相濡以沫出自以为那部著作？",
+  "answer": "庄子",
+  "createdAt": 1779704561233
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d406f"
+  },
+  "question": "《忘仙OL》中，鬼煞骑乘的坐骑是什么？",
+  "answer": "狼",
+  "createdAt": 1779704561236
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4071"
+  },
+  "question": "《忘仙OL》中，宠物加星星要进行什么操作？",
+  "answer": "幻化",
+  "createdAt": 1779704561238
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4073"
+  },
+  "question": "《忘仙OL》中，玲珑塔一共有几层？",
+  "answer": "10层",
+  "createdAt": 1779704561239
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4075"
+  },
+  "question": "《忘仙OL》中，人物基础技能有几个？",
+  "answer": "4个",
+  "createdAt": 1779704561241
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4077"
+  },
+  "question": "《忘仙OL》中，鬼煞可使用什么武器？",
+  "answer": "匕首和刺",
+  "createdAt": 1779704561242
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4079"
+  },
+  "question": "《忘仙OL》中，宝石一共有几种？",
+  "answer": "9种",
+  "createdAt": 1779704561243
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d407b"
+  },
+  "question": "《忘仙OL》中，宝石最高多少级？",
+  "answer": "9级",
+  "createdAt": 1779704561254
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d407d"
+  },
+  "question": "《忘仙OL》中，人物携带宠物上限是多少个？",
+  "answer": "5个",
+  "createdAt": 1779704561257
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d407f"
+  },
+  "question": "《忘仙OL》中，宠物的行为有几种？",
+  "answer": "3种",
+  "createdAt": 1779704561258
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4081"
+  },
+  "question": "《忘仙OL》中，宠物幻化消耗什么道具？",
+  "answer": "灵兽内丹",
+  "createdAt": 1779704561259
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4083"
+  },
+  "question": "《忘仙OL》中，屠魔帖·降魔，物品的最低使用等级是多少级？",
+  "answer": "25级",
+  "createdAt": 1779704561260
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4085"
+  },
+  "question": "《忘仙OL》中，屠魔帖·朱雀，物品的最低使用等级是多少级？",
+  "answer": "85级",
+  "createdAt": 1779704561262
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4087"
+  },
+  "question": "《忘仙OL》中，能够召集结义兄弟到身边的令牌是什么？",
+  "answer": "兄弟令",
+  "createdAt": 1779704561265
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4089"
+  },
+  "question": "《忘仙OL》中，千年古城内不能修装备的NPC是哪个？",
+  "answer": "宝石匠",
+  "createdAt": 1779704561267
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d408b"
+  },
+  "question": "娉娉袅袅＜＞余，豆蔻梢头二月初，＜＞里该填什么？",
+  "answer": "十三",
+  "createdAt": 1779704561269
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d408d"
+  },
+  "question": "西洪洞县的明代监狱，因谁的故事而著名？",
+  "answer": "苏三",
+  "createdAt": 1779704561271
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d408f"
+  },
+  "question": "西欧农奴没有以下哪种权利义务？",
+  "answer": "定期服兵役",
+  "createdAt": 1779704561273
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4091"
+  },
+  "question": "算盘的梁上一珠代表几？",
+  "answer": "5",
+  "createdAt": 1779704561274
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4093"
+  },
+  "question": "三国时期马谡曾在街亭一战败给哪位魏国大将？",
+  "answer": "张郃",
+  "createdAt": 1779704561275
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4095"
+  },
+  "question": "通往帝王陵区的神道上，石头动物后面的石人又叫做？",
+  "answer": "石翁仲",
+  "createdAt": 1779704561276
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4097"
+  },
+  "question": "山西洪洞县的明代监狱，因谁的故事而著名？",
+  "answer": "苏三",
+  "createdAt": 1779704561278
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d4099"
+  },
+  "question": "按古代兄弟排行，次子应该称为？",
+  "answer": "仲",
+  "createdAt": 1779704561280
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d409b"
+  },
+  "question": "进行京剧表演的戏院，在清朝叫？",
+  "answer": "茶园",
+  "createdAt": 1779704561282
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d409d"
+  },
+  "question": "古诗中风雅颂的风是指？",
+  "answer": "国风",
+  "createdAt": 1779704561285
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d409f"
+  },
+  "question": "中华名酒汾酒有者1500年历史？",
+  "answer": "杏花村",
+  "createdAt": 1779704561286
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40a1"
+  },
+  "question": "我国第一大爱国诗人？",
+  "answer": "屈原",
+  "createdAt": 1779704561288
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40a3"
+  },
+  "question": "明朝开国皇帝？",
+  "answer": "朱元璋",
+  "createdAt": 1779704561290
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40a5"
+  },
+  "question": "中药龙眼的主要功效？",
+  "answer": "补血安神",
+  "createdAt": 1779704561292
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40a7"
+  },
+  "question": "提出心外无物心外无理？",
+  "answer": "王守仁",
+  "createdAt": 1779704561295
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40a9"
+  },
+  "question": "古代成语月怀一鸡的寓意？",
+  "answer": "知错却不改正",
+  "createdAt": 1779704561298
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40ab"
+  },
+  "question": "什么地方盖章才过得去？",
+  "answer": "印度",
+  "createdAt": 1779704561302
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40ad"
+  },
+  "question": "驿站在元朝时称为？",
+  "answer": "站赤",
+  "createdAt": 1779704561304
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40af"
+  },
+  "question": "中国什么时候开始用砖瓦？西周 (",
+  "answer": "案不确定)",
+  "createdAt": 1779704561306
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40b1"
+  },
+  "question": "唐朝最高学府称什么？国子监(",
+  "answer": "案不确定)",
+  "createdAt": 1779704561307
+},
+{
+  "_id": {
+    "$oid": "6a1422f19ea803a8b66d40b3"
+  },
+  "question": "最早提出地理名称的书？",
+  "answer": "易经",
+  "createdAt": 1779704561309
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4103"
+  },
+  "question": "我国第一个伟大的浪漫主义爱国诗人是？",
+  "answer": "屈原",
+  "createdAt": 1779704909908
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4105"
+  },
+  "question": "祖冲之第一个把圆周率准确推算的小数点后第几位？",
+  "answer": "第七位",
+  "createdAt": 1779704909910
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4107"
+  },
+  "question": "古时“茶”字从什么字简化出来的？",
+  "answer": "荼",
+  "createdAt": 1779704909920
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4109"
+  },
+  "question": "古代成语长绳系日的寓意是？",
+  "answer": "想留住时光",
+  "createdAt": 1779704909922
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d410b"
+  },
+  "question": "古代著名的抒情诗《离骚》的作者是",
+  "answer": "屈原",
+  "createdAt": 1779704909936
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d410d"
+  },
+  "question": "以下什么酒不能喝？",
+  "answer": "碘酒",
+  "createdAt": 1779704909942
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d410f"
+  },
+  "question": "洛阳白马寺创建于",
+  "answer": "东汉",
+  "createdAt": 1779704909955
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4111"
+  },
+  "question": "黄酒名品“加饭酒”的产地在哪？",
+  "answer": "浙江",
+  "createdAt": 1779704909958
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4113"
+  },
+  "question": "造纸技术的发明人是",
+  "answer": "蔡伦",
+  "createdAt": 1779704909960
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4115"
+  },
+  "question": "著名的汝窑位于哪个省",
+  "answer": "河南",
+  "createdAt": 1779704909961
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4117"
+  },
+  "question": "中华名酒汾酒产",
+  "answer": "山西杏花村",
+  "createdAt": 1779704909963
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4119"
+  },
+  "question": "中国什么时候开始用砖瓦?",
+  "answer": "西周",
+  "createdAt": 1779704909964
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d411b"
+  },
+  "question": "在《淝水之战》战败的君主是",
+  "answer": "苻坚",
+  "createdAt": 1779704909965
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d411d"
+  },
+  "question": "最早提出地理名称的书是什么书",
+  "answer": "易经?系辞",
+  "createdAt": 1779704909967
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d411f"
+  },
+  "question": "驿站在元代叫什么",
+  "answer": "站赤",
+  "createdAt": 1779704909969
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4121"
+  },
+  "question": "“云雕”是指",
+  "answer": "一种漆雕工艺",
+  "createdAt": 1779704909971
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4123"
+  },
+  "question": "以下哪项是加工绿茶时不会出现的步骤",
+  "answer": "发酵",
+  "createdAt": 1779704909972
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4125"
+  },
+  "question": "以下“不是”古代药酒常用原料的是",
+  "answer": "鸡尾",
+  "createdAt": 1779704909974
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4127"
+  },
+  "question": "小时不识月,呼作白玉盘的作者是谁",
+  "answer": "李白",
+  "createdAt": 1779704909976
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4129"
+  },
+  "question": "象棋的棋子中不能走直线的是",
+  "answer": "象",
+  "createdAt": 1779704909977
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d412b"
+  },
+  "question": "中国象棋棋盘上的“米”字形方框叫做",
+  "answer": "九宫",
+  "createdAt": 1779704909978
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d412d"
+  },
+  "question": "象棋起源较早，哪个时期就已有记载",
+  "answer": "战国",
+  "createdAt": 1779704909979
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d412f"
+  },
+  "question": "下列除治病，还有驱蚊作用的是",
+  "answer": "艾高",
+  "createdAt": 1779704909981
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4131"
+  },
+  "question": "下列哪个字笔划有点横.竖.撇.",
+  "answer": "永",
+  "createdAt": 1779704909983
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4133"
+  },
+  "question": "下列哪种草药能够治疗呕吐泻痢",
+  "answer": "黄连",
+  "createdAt": 1779704909984
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4135"
+  },
+  "question": "“五禽戏”起源于汉代，它属于什么类型的？",
+  "answer": "强身健体的功法",
+  "createdAt": 1779704909985
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4137"
+  },
+  "question": "“五台山”位于哪个省",
+  "answer": "山西",
+  "createdAt": 1779704909986
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4139"
+  },
+  "question": "我国梁式桥型的精品杰作洛阳桥位于何地？",
+  "answer": "福建泉州",
+  "createdAt": 1779704909987
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d413b"
+  },
+  "question": "我国第一部系统分析字形和考求字的本义的字典是",
+  "answer": "说文解字",
+  "createdAt": 1779704909988
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d413d"
+  },
+  "question": "我国第一部详细记述茶艺的著作是",
+  "answer": "唐代陆羽的《茶经》",
+  "createdAt": 1779704909989
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d413f"
+  },
+  "question": "我国古代酿酒的主要原料是",
+  "answer": "粮食",
+  "createdAt": 1779704909991
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4141"
+  },
+  "question": "“卧槽马”是指？",
+  "answer": "在对方将前一格形成将军的马",
+  "createdAt": 1779704909994
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4143"
+  },
+  "question": "围棋棋盘的图案是",
+  "answer": "横竖各十九条线",
+  "createdAt": 1779704909996
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4145"
+  },
+  "question": "通往帝王陵墓去的神道上,石头动物后面的石人又叫做?",
+  "answer": "石翁仲",
+  "createdAt": 1779704909997
+},
+{
+  "_id": {
+    "$oid": "6a14244d9ea803a8b66d4147"
+  },
+  "question": "提出“心外无物、心外无理”之说的明朝思想家是",
+  "answer": "王守仁",
+  "createdAt": 1779704909999
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4149"
+  },
+  "question": "宋太祖赵匡胤通过哪个事件夺取政权建立宋朝",
+  "answer": "陈桥兵变",
+  "createdAt": 1779704910009
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d414b"
+  },
+  "question": "世界上最早由国家颁发的药典是",
+  "answer": "唐本草",
+  "createdAt": 1779704910023
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d414d"
+  },
+  "question": "苏轼《赤壁怀古》中的“遥想公瑾当年”一句所指人物是",
+  "answer": "周瑜",
+  "createdAt": 1779704910031
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d414f"
+  },
+  "question": "属于少数民族乐器的是",
+  "answer": "马头琴",
+  "createdAt": 1779704910047
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4151"
+  },
+  "question": "算盘发明后，人们用珠算口诀帮助记忆，以下口诀错误的是",
+  "answer": "四上二去五",
+  "createdAt": 1779704910055
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4153"
+  },
+  "question": "宋代五大名窑除定窑、哥窑、钧窑、官窑外，还有",
+  "answer": "汝窑",
+  "createdAt": 1779704910062
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4155"
+  },
+  "question": "宋代大型酒店、食店在门前用木枋扎彩楼，加种种装饰，施朱绿彩画，称为什么？",
+  "answer": "欢门",
+  "createdAt": 1779704910075
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4157"
+  },
+  "question": "清初四画僧“八大山人”是指的谁？",
+  "answer": "朱耷",
+  "createdAt": 1779704910079
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4159"
+  },
+  "question": "“娉娉袅袅十三馀,豆蔻梢头二月初”中的“豆蔻”指的是几岁？",
+  "answer": "十三",
+  "createdAt": 1779704910087
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d415b"
+  },
+  "question": "琵琶顶部的“弦轴”作用是？",
+  "answer": "调节音高",
+  "createdAt": 1779704910091
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d415d"
+  },
+  "question": "哪一个是象棋中不会出现的走法？",
+  "answer": "象四进五",
+  "createdAt": 1779704910093
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d415f"
+  },
+  "question": "年画中的鲤鱼代表哪种寓意？",
+  "answer": "连年有余",
+  "createdAt": 1779704910097
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4161"
+  },
+  "question": "民族乐器“葫芦丝”按演奏方式划分属于",
+  "answer": "吹奏类乐器",
+  "createdAt": 1779704910099
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4163"
+  },
+  "question": "明朝开国皇帝",
+  "answer": "朱元璋",
+  "createdAt": 1779704910102
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4165"
+  },
+  "question": "龙井茶属于",
+  "answer": "绿茶",
+  "createdAt": 1779704910104
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4167"
+  },
+  "question": "甲的嫂子是乙的姑姑，则以下两人属于“亲家”关系的是？",
+  "answer": "甲的父亲与乙的祖母",
+  "createdAt": 1779704910107
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4169"
+  },
+  "question": "“景泰蓝”主要原料是？",
+  "answer": "铜",
+  "createdAt": 1779704910109
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d416b"
+  },
+  "question": "进行京剧表演的戏院，在清朝最早叫什么？",
+  "answer": "茶园",
+  "createdAt": 1779704910110
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d416d"
+  },
+  "question": "“候风地动仪”，它的发明者是？",
+  "answer": "张衡",
+  "createdAt": 1779704910113
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d416f"
+  },
+  "question": "中药很早就有",
+  "answer": "清淡食物",
+  "createdAt": 1779704910115
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4171"
+  },
+  "question": "古代成语“汗牛充栋”的意思是？",
+  "answer": "形容藏书繁多",
+  "createdAt": 1779704910118
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4173"
+  },
+  "question": "古代成语“蜀犬吠日”的意思是什么？",
+  "answer": "少见多怪",
+  "createdAt": 1779704910120
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4175"
+  },
+  "question": "古代成语“月怀一鸡”的寓意是什么？",
+  "answer": "知错却不改正",
+  "createdAt": 1779704910122
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4177"
+  },
+  "question": "“枯藤老树昏鸦，小桥流水人家”出自宋词《天净沙秋思》，作者是？",
+  "answer": "马致远",
+  "createdAt": 1779704910123
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4179"
+  },
+  "question": "“碧落黄泉”中的黄泉是指的是什么？",
+  "answer": "地下地府",
+  "createdAt": 1779704910124
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d417b"
+  },
+  "question": "古代成语“开门揖盗”的意思是？",
+  "answer": "引进坏人，招致祸患",
+  "createdAt": 1779704910127
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d417d"
+  },
+  "question": "古代成语“一日三秋”的意思是？",
+  "answer": "形容思慕心切",
+  "createdAt": 1779704910128
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d417f"
+  },
+  "question": "古人常用松鹤延年图祝寿，鹤是生长在？",
+  "answer": "沼泽",
+  "createdAt": 1779704910129
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4181"
+  },
+  "question": "古诗“风、雅、颂”中的“风”是指？",
+  "answer": "国风",
+  "createdAt": 1779704910130
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4183"
+  },
+  "question": "佛门戒律中“三聚净戒”是指？",
+  "answer": "菩萨戒",
+  "createdAt": 1779704910131
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4185"
+  },
+  "question": "翡翠是材质上属于？",
+  "answer": "矿物",
+  "createdAt": 1779704910133
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4187"
+  },
+  "question": "“大弦嘈嘈如急雨，小弦切切如私语”描述的是哪种乐器？",
+  "answer": "琵琶",
+  "createdAt": 1779704910134
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4189"
+  },
+  "question": "称为两榜出身的是？",
+  "answer": "进士",
+  "createdAt": 1779704910135
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d418b"
+  },
+  "question": "茶居的“居”字什么意思？",
+  "answer": "隐",
+  "createdAt": 1779704910136
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d418d"
+  },
+  "question": "白发三千丈，缘愁似个长。是出自哪位诗人？",
+  "answer": "李白",
+  "createdAt": 1779704910137
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d418f"
+  },
+  "question": "“兵马俑”体现了工匠的哪项技艺？",
+  "answer": "制陶工",
+  "createdAt": 1779704910139
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4191"
+  },
+  "question": "“不为五斗米折腰”是谁写的？",
+  "answer": "陶渊明",
+  "createdAt": 1779704910141
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4193"
+  },
+  "question": "按图索骥中“骥”本意是指？",
+  "answer": "马",
+  "createdAt": 1779704910142
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4195"
+  },
+  "question": "按古代兄弟排行的顺序,次子应该称为?",
+  "answer": "仲",
+  "createdAt": 1779704910144
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4197"
+  },
+  "question": "“藕”是莲花的什么？",
+  "answer": "根茎",
+  "createdAt": 1779704910145
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4199"
+  },
+  "question": "配制世界上最早的麻醉药剂“麻沸散”的是我国古代的？",
+  "answer": "华佗",
+  "createdAt": 1779704910147
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d419b"
+  },
+  "question": "喜好饮酒，自称“酒中仙”的著名诗人是？",
+  "answer": "李白",
+  "createdAt": 1779704910148
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d419d"
+  },
+  "question": "豆蔻桥头二月初",
+  "answer": "十三",
+  "createdAt": 1779704910149
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d419f"
+  },
+  "question": "古代将中草药按药性分为“四气”指的是？",
+  "answer": "寒热温凉",
+  "createdAt": 1779704910150
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41a1"
+  },
+  "question": "五谷中的“菽”指的是？",
+  "answer": "大豆",
+  "createdAt": 1779704910151
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41a3"
+  },
+  "question": "“胡蓝之狱”发生在那个朝代？",
+  "answer": "明朝",
+  "createdAt": 1779704910152
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41a5"
+  },
+  "question": "泥娃娃“大阿福”产地是？",
+  "answer": "无锡",
+  "createdAt": 1779704910153
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41a7"
+  },
+  "question": "“海内存知己，天涯共此时。”是哪位诗人的诗句？",
+  "answer": "张九龄",
+  "createdAt": 1779704910154
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41a9"
+  },
+  "question": "被广大百姓推崇为“国酒”是？",
+  "answer": "茅台",
+  "createdAt": 1779704910155
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41ab"
+  },
+  "question": "三国时代建造“铜雀台”的是谁？",
+  "answer": "曹操",
+  "createdAt": 1779704910156
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41ad"
+  },
+  "question": "词语“同气”是指什么关系？",
+  "answer": "兄弟",
+  "createdAt": 1779704910157
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41af"
+  },
+  "question": "“长安”两个字共有多少笔画组成？",
+  "answer": "10",
+  "createdAt": 1779704910158
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41b1"
+  },
+  "question": "古代成语中“不分皂白”中的皂是什么颜色？",
+  "answer": "黑色",
+  "createdAt": 1779704910160
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41b3"
+  },
+  "question": "古代六艺礼、乐、射、御、书、数中的“御”是指的是？",
+  "answer": "驾驭马车的技术",
+  "createdAt": 1779704910161
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41b5"
+  },
+  "question": "古代名画“魏征觐见图”的作者是？",
+  "answer": "阎立本",
+  "createdAt": 1779704910162
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41b7"
+  },
+  "question": "古代发明的“云梯”按用途来讲属于？",
+  "answer": "攻城器具",
+  "createdAt": 1779704910163
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41b9"
+  },
+  "question": "和张旭齐名，称“素狂”的是谁？",
+  "answer": "怀素",
+  "createdAt": 1779704910165
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41bb"
+  },
+  "question": "宋词名句“天不老，情难绝，心似双丝网，中有千千结。”的作者是",
+  "answer": "张生",
+  "createdAt": 1779704910166
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41bd"
+  },
+  "question": "被称为“天下第一行书”的是？",
+  "answer": "《兰亭序》",
+  "createdAt": 1779704910168
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41bf"
+  },
+  "question": "提出“望闻问切”等医疗手段的是？",
+  "answer": "扁鹊",
+  "createdAt": 1779704910169
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41c1"
+  },
+  "question": "词语“芊芊”代表什么颜色",
+  "answer": "翠绿色",
+  "createdAt": 1779704910171
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41c3"
+  },
+  "question": "“玄英”是哪个季节的别称",
+  "answer": "冬季",
+  "createdAt": 1779704910173
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41c5"
+  },
+  "question": "古代名画“洛神赋图”的作者是谁？",
+  "answer": "顾恺之",
+  "createdAt": 1779704910174
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41c7"
+  },
+  "question": "哪位君主采纳“废黜百家，独尊儒术”的建议？",
+  "answer": "汉武帝",
+  "createdAt": 1779704910176
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41c9"
+  },
+  "question": "“交杯酒”一般出现在哪种场合？",
+  "answer": "结婚喜宴",
+  "createdAt": 1779704910178
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41cb"
+  },
+  "question": "“忘仙”二个字一共有多少笔画组成",
+  "answer": "十二画",
+  "createdAt": 1779704910180
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41cd"
+  },
+  "question": "成语“鸡鸣狗盗”与战国四君子哪位有所关联？",
+  "answer": "孟尝君",
+  "createdAt": 1779704910181
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41cf"
+  },
+  "question": "中药里的“牛黄”指的是？",
+  "answer": "牛的胆囊结石",
+  "createdAt": 1779704910183
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41d1"
+  },
+  "question": "中药“胖大海”的主要功效是？",
+  "answer": "润喉止咳",
+  "createdAt": 1779704910187
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41d3"
+  },
+  "question": "唐朝的“朝”字由多少笔画组成？",
+  "answer": "十二画",
+  "createdAt": 1779704910189
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41d5"
+  },
+  "question": "古代许多诗句中都有“折柳”二字，这是什么情况下的习俗？",
+  "answer": "送别",
+  "createdAt": 1779704910191
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41d7"
+  },
+  "question": "战国时期，与“合纵连横”这一外交军事政策关联的人物是？",
+  "answer": "苏秦与张仪",
+  "createdAt": 1779704910193
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41d9"
+  },
+  "question": "古代成语“碧落黄泉”中的“碧落”是指？",
+  "answer": "天界",
+  "createdAt": 1779704910194
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41db"
+  },
+  "question": "中医的“针灸”对人体空位有很深的研究，人体有一处“四白穴”位于哪里？",
+  "answer": "头部",
+  "createdAt": 1779704910196
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41dd"
+  },
+  "question": "太平天国起义核心人物之一，被称为“北王”的？",
+  "answer": "韦昌辉",
+  "createdAt": 1779704910198
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41df"
+  },
+  "question": "被称为“七绝圣手”的唐代诗人是谁？",
+  "answer": "王昌龄",
+  "createdAt": 1779704910200
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41e1"
+  },
+  "question": "古代用“沉鱼落雁，闭月羞花”形容女性之美，其中“沉鱼”是指？",
+  "answer": "西施",
+  "createdAt": 1779704910202
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41e3"
+  },
+  "question": "古代成语“长绳系日”的寓意是",
+  "answer": "想留住时光",
+  "createdAt": 1779704910203
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41e5"
+  },
+  "question": "古代成语“一曝十寒”的意思是？",
+  "answer": "形容没有恒心",
+  "createdAt": 1779704910204
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41e7"
+  },
+  "question": "中药里的“大黄”指的是？",
+  "answer": "一种植物类中药",
+  "createdAt": 1779704910206
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41e9"
+  },
+  "question": "清朝推行“摊丁入亩”制度的皇帝是？",
+  "answer": "雍正",
+  "createdAt": 1779704910207
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41eb"
+  },
+  "question": "被称为“万园之园”，后被焚毁的建筑是？",
+  "answer": "圆明园",
+  "createdAt": 1779704910208
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41ed"
+  },
+  "question": "以草书见长，人称“草圣”的书法家是谁？",
+  "answer": "张旭",
+  "createdAt": 1779704910210
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41ef"
+  },
+  "question": "中国十大名茶之一的“龙井茶”原产地在哪个省？",
+  "answer": "浙江",
+  "createdAt": 1779704910211
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41f1"
+  },
+  "question": "中医的“针灸”对人体穴位有很深的研究，人体有一处“涌泉穴”在哪儿？",
+  "answer": "足底",
+  "createdAt": 1779704910214
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41f3"
+  },
+  "question": "“六书”指的是？",
+  "answer": "造字方法",
+  "createdAt": 1779704910216
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41f5"
+  },
+  "question": "“冲天香阵透长安，满城尽带黄金价”是从谁的诗作中诗作中摘录的？",
+  "answer": "黄巢",
+  "createdAt": 1779704910218
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41f7"
+  },
+  "question": "三国时期“火烧连营”一战的对阵双方是？",
+  "answer": "陆逊VS刘备",
+  "createdAt": 1779704910220
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41f9"
+  },
+  "question": "世界上最早记载“哈雷彗星”的书是？",
+  "answer": "《春秋》",
+  "createdAt": 1779704910221
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41fb"
+  },
+  "question": "古代成语“剖腹藏珠”的意思是？",
+  "answer": "比喻爱财如命",
+  "createdAt": 1779704910222
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41fd"
+  },
+  "question": "康熙和乾隆所题名的“七十二景”位于哪里？",
+  "answer": "避暑山庄",
+  "createdAt": 1779704910223
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d41ff"
+  },
+  "question": "“户枢不蠹”的“不蠹”是什么意思？",
+  "answer": "不生虫",
+  "createdAt": 1779704910224
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4201"
+  },
+  "question": "“何以解忧，惟有杜康”的作者是谁？",
+  "answer": "曹操",
+  "createdAt": 1779704910226
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4203"
+  },
+  "question": "有漏皆苦中的“漏”意思为",
+  "answer": "烦恼",
+  "createdAt": 1779704910228
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4205"
+  },
+  "question": "中医所说的“白虎历节”指的是哪种症状？",
+  "answer": "关节肿痛",
+  "createdAt": 1779704910230
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4207"
+  },
+  "question": "“清明寒食”是吴王为了纪念哪一个大臣设的规矩？",
+  "answer": "介子推",
+  "createdAt": 1779704910231
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4209"
+  },
+  "question": "“金屋藏娇”说的是哪一位皇帝？",
+  "answer": "刘彻",
+  "createdAt": 1779704910233
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d420b"
+  },
+  "question": "古时用“十二生肖”对应十二地支，其中与“辰”对应的是？",
+  "answer": "龙",
+  "createdAt": 1779704910234
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d420d"
+  },
+  "question": "诗歌“鹅”的作者是谁？",
+  "answer": "骆宾王",
+  "createdAt": 1779704910235
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d420f"
+  },
+  "question": "古人发明的一咱工具“耒耜”（读leisi）用在哪个行业？",
+  "answer": "农业",
+  "createdAt": 1779704910236
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4211"
+  },
+  "question": "清代官服上绣有方形图案，称为“补子”，其中一品武官的图案是？",
+  "answer": "麒麟",
+  "createdAt": 1779704910237
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4213"
+  },
+  "question": "“名不正则言不顺”是哪家的思想",
+  "answer": "儒家",
+  "createdAt": 1779704910239
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4215"
+  },
+  "question": "在我国，“桃月”是指",
+  "answer": "三月",
+  "createdAt": 1779704910241
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4217"
+  },
+  "question": "“四羊方尊”是哪个朝代的文物？",
+  "answer": "商",
+  "createdAt": 1779704910242
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4219"
+  },
+  "question": "隋朝的“隋”字由多少笔画组成？",
+  "answer": "十一画",
+  "createdAt": 1779704910244
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d421b"
+  },
+  "question": "中国十大名茶中“碧螺春”的产地是？",
+  "answer": "苏州洞庭山",
+  "createdAt": 1779704910245
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d421d"
+  },
+  "question": "“农田水利法”是历史上哪次变法中提出的兴农措施？",
+  "answer": "王安石变法",
+  "createdAt": 1779704910247
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d421f"
+  },
+  "question": "古代成语“望其项背”的近义词是",
+  "answer": "望其肩项",
+  "createdAt": 1779704910247
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4221"
+  },
+  "question": "福建名茶“大红袍”属于哪类茶？",
+  "answer": "乌龙茶",
+  "createdAt": 1779704910249
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4223"
+  },
+  "question": "“仲夏”在古代时令中是指农历几月？",
+  "answer": "五月",
+  "createdAt": 1779704910250
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4225"
+  },
+  "question": "“算盘”是古代的计算用具，正规的算盘中间用档木把算珠分为两栏，上栏每列两珠，下栏每列的珠数是？",
+  "answer": "五珠",
+  "createdAt": 1779704910252
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4227"
+  },
+  "question": "清代官服上绣有方形图案，称为“补子”，其中一品文官的图案是？",
+  "answer": "仙鹤",
+  "createdAt": 1779704910254
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4229"
+  },
+  "question": "有一味中药名为“全虫”，这里的虫是指？",
+  "answer": "蝎子",
+  "createdAt": 1779704910259
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d422b"
+  },
+  "question": "古代成语“噤若寒蝉”的意思是？",
+  "answer": "形容沉默不语",
+  "createdAt": 1779704910261
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d422d"
+  },
+  "question": "古代成语“沐猴而冠”的意思是？",
+  "answer": "形容虚有其表",
+  "createdAt": 1779704910263
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d422f"
+  },
+  "question": "古代名画“步辇图”的作者是谁？",
+  "answer": "阎立本",
+  "createdAt": 1779704910265
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4231"
+  },
+  "question": "古代成语“爱鹤失众”的寓意是？",
+  "answer": "因小失大",
+  "createdAt": 1779704910266
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4233"
+  },
+  "question": "古代成语“含沙射影”的意思是？",
+  "answer": "造谣陷害",
+  "createdAt": 1779704910268
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4235"
+  },
+  "question": "战国时期，各国都有自己独特的货币，其中使用“铲形币”的是？",
+  "answer": "赵国",
+  "createdAt": 1779704910270
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4237"
+  },
+  "question": "“元曲四大家”除了关汉卿、白朴、马致远外还有？",
+  "answer": "郑光祖",
+  "createdAt": 1779704910273
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4239"
+  },
+  "question": "“海内存知己，天涯若比邻”出自何人之手？",
+  "answer": "王勃",
+  "createdAt": 1779704910275
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d423b"
+  },
+  "question": "“初出茅庐”中的“茅庐”本意是指谁的的住处？",
+  "answer": "诸葛亮",
+  "createdAt": 1779704910277
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d423d"
+  },
+  "question": "蟋蟀的“耳朵”长在？",
+  "answer": "前足的小腿节上",
+  "createdAt": 1779704910281
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d423f"
+  },
+  "question": "“明月几时有？把酒问青天。”是谁的诗词？",
+  "answer": "苏东坡",
+  "createdAt": 1779704910283
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4241"
+  },
+  "question": "“洛阳纸贵”指的作品的下面哪一部？",
+  "answer": "《三都赋》",
+  "createdAt": 1779704910285
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4243"
+  },
+  "question": "被称为“文房四宝”的是什么？",
+  "answer": "笔、墨、纸、砚",
+  "createdAt": 1779704910286
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4245"
+  },
+  "question": "后代医家奉之为“脉学之宗”的人是",
+  "answer": "扁鹊",
+  "createdAt": 1779704910287
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4247"
+  },
+  "question": "“铜权”是古代常见的金属器物，后来被俗称为？",
+  "answer": "秤砣",
+  "createdAt": 1779704910288
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4249"
+  },
+  "question": "历史知识“不鸣则已，一鸣惊人”这句成语源自于谁的典故？",
+  "answer": "楚庄王",
+  "createdAt": 1779704910290
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d424b"
+  },
+  "question": "中国古代人们所说的“元旦”是指哪一天？",
+  "answer": "春节",
+  "createdAt": 1779704910291
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d424d"
+  },
+  "question": "中国十大名茶之一的“白毫银针”原产地在哪个省？",
+  "answer": "福建",
+  "createdAt": 1779704910293
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d424f"
+  },
+  "question": "中草药里“三七”的入药部分实际是植物的？",
+  "answer": "根",
+  "createdAt": 1779704910295
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4251"
+  },
+  "question": "词语“司空见惯”中的“司空”指的是",
+  "answer": "官职",
+  "createdAt": 1779704910297
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4253"
+  },
+  "question": "下列中“甜纯型”的茶是？",
+  "answer": "红茶",
+  "createdAt": 1779704910298
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4255"
+  },
+  "question": "唐朝灭亡后，中原一带先后出现了五个朝代，史称“五代”，除后梁、后唐、后晋、后汉外还有？",
+  "answer": "后周",
+  "createdAt": 1779704910299
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4257"
+  },
+  "question": "“床前明月光”的“床”是什么意思？",
+  "answer": "井栏",
+  "createdAt": 1779704910301
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4259"
+  },
+  "question": "古代“重阳节”里有饮酒的习俗，所饮的酒是？",
+  "answer": "菊花酒",
+  "createdAt": 1779704910302
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d425b"
+  },
+  "question": "中药里的“雄黄”属于？",
+  "answer": "矿物",
+  "createdAt": 1779704910303
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d425d"
+  },
+  "question": "中医的“针灸”对人体穴位有很深的研究，以下位于人体手部的穴位为？",
+  "answer": "劳宫穴",
+  "createdAt": 1779704910304
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d425f"
+  },
+  "question": "古代成语“投桃报李”的意思是？",
+  "answer": "礼尚往来",
+  "createdAt": 1779704910305
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4261"
+  },
+  "question": "“寒蝉凄切，对长亭晚，骤雨初歇”这首词的作者是谁？",
+  "answer": "柳永",
+  "createdAt": 1779704910306
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4263"
+  },
+  "question": "指南针为什么不叫“指北针”",
+  "answer": "面南为尊",
+  "createdAt": 1779704910307
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4265"
+  },
+  "question": "古代的“走马灯”是一种什么类型的灯？",
+  "answer": "能够旋转的装饰灯",
+  "createdAt": 1779704910308
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4267"
+  },
+  "question": "《三国演义》中的“凤雏”是？",
+  "answer": "庞统",
+  "createdAt": 1779704910309
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4269"
+  },
+  "question": "战国时期，各国都有自己独特的货币，其中用“半两”的是？",
+  "answer": "秦国",
+  "createdAt": 1779704910311
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d426b"
+  },
+  "question": "古代成语“瓜田李下”的意思是？",
+  "answer": "容易引起误会",
+  "createdAt": 1779704910313
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d426d"
+  },
+  "question": "“煮酒论英雄”的典故发生在哪个时期？",
+  "answer": "三国时期",
+  "createdAt": 1779704910315
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d426f"
+  },
+  "question": "中药里所说的“陈皮”是指？",
+  "answer": "晒干的橘皮",
+  "createdAt": 1779704910319
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4271"
+  },
+  "question": "唐朝的“唐”字由多少笔画组成？",
+  "answer": "十画",
+  "createdAt": 1779704910321
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4273"
+  },
+  "question": "中国古代乐器“磬”的材料主要是",
+  "answer": "石灰石",
+  "createdAt": 1779704910322
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4275"
+  },
+  "question": "世称“颜筋柳骨”的书法大家柳公权，他是哪个朝代人士？",
+  "answer": "唐朝",
+  "createdAt": 1779704910324
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4277"
+  },
+  "question": "有“画圣”美誉的吴道子是哪朝人？",
+  "answer": "唐朝",
+  "createdAt": 1779704910326
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4279"
+  },
+  "question": "被誉为“茶仙、茶圣”等称谓的陆羽是哪朝人？",
+  "answer": "唐朝",
+  "createdAt": 1779704910327
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d427b"
+  },
+  "question": "被誉为“书圣”的是哪位书法名家？",
+  "answer": "王羲之",
+  "createdAt": 1779704910329
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d427d"
+  },
+  "question": "古代成语“白龙鱼服”的意思是？",
+  "answer": "微服出巡的危险",
+  "createdAt": 1779704910331
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d427f"
+  },
+  "question": "“红娘”是哪部作品中的人物？",
+  "answer": "西厢记",
+  "createdAt": 1779704910333
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4281"
+  },
+  "question": "古代成语“兵不血刃”的意思是？",
+  "answer": "形容不战而胜",
+  "createdAt": 1779704910336
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4283"
+  },
+  "question": "古代成语“门可罗雀”的意思是？",
+  "answer": "形容门庭冷落",
+  "createdAt": 1779704910338
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4285"
+  },
+  "question": "古代成语“一衣带水”的意思是？",
+  "answer": "形容一水之隔",
+  "createdAt": 1779704910339
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4287"
+  },
+  "question": "古代有一种名为“佩”的首饰，一般是佩带在哪里",
+  "answer": "腰",
+  "createdAt": 1779704910341
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4289"
+  },
+  "question": "下列哪个字具有汉字的八种基本笔画“点、横、竖、撇、捺、折、钩、提”",
+  "answer": "永",
+  "createdAt": 1779704910343
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d428b"
+  },
+  "question": "中药里的“玳瑁”具有很好的清热解毒功效，它取材于？",
+  "answer": "一种海洋植物",
+  "createdAt": 1779704910344
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d428d"
+  },
+  "question": "古代所称的“杏林高手”是指？",
+  "answer": "医术高明之人",
+  "createdAt": 1779704910346
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d428f"
+  },
+  "question": "“将相和”讲的是廉颇和蔺相如的故事，他们是战国时期的哪过人？",
+  "answer": "赵国",
+  "createdAt": 1779704910347
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4291"
+  },
+  "question": "中药“羊蹄”按取材分类应该属于？",
+  "answer": "植物类",
+  "createdAt": 1779704910349
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4293"
+  },
+  "question": "东汉时期的“黄巾起义”领导者是？",
+  "answer": "张角",
+  "createdAt": 1779704910350
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4295"
+  },
+  "question": "《忘仙OL》中，屠魔帖•朱雀，物品的最低使用等级是多少级？",
+  "answer": "85级",
+  "createdAt": 1779704910351
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4297"
+  },
+  "question": "柳公权是哪个朝代人？",
+  "answer": "唐朝人",
+  "createdAt": 1779704910352
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4299"
+  },
+  "question": "相濡以沫出自以为那部着作？",
+  "answer": "庄子",
+  "createdAt": 1779704910353
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d429b"
+  },
+  "question": "手绢是由古代的什么演化而来？",
+  "answer": "头巾",
+  "createdAt": 1779704910355
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d429d"
+  },
+  "question": "中国第一部完整的药物学着作是？",
+  "answer": "神农本草经",
+  "createdAt": 1779704910356
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d429f"
+  },
+  "question": "着名的棉纺织革新家黄道婆是哪个朝代的人？",
+  "answer": "元朝",
+  "createdAt": 1779704910358
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42a1"
+  },
+  "question": "着有《徐霞客游记》的徐霞客是哪个朝代的人？",
+  "answer": "明朝",
+  "createdAt": 1779704910359
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42a3"
+  },
+  "question": "苏州评弹是哪两种表演形式的统称？",
+  "answer": "评话和弹词",
+  "createdAt": 1779704910360
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42a5"
+  },
+  "question": "明代的小说有很高的艺术成就，着成《三国演义》的是？",
+  "answer": "罗贯中",
+  "createdAt": 1779704910361
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42a7"
+  },
+  "question": "中国古代历法名着《授时历》的作者是谁？",
+  "answer": "郭守敬",
+  "createdAt": 1779704910363
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42a9"
+  },
+  "question": "北宋的两个着名词人晏殊和晏几道是什么关系",
+  "answer": "父子",
+  "createdAt": 1779704910365
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42ab"
+  },
+  "question": "鲸是世界上最大的鱼，对还是不对？",
+  "answer": "不对",
+  "createdAt": 1779704910366
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42ad"
+  },
+  "question": "我国最早的一部药物学着作是？",
+  "answer": "《神农本草经》",
+  "createdAt": 1779704910367
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42af"
+  },
+  "question": "宫城的正门被称为？",
+  "answer": "午门",
+  "createdAt": 1779704910369
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42b1"
+  },
+  "question": "古代中药里俗称当门子指的是什么？",
+  "answer": "麝香",
+  "createdAt": 1779704910371
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42b3"
+  },
+  "question": "在中国，自古就有”天府之国“美誉的地区是",
+  "answer": "四川盆地",
+  "createdAt": 1779704910372
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42b5"
+  },
+  "question": "《忘仙OL》中，屠魔帖•逍遥，物品的最低使用等级是多少级？",
+  "answer": "45级",
+  "createdAt": 1779704910374
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42b7"
+  },
+  "question": "《忘仙OL》中，屠魔帖•降魔，物品的最低使用等级是多少级？",
+  "answer": "25级",
+  "createdAt": 1779704910377
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42b9"
+  },
+  "question": "古代医学着作《伤寒杂病论》的作者是？",
+  "answer": "张仲景",
+  "createdAt": 1779704910380
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42bb"
+  },
+  "question": "《忘仙OL》中，屠魔帖•霸者，物品的最低使用等级是多少级？",
+  "answer": "65级",
+  "createdAt": 1779704910382
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42bd"
+  },
+  "question": "表现力最丰富的乐器是？",
+  "answer": "小提琴",
+  "createdAt": 1779704910384
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42bf"
+  },
+  "question": "吃海鲜最好不要喝什么？",
+  "answer": "啤酒",
+  "createdAt": 1779704910386
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42c1"
+  },
+  "question": "小儿在父母之间睡觉好吗？",
+  "answer": "不好",
+  "createdAt": 1779704910388
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42c3"
+  },
+  "question": "比利时着名的撒尿小孩铜雕，平时他尿的是自来水，那狂欢节他尿的是什么？",
+  "answer": "啤酒",
+  "createdAt": 1779704910389
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42c5"
+  },
+  "question": "以下哪种室内盆栽植物是常年开花的？",
+  "answer": "紫罗兰",
+  "createdAt": 1779704910390
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42c7"
+  },
+  "question": "古代人参有多种雅称，以下不属于人参雅称的是",
+  "answer": "赤箭",
+  "createdAt": 1779704910391
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42c9"
+  },
+  "question": "与木兰辞并称乐府双璧的是？",
+  "answer": "《孔雀东南飞》",
+  "createdAt": 1779704910392
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42cb"
+  },
+  "question": "清代号雪芹所着的小说《红楼梦》最初时命名为？",
+  "answer": "《石头记》",
+  "createdAt": 1779704910394
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42cd"
+  },
+  "question": "一般来说，治疗伤风感冒的解表药以及清热药、芳香药，宜用什么火煎？",
+  "answer": "武火",
+  "createdAt": 1779704910396
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42cf"
+  },
+  "question": "新石器时代属于石器时代的哪个时期？",
+  "answer": "晚期",
+  "createdAt": 1779704910397
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42d1"
+  },
+  "question": "哪一类茶属于发酵茶？",
+  "answer": "红茶",
+  "createdAt": 1779704910400
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42d3"
+  },
+  "question": "钢铁工人在炼钢时，穿了一种不怕烧，不怕钢水，火星的衣服，请问它是用什么作成的？",
+  "answer": "石棉",
+  "createdAt": 1779704910401
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42d5"
+  },
+  "question": "果汁在什么温度饮用时最适宜？",
+  "answer": "10度",
+  "createdAt": 1779704910403
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42d7"
+  },
+  "question": "平遥古城位于？",
+  "answer": "山西中部",
+  "createdAt": 1779704910405
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42d9"
+  },
+  "question": "仲夏在古代属于几月份？",
+  "answer": "答五月",
+  "createdAt": 1779704910407
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42db"
+  },
+  "question": "适量合理地引用葡萄酒，对人体有什么好处？",
+  "answer": "案防治心血管病",
+  "createdAt": 1779704910408
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42dd"
+  },
+  "question": "《忘仙OL》中，有人宣传代练，提供帐号密码就可满级。正确做法是？",
+  "answer": "向GM举报",
+  "createdAt": 1779704910409
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42df"
+  },
+  "question": "清代着名小说《儒林外史》的作者是？",
+  "answer": "吴敬梓",
+  "createdAt": 1779704910410
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42e1"
+  },
+  "question": "以画竹子着称的书画家郑板桥是哪个朝代的人？",
+  "answer": "清朝",
+  "createdAt": 1779704910411
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42e3"
+  },
+  "question": "古代建筑中有顶的被称为？",
+  "answer": "廊",
+  "createdAt": 1779704910412
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42e5"
+  },
+  "question": "以下谁不是玄武门之变的参与者？",
+  "answer": "李元霸",
+  "createdAt": 1779704910413
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42e7"
+  },
+  "question": "清末商人胡雪岩创办的着名中药堂名叫？",
+  "answer": "胡庆余堂",
+  "createdAt": 1779704910414
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42e9"
+  },
+  "question": "蔬菜、水果主要向人们提供什么营养？",
+  "answer": "膳食纤维",
+  "createdAt": 1779704910415
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42eb"
+  },
+  "question": "人们最早是从哪种动物身上得知咖啡的作用的？",
+  "answer": "羊",
+  "createdAt": 1779704910416
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42ed"
+  },
+  "question": "一般金婚是纪念结婚多少周年？",
+  "answer": "50周年",
+  "createdAt": 1779704910416
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42ef"
+  },
+  "question": "热咖啡在什么温度时才香甜可口？",
+  "answer": "70度",
+  "createdAt": 1779704910417
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42f1"
+  },
+  "question": "万有引力是哪一位科学家提出的？",
+  "answer": "牛顿",
+  "createdAt": 1779704910418
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42f3"
+  },
+  "question": "在三国中，诸葛亮欠了谁的东西没有还？",
+  "answer": "东风",
+  "createdAt": 1779704910419
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42f5"
+  },
+  "question": "三师指的是太师、太傅和什么？",
+  "answer": "太保",
+  "createdAt": 1779704910421
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42f7"
+  },
+  "question": "中医的”针灸“对人体穴位有很深的研究，人体有一处”曲池穴“位于？",
+  "answer": "肘部",
+  "createdAt": 1779704910422
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42f9"
+  },
+  "question": "《忘仙OL》中，朋友向你索要帐号密码，为了帐号安全，应该怎么样做？",
+  "answer": "婉拒对方",
+  "createdAt": 1779704910423
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42fb"
+  },
+  "question": "《忘仙OL》中，屠魔帖•水晶，物品的最低使用等级是多少级？",
+  "answer": "105级",
+  "createdAt": 1779704910424
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42fd"
+  },
+  "question": "中国第一个奴隶制度的王朝是？",
+  "answer": "夏朝",
+  "createdAt": 1779704910425
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d42ff"
+  },
+  "question": "太平天国起义被封为西王的是？",
+  "answer": "萧朝贵",
+  "createdAt": 1779704910426
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4301"
+  },
+  "question": "蜡染是哪个名族特有？",
+  "answer": "苗族",
+  "createdAt": 1779704910427
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4303"
+  },
+  "question": "神医扁鹊是哪个朝代人？",
+  "answer": "春秋战国",
+  "createdAt": 1779704910428
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4305"
+  },
+  "question": "南宋都城临安。是现今何处？",
+  "answer": "杭州",
+  "createdAt": 1779704910428
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4307"
+  },
+  "question": "乞巧节指的是农历？",
+  "answer": "七月初七",
+  "createdAt": 1779704910429
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4309"
+  },
+  "question": "一公斤铁和一公斤棉花哪一个轻？",
+  "answer": "一样轻",
+  "createdAt": 1779704910430
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d430b"
+  },
+  "question": "用温度多高的水洗澡最好？",
+  "answer": "40度",
+  "createdAt": 1779704910431
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d430d"
+  },
+  "question": "“月上柳梢头，人约黄昏后。”指的是那一个节日？",
+  "answer": "元宵",
+  "createdAt": 1779704910432
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d430f"
+  },
+  "question": "祖冲率先将圆周率精准到小数点后几位？",
+  "answer": "7位",
+  "createdAt": 1779704910433
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4311"
+  },
+  "question": "蟋蟀的“耳朵”长在什么地方？",
+  "answer": "小腿上",
+  "createdAt": 1779704910434
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4313"
+  },
+  "question": "“碧云天，黄叶地，北雁南飞”是语出？",
+  "answer": "西厢记",
+  "createdAt": 1779704910436
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4315"
+  },
+  "question": "送给恋人三朵花表示？",
+  "answer": "我爱你",
+  "createdAt": 1779704910437
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4317"
+  },
+  "question": "“东山再起”的典故是出自于？",
+  "answer": "谢安",
+  "createdAt": 1779704910439
+},
+{
+  "_id": {
+    "$oid": "6a14244e9ea803a8b66d4319"
+  },
+  "question": "《忘仙OL》中，收到邮件说你的账号存在，需要提供账号和密码，正确的做法是？",
+  "answer": "向GM举报",
+  "createdAt": 1779704910440
+}]

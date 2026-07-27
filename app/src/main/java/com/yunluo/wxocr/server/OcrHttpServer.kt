@@ -1,0 +1,304 @@
+package com.yunluo.wxocr.server
+
+import android.util.Log
+import com.google.gson.Gson
+import com.yunluo.wxocr.config.AppConfig
+import com.yunluo.wxocr.knowledge.FuzzyMatcher
+import com.yunluo.wxocr.knowledge.QuestionBank
+import com.yunluo.wxocr.ocr.ImagePreprocessor
+import com.yunluo.wxocr.ocr.PaddleOcrEngine
+import fi.iki.elonen.NanoHTTPD
+import kotlinx.coroutines.*
+import java.io.ByteArrayOutputStream
+import java.util.concurrent.ConcurrentHashMap
+
+class OcrHttpServer(
+    hostname: String,
+    port: Int,
+    private val questionBank: QuestionBank,
+    private val ocrEngineProvider: () -> PaddleOcrEngine
+) : NanoHTTPD(hostname, port) {
+
+    private val gson = Gson()
+    private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+    private var currentEngine: PaddleOcrEngine? = null
+
+    var logListener: ((String) -> Unit)? = null
+
+    fun updatePort(newPort: Int) {
+        log("端口已更新为 $newPort，请重启服务生效")
+    }
+
+    override fun serve(session: IHTTPSession): Response {
+        val uri = session.uri
+        val method = session.method
+
+        return try {
+            // CORS preflight
+            if (method == Method.OPTIONS) {
+                val resp = newFixedLengthResponse(Response.Status.OK, "application/json", "")
+                addCorsHeaders(resp)
+                return resp
+            }
+            val response = when {
+                uri == "/health" && method == Method.GET -> handleHealth()
+                uri == "/wx_ocr" && method == Method.POST -> handleWxOcr(session)
+                uri == "/wx_anti_cheat_popup" && method == Method.POST -> handleAntiCheatPopup(session)
+                else -> newFixedLengthResponse(Response.Status.NOT_FOUND, "application/json",
+                    """{"error":"not_found"}""")
+            }
+            addCorsHeaders(response)
+            response
+        } catch (e: Throwable) {
+            Log.e(TAG, "请求处理异常", e)
+            log("ERROR: ${e::class.simpleName}: ${e.message}")
+            val resp = newFixedLengthResponse(Response.Status.INTERNAL_ERROR, "application/json",
+                """{"success":false,"message":"服务器内部错误"}""")
+            addCorsHeaders(resp)
+            resp
+        }
+    }
+
+    private fun addCorsHeaders(resp: Response): Response {
+        resp.addHeader("Access-Control-Allow-Origin", "*")
+        resp.addHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        resp.addHeader("Access-Control-Allow-Headers", "Content-Type")
+        return resp
+    }
+
+    private fun handleHealth(): Response {
+        return jsonResponse("""{"status":"ok"}""")
+    }
+
+    private fun handleWxOcr(session: IHTTPSession): Response {
+        val body = readBody(session) ?: return jsonResponse(
+            """{"success":false,"message":"请求体不能为空"}""")
+
+        val img = gson.fromJson(body, WxOcrRequest::class.java)?.img ?: ""
+        if (img.isBlank()) {
+            log("wx_ocr: img 字段为空")
+            return jsonResponse("""{"success":false,"message":"img 字段不能为空"}""")
+        }
+
+        log("wx_ocr: 收到请求, img长度=${img.length}")
+
+        if (AppConfig.saveDebug) {
+            ImagePreprocessor.saveBase64Image(img, "wx_ocr_req")
+        }
+
+        // Step 1: 题号 OCR
+        val engine = ocrEngineProvider()
+        currentEngine = engine
+
+        val questionIndex = engine.ocrIndexRegion(img)
+        if (questionIndex <= 0) {
+            log("wx_ocr: 题号识别失败")
+            return jsonResponse("""{"success":false,"message":"题号识别失败，请重新截图请求","index":0}""")
+        }
+        log("wx_ocr: 题号=$questionIndex")
+
+        // Step 2: 按题号查缓存（同一题号短时间内复用完整 OCR 结果）
+        val now = System.currentTimeMillis()
+        val cached = Companion.responseCache[questionIndex]
+        if (cached != null && now - cached.timestamp < (AppConfig.CACHE_TTL_SECONDS * 1000).toLong()) {
+            log("wx_ocr: 命中题号缓存 index=$questionIndex")
+            return jsonResponse(gson.toJson(cached.result))
+        }
+
+        // Step 3: 完整 5 区域 OCR
+        val ocrResult = engine.ocrAllRegions(img)
+        val questionText = ocrResult.question
+        val options = ocrResult.options
+
+        log("wx_ocr: 题目=$questionText")
+
+        var matchedAnswer: String? = null
+        var bestLetter = ""
+        var bestX = 0
+        var bestY = 0
+
+        if (questionText.isNotBlank()) {
+            runBlocking {
+                val match = questionBank.search(questionText)
+                if (match != null) {
+                    matchedAnswer = match.answer
+                    log("wx_ocr: 题库答案=${match.answer}")
+
+                    var bestScore = 0.0
+                    for ((key, _) in AppConfig.CROP_AREA) {
+                        if (key == "question") continue
+                        val letter = key.split("_")[1].uppercase()
+                        val optText = ocrResult.rawResults[letter] ?: ""
+                        val score = FuzzyMatcher.ratio(match.answer, optText)
+                        Log.d(TAG, "  $letter: $optText vs ${match.answer} -> score=${"%.2f".format(score)}")
+                        if (score > bestScore) {
+                            bestScore = score
+                            bestLetter = letter
+                        }
+                    }
+                    if (bestLetter.isNotBlank() && bestScore > AppConfig.FUZZ_MATCH_THRESHOLD) {
+                        val coord = AppConfig.OPTION_COORDS[bestLetter] ?: intArrayOf(0, 0)
+                        bestX = coord[0]; bestY = coord[1]
+                        log("wx_ocr: 最佳匹配=$bestLetter 坐标=($bestX,$bestY) 相似度=${"%.2f".format(bestScore)}")
+                    }
+                } else {
+                    log("wx_ocr: 未在题库中找到匹配")
+                }
+            }
+        }
+
+        val responseMap = linkedMapOf(
+            "letter" to bestLetter,
+            "x" to bestX,
+            "y" to bestY,
+            "question" to questionText,
+            "options" to options,
+            "answer" to (matchedAnswer ?: ""),
+            "index" to questionIndex
+        )
+
+        // Step 4: 写入题号缓存
+        Companion.responseCache[questionIndex] = CacheEntry(responseMap, now)
+
+        log("wx_ocr: 完成 -> letter=$bestLetter index=$questionIndex")
+        return jsonResponse(gson.toJson(responseMap))
+    }
+
+    private fun handleAntiCheatPopup(session: IHTTPSession): Response {
+        val body = readBody(session) ?: return jsonResponse(
+            """{"success":false,"message":"请求体不能为空"}""")
+
+        val img = gson.fromJson(body, WxOcrRequest::class.java)?.img ?: ""
+        if (img.isBlank()) {
+            return jsonResponse("""{"success":false,"message":"img 字段不能为空"}""")
+        }
+
+        log("anti_cheat_popup: 收到请求, img长度=${img.length}")
+
+        val engine = ocrEngineProvider()
+        currentEngine = engine
+
+        if (AppConfig.saveDebug) {
+            ImagePreprocessor.saveBase64Image(img, "anti_cheat_req")
+        }
+
+        val matchResult = engine.findAntiCheatButton(img)
+        if (matchResult == null) {
+            log("anti_cheat_popup: 未匹配到反作弊按钮")
+            return jsonResponse("""{"success":false,"message":"未匹配到反作弊按钮"}""")
+        }
+        log("anti_cheat_popup: 匹配成功 相似度=${"%.3f".format(matchResult.confidence)} 小图左上角=(${matchResult.x},${matchResult.y})")
+
+        val btnX = matchResult.x
+        val btnY = matchResult.y
+
+        val qs = AppConfig.QUESTION_SEARCH
+        val qx = btnX - qs.offsetX
+        val qy = btnY - qs.offsetY
+
+        val os = AppConfig.OPTION_SEARCH
+        val ox = btnX - os.offsetX
+        val oy = btnY - os.offsetY
+
+        val questionDetections = engine.ocrRoiRegion(img, qx, qy, qs.w, qs.h)
+        val optionDetections = engine.ocrRoiRegion(img, ox, oy, os.w, os.h)
+
+        val questionText = questionDetections.firstOrNull()?.text ?: ""
+
+        val optTexts = optionDetections.map { it.text }
+        val classified = classifyOptionsGrid(optTexts)
+
+        val optionsMap = linkedMapOf(
+            "A" to (classified.getOrElse("A") { "" }),
+            "B" to (classified.getOrElse("B") { "" }),
+            "C" to (classified.getOrElse("C") { "" }),
+            "D" to (classified.getOrElse("D") { "" })
+        )
+
+        log("anti_cheat_popup: 题目=$questionText, 选项=$optionsMap")
+
+        val responseMap = linkedMapOf(
+            "question" to questionText,
+            "options" to optionsMap,
+            "answer" to "",
+            "click_x" to 0,
+            "click_y" to 0,
+            "btn_x" to (btnX + AppConfig.BTN_CLICK_OFFSET_X),
+            "btn_y" to btnY
+        )
+
+        log("anti_cheat_popup: 完成")
+        return jsonResponse(gson.toJson(responseMap))
+    }
+
+    private fun classifyOptionsGrid(texts: List<String>): Map<String, String> {
+        if (texts.isEmpty()) return emptyMap()
+        val result = mutableMapOf<String, String>()
+        for ((i, text) in texts.withIndex()) {
+            val letter = when (i % 4) {
+                0 -> "A"; 1 -> "B"; 2 -> "C"; 3 -> "D"
+                else -> continue
+            }
+            result[letter] = text
+        }
+        return result
+    }
+
+    private fun readBody(session: IHTTPSession): String? {
+        return try {
+            val contentLength = session.headers["content-length"]?.toIntOrNull() ?: 0
+            val stream = session.getInputStream()
+            val buf = ByteArray(if (contentLength > 0) contentLength else 4096)
+            val bytes = ByteArrayOutputStream(contentLength.coerceAtLeast(1024))
+            var total = 0
+            if (contentLength > 0) {
+                while (total < contentLength) {
+                    val n = stream.read(buf, total, contentLength - total)
+                    if (n < 0) break
+                    total += n
+                }
+                bytes.write(buf, 0, total)
+            } else {
+                // 无 Content-Length 时读到末尾
+                val tmp = ByteArray(4096)
+                while (true) {
+                    val n = stream.read(tmp)
+                    if (n < 0) break
+                    bytes.write(tmp, 0, n)
+                    total += n
+                }
+            }
+            val body = bytes.toString("UTF-8")
+            bytes.close()
+            Log.d(TAG, "readBody: ${body.length} chars (contentLength=$contentLength)")
+            body
+        } catch (e: Exception) {
+            Log.w(TAG, "读取请求体失败", e)
+            null
+        }
+    }
+
+    private fun jsonResponse(json: String): Response {
+        return newFixedLengthResponse(Response.Status.OK, "application/json", json)
+    }
+
+    private fun log(msg: String) {
+        Log.i(TAG, msg)
+        logListener?.invoke(msg)
+    }
+
+    override fun stop() {
+        currentEngine?.release()
+        scope.cancel()
+        super.stop()
+    }
+
+    data class WxOcrRequest(val img: String = "", val region: String = "")
+
+    data class CacheEntry(val result: Map<String, Any>, val timestamp: Long)
+
+    companion object {
+        private const val TAG = "OcrHttpServer"
+        val responseCache = ConcurrentHashMap<Int, CacheEntry>()
+    }
+}
