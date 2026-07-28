@@ -21,7 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WxOcr"
         android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true">
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true">
 
         <activity
             android:name=".MainActivity"
