@@ -15,6 +15,7 @@ import java.io.ByteArrayOutputStream
 import java.net.HttpURLConnection
 import java.net.URL
 import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.Semaphore
 
 class OcrHttpServer(
     hostname: String,
@@ -25,6 +26,7 @@ class OcrHttpServer(
 
     private val gson = Gson()
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
+    private val requestPermits = Semaphore(MAX_CONCURRENT_REQUESTS)
 
     var logListener: ((String) -> Unit)? = null
 
@@ -36,13 +38,15 @@ class OcrHttpServer(
         val uri = session.uri
         val method = session.method
 
-        return try {
-            // CORS preflight
-            if (method == Method.OPTIONS) {
-                val resp = newFixedLengthResponse(Response.Status.OK, "application/json", "")
-                addCorsHeaders(resp)
-                return resp
-            }
+        // CORS preflight — no semaphore needed
+        if (method == Method.OPTIONS) {
+            val resp = newFixedLengthResponse(Response.Status.OK, "application/json", "")
+            addCorsHeaders(resp)
+            return resp
+        }
+
+        requestPermits.acquireUninterruptibly()
+        try {
             val response = when {
                 uri == "/health" && method == Method.GET -> handleHealth()
                 uri == "/wx_ocr" && method == Method.POST -> handleWxOcr(session)
@@ -51,14 +55,16 @@ class OcrHttpServer(
                     """{"error":"not_found"}""")
             }
             addCorsHeaders(response)
-            response
+            return response
         } catch (e: Throwable) {
             Log.e(TAG, "请求处理异常", e)
             log("ERROR: ${e::class.simpleName}: ${e.message}")
             val resp = newFixedLengthResponse(Response.Status.INTERNAL_ERROR, "application/json",
                 """{"success":false,"message":"服务器内部错误"}""")
             addCorsHeaders(resp)
-            resp
+            return resp
+        } finally {
+            requestPermits.release()
         }
     }
 
@@ -373,6 +379,7 @@ class OcrHttpServer(
 
     companion object {
         private const val TAG = "OcrHttpServer"
+        private const val MAX_CONCURRENT_REQUESTS = 3
         val responseCache = ConcurrentHashMap<Int, CacheEntry>()
     }
 }
