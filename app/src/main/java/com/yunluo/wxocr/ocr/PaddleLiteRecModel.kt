@@ -104,7 +104,9 @@ class PaddleLiteRecModel(private val device: String = "cpu") {
         Log.d(TAG, "predictBatch 开始, 批次大小=${bmps.size}")
         val results = bmps.mapIndexed { i, bmp ->
             Log.d(TAG, "predictBatch 第${i + 1}/ ${bmps.size} 个")
-            predict(bmp)
+            val result = predict(bmp)
+            bmp.recycle()
+            result
         }
         val nonEmpty = results.count { it.isNotBlank() }
         Log.d(TAG, "predictBatch 完成: $nonEmpty/${bmps.size} 非空")
@@ -264,6 +266,7 @@ class PaddleLiteRecModel(private val device: String = "cpu") {
         val resized = Bitmap.createScaledBitmap(bmp, dstW, INPUT_SIZE, true)
         val pixels = IntArray(dstW * INPUT_SIZE)
         resized.getPixels(pixels, 0, dstW, 0, 0, dstW, INPUT_SIZE)
+        resized.recycle()
 
         val chStride = INPUT_SIZE * dstW
         val inputData = FloatArray(3 * chStride)

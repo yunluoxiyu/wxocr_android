@@ -23,10 +23,9 @@ object ImagePreprocessor {
             val bytes = android.util.Base64.decode(raw, android.util.Base64.DEFAULT)
             Log.d(TAG, "Base64 解码: ${bytes.size} bytes (${System.currentTimeMillis() - start}ms)")
             val mat = Mat()
-            Utils.bitmapToMat(
-                android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size),
-                mat
-            )
+            val bmp = android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
+            Utils.bitmapToMat(bmp, mat)
+            bmp.recycle()
             Log.d(TAG, "Bitmap -> Mat: ${mat.cols()}x${mat.rows()}")
             mat
         } catch (e: IllegalArgumentException) {
@@ -302,6 +301,7 @@ object ImagePreprocessor {
             val bytes = android.util.Base64.decode(raw, android.util.Base64.DEFAULT)
             val bmp = android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
             val dims = if (bmp != null) "${bmp.width}x${bmp.height}" else "unknown"
+            bmp?.recycle()
             val filename = "${prefix}_${dims}_${System.currentTimeMillis()}.png"
             val file = File(dir, filename)
             file.writeBytes(bytes)

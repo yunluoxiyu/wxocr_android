@@ -332,24 +332,22 @@ class OcrHttpServer(
         return try {
             val contentLength = session.headers["content-length"]?.toIntOrNull() ?: 0
             val stream = session.getInputStream()
-            val buf = ByteArray(if (contentLength > 0) contentLength else 4096)
             val bytes = ByteArrayOutputStream(contentLength.coerceAtLeast(1024))
-            var total = 0
+            val tmp = ByteArray(8192)
             if (contentLength > 0) {
-                while (total < contentLength) {
-                    val n = stream.read(buf, total, contentLength - total)
-                    if (n < 0) break
-                    total += n
-                }
-                bytes.write(buf, 0, total)
-            } else {
-                // 无 Content-Length 时读到末尾
-                val tmp = ByteArray(4096)
-                while (true) {
-                    val n = stream.read(tmp)
+                var remaining = contentLength
+                while (remaining > 0) {
+                    val n = stream.read(tmp, 0, minOf(tmp.size, remaining))
                     if (n < 0) break
                     bytes.write(tmp, 0, n)
-                    total += n
+                    remaining -= n
+                }
+            } else {
+                val buf = ByteArray(4096)
+                while (true) {
+                    val n = stream.read(buf)
+                    if (n < 0) break
+                    bytes.write(buf, 0, n)
                 }
             }
             val body = bytes.toString("UTF-8")

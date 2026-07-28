@@ -42,6 +42,13 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         recModel.release()
     }
 
+    private fun predictAndRecycle(mat: Mat): String {
+        val bmp = ImagePreprocessor.matToBitmap(mat)
+        val text = recModel.predict(bmp)
+        bmp.recycle()
+        return text
+    }
+
     private fun decodeToMat(base64Str: String): Mat? {
         val raw = if (base64Str.startsWith("data:image")) {
             base64Str.substringAfter("base64,")
@@ -82,6 +89,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
             val processed = ImagePreprocessor.preprocessYellow(roi)
             val bmp = ImagePreprocessor.matToBitmap(processed)
             val text = recModel.predict(bmp)
+            bmp.recycle()
             val index = extractQuestionIndex(text)
             log("ocrIndexRegion (fixed): \"$text\" -> index=$index")
             com.yunluo.wxocr.server.ServiceState.postLog("题号OCR: \"$text\" → index=$index")
@@ -135,6 +143,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "index_det_ocr")
         val bmp = ImagePreprocessor.matToBitmap(processed)
         val text = recModel.predict(bmp)
+        bmp.recycle()
         val index = extractQuestionIndex(text)
         log("题号(det): \"$text\" -> $index")
         roi.release(); processed.release()
@@ -151,6 +160,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         }
         val bmp = ImagePreprocessor.matToBitmap(processed)
         val text = recModel.predict(bmp)
+        bmp.recycle()
         roi.release(); processed.release()
         return text
     }
@@ -217,7 +227,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
                         val (x1, y1, x2, y2) = AppConfig.CROP_AREA[keys[i]]!!
                         val fbRoi = ImagePreprocessor.crop(mat, x1, y1, x2, y2)
                         if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(fbRoi, "fallback_${keys[i]}")
-                        val fbText = recModel.predict(ImagePreprocessor.matToBitmap(fbRoi))
+                        val fbText = predictAndRecycle(fbRoi)
                         if (fbText.isNotBlank()) {
                             cleaned = cleanQuestionText(fbText)
                             rawQuestionIndex = extractQuestionIndex(fbText).takeIf { it > 0 } ?: rawQuestionIndex
@@ -234,7 +244,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
                         val (x1, y1, x2, y2) = AppConfig.CROP_AREA[keys[i]]!!
                         val fbRoi = ImagePreprocessor.crop(mat, x1, y1, x2, y2)
                         if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(fbRoi, "fallback_${keys[i]}")
-                        val fbText = recModel.predict(ImagePreprocessor.matToBitmap(fbRoi))
+                        val fbText = predictAndRecycle(fbRoi)
                         if (fbText.isNotBlank()) {
                             cleaned = cleanOptionText(fbText)
                         }
@@ -278,7 +288,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
             val roi = ImagePreprocessor.crop(mat, x, y, x + w, y + h)
             if (roi.empty()) return emptyList()
             val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi)
-            val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(processed)))
+            val text = cleanAntiCheatText(predictAndRecycle(processed))
             roi.release(); processed.release()
             if (text.isBlank()) return emptyList()
             return listOf(OcrDetection(text = text, centerX = x + w / 2, centerY = y + h / 2, confidence = 0.8f))
@@ -320,7 +330,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
                 }
                 val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi, targetWidth = 320)
                 if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_option_${letter}")
-                val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(processed)))
+                val text = cleanAntiCheatText(predictAndRecycle(processed))
                 processed.release(); roi.release()
                 result[letter] = OcrDetection(
                     text = text,
@@ -352,7 +362,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
                 localCrop.release()
                 continue
             }
-            val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(localCrop)))
+            val text = cleanAntiCheatText(predictAndRecycle(localCrop))
             localCrop.release()
             if (text.isBlank()) continue
             val centerX = x + (box.centerX * sx).toInt()
@@ -361,7 +371,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         }
 
         if (detections.isEmpty()) {
-            val text = cleanAntiCheatText(recModel.predict(ImagePreprocessor.matToBitmap(processed)))
+            val text = cleanAntiCheatText(predictAndRecycle(processed))
             processed.release(); roi.release()
             return if (text.isBlank()) emptyList() else listOf(
                 OcrDetection(text = text, centerX = x + w / 2, centerY = y + h / 2, confidence = 0.8f)
