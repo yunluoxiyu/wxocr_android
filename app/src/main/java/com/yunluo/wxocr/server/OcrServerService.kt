@@ -24,6 +24,7 @@ class OcrServerService : Service() {
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
     private var httpServer: OcrHttpServer? = null
     private var questionBank: QuestionBank? = null
+    private var ocrEngine: PaddleOcrEngine? = null
 
     var onLog: ((String) -> Unit)? = null
     var onStatusChange: ((Boolean, String) -> Unit)? = null
@@ -70,11 +71,12 @@ class OcrServerService : Service() {
                 postLog("题库加载完成，共 ${qb.size} 道题")
 
                 postProgress(40, "加载识别模型...")
-                PaddleOcrEngine().release()
+                val engine = PaddleOcrEngine()
+                ocrEngine = engine
                 postProgress(70, "模型加载完成")
 
                 postProgress(80, "启动 HTTP 服务 (0.0.0.0:$port)...")
-                val server = OcrHttpServer("0.0.0.0", port, qb) { PaddleOcrEngine() }
+                val server = OcrHttpServer("0.0.0.0", port, qb, engine)
                 server.logListener = { msg ->
                     postLog(msg)
                 }

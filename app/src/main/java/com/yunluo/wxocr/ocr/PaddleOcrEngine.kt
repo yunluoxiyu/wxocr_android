@@ -72,6 +72,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
 
     // ==================== 题号 OCR ====================
 
+    @Synchronized
     fun ocrIndexRegion(base64Str: String): Int {
         val rawKey = base64Str.hashCode().toString()
         val cached = OcrCache.indexCache[rawKey]
@@ -102,6 +103,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
 
     // ==================== 全区域 OCR（检测+识别） ====================
 
+    @Synchronized
     fun ocrAllRegions(base64Str: String): OcrResult {
         val mat = decodeToMat(base64Str) ?: run {
             Log.w(TAG, "ocrAllRegions: 图片解码失败")
@@ -266,6 +268,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
 
     // ==================== 反作弊 ====================
 
+    @Synchronized
     fun findAntiCheatButton(base64Str: String): ImagePreprocessor.TemplateMatchResult? {
         val mat = decodeToMat(base64Str) ?: return null
         try {
@@ -282,6 +285,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         } finally { mat.release() }
     }
 
+    @Synchronized
     fun ocrRoiRegion(base64Str: String, x: Int, y: Int, w: Int, h: Int): List<OcrDetection> {
         val mat = decodeToMat(base64Str) ?: return emptyList()
         try {
@@ -295,6 +299,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         } finally { mat.release() }
     }
 
+    @Synchronized
     fun ocrRoiDetections(base64Str: String, x: Int, y: Int, w: Int, h: Int): List<OcrDetection> {
         val mat = decodeToMat(base64Str) ?: return emptyList()
         try {
@@ -302,6 +307,7 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         } finally { mat.release() }
     }
 
+    @Synchronized
     fun ocrAntiCheatOptionGrid(base64Str: String, x: Int, y: Int, w: Int, h: Int): Map<String, OcrDetection> {
         val mat = decodeToMat(base64Str) ?: return emptyMap()
         try {

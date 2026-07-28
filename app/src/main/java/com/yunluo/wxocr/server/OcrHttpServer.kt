@@ -20,12 +20,11 @@ class OcrHttpServer(
     hostname: String,
     port: Int,
     private val questionBank: QuestionBank,
-    private val ocrEngineProvider: () -> PaddleOcrEngine
+    private val engine: PaddleOcrEngine
 ) : NanoHTTPD(hostname, port) {
 
     private val gson = Gson()
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
-    private var currentEngine: PaddleOcrEngine? = null
 
     var logListener: ((String) -> Unit)? = null
 
@@ -91,9 +90,6 @@ class OcrHttpServer(
         }
 
         // Step 1: 题号 OCR
-        val engine = ocrEngineProvider()
-        currentEngine = engine
-
         val questionIndex = engine.ocrIndexRegion(img)
         if (questionIndex <= 0) {
             log("wx_ocr: 题号识别失败")
@@ -178,9 +174,6 @@ class OcrHttpServer(
         }
 
         log("anti_cheat_popup: 收到请求, img长度=${img.length}")
-
-        val engine = ocrEngineProvider()
-        currentEngine = engine
 
         if (AppConfig.saveDebug) {
             ImagePreprocessor.saveBase64Image(img, "anti_cheat_req")
@@ -370,7 +363,6 @@ class OcrHttpServer(
     }
 
     override fun stop() {
-        currentEngine?.release()
         scope.cancel()
         super.stop()
     }
