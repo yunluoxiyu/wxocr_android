@@ -143,8 +143,13 @@ class OcrHttpServer(
                         }
                     }
                     if (bestLetter.isNotBlank() && bestScore > AppConfig.FUZZ_MATCH_THRESHOLD) {
-                        val coord = AppConfig.OPTION_COORDS[bestLetter] ?: intArrayOf(0, 0)
-                        bestX = coord[0]; bestY = coord[1]
+                        val cropKey = "option_${bestLetter.lowercase()}"
+                        val cropArea = AppConfig.CROP_AREA[cropKey]
+                        if (cropArea != null) {
+                            val (x1, y1, _, y2) = cropArea
+                            bestX = x1 + 25
+                            bestY = y1 + (y2 - y1) / 2
+                        }
                         log("wx_ocr: 最佳匹配=$bestLetter 坐标=($bestX,$bestY) 相似度=${"%.2f".format(bestScore)}")
                     }
                 } else {

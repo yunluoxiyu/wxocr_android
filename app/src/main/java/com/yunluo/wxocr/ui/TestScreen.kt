@@ -92,8 +92,16 @@ fun TestScreen(onNavigateBack: () -> Unit) {
                                 if (score > bestScore) { bestScore = score; bestLetter = letter }
                             }
                             if (bestLetter.isNotBlank() && bestScore > AppConfig.FUZZ_MATCH_THRESHOLD) {
-                                val coord = AppConfig.OPTION_COORDS[bestLetter] ?: intArrayOf(0, 0)
-                                msgs.add("最佳匹配: $bestLetter 坐标=(${coord[0]},${coord[1]}) 相似度=${"%.2f".format(bestScore)}")
+                                val cropKey = "option_${bestLetter.lowercase()}"
+                                val cropArea = AppConfig.CROP_AREA[cropKey]
+                                if (cropArea != null) {
+                                    val (x1, y1, _, y2) = cropArea
+                                    val cx = x1 + 25
+                                    val cy = y1 + (y2 - y1) / 2
+                                    msgs.add("最佳匹配: $bestLetter 坐标=($cx,$cy) 相似度=${"%.2f".format(bestScore)}")
+                                } else {
+                                    msgs.add("最佳匹配: $bestLetter 相似度=${"%.2f".format(bestScore)}")
+                                }
                             }
                         } else { msgs.add("未在题库中找到匹配") }
                     } else { msgs.add("题目为空，跳过题库搜索") }
