@@ -61,6 +61,7 @@ fun MainScreen(
     var currentIp by remember { mutableStateOf("") }
     val authState = remember { mutableStateOf(false) }
     val logListState = rememberLazyListState()
+    var saveDebug by remember { mutableStateOf(AppConfig.saveDebug) }
 
     val permissionLauncher = rememberLauncherForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -348,8 +349,8 @@ fun MainScreen(
                         Text("请求截图自动保存到 debug_crops", fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
                     Switch(
-                        checked = AppConfig.saveDebug,
-                        onCheckedChange = { AppConfig.saveDebug = it }
+                        checked = saveDebug,
+                        onCheckedChange = { saveDebug = it; AppConfig.saveDebug = it }
                     )
                 }
             }

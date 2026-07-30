@@ -231,14 +231,31 @@ class OcrHttpServer(
         val answer = if (questionText.isNotBlank() && optionsMap.values.any { it.isNotBlank() }) {
             askDeepSeek(questionText, optionsMap)
         } else null
-        val click = answer?.let { classified[it] }
+
+        // 始终从选项搜索窗 2x2 网格靠左计算点击坐标，不依赖检测框位置
+        val halfW = os.w / 2
+        val halfH = os.h / 2
+        val clickX = when (answer) {
+            "A" -> ox + 10
+            "B" -> ox + halfW + 10
+            "C" -> ox + 10
+            "D" -> ox + halfW + 10
+            else -> 0
+        }
+        val clickY = when (answer) {
+            "A" -> oy + halfH / 2
+            "B" -> oy + halfH / 2
+            "C" -> oy + halfH + (os.h - halfH) / 2
+            "D" -> oy + halfH + (os.h - halfH) / 2
+            else -> 0
+        }
 
         val responseMap = linkedMapOf(
             "question" to questionText,
             "options" to optionsMap,
             "answer" to (answer ?: ""),
-            "click_x" to (click?.centerX ?: 0),
-            "click_y" to (click?.centerY ?: 0),
+            "click_x" to clickX,
+            "click_y" to clickY,
             "btn_x" to (btnX + AppConfig.BTN_CLICK_OFFSET_X),
             "btn_y" to btnY
         )
