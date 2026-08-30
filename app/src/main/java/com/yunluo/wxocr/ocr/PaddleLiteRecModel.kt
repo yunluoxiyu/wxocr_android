@@ -38,17 +38,22 @@ class PaddleLiteRecModel(private val device: String = "cpu") {
     }
 
     fun release() {
+        try {
+            cachedPredictor?.let { predictorClose(it) }
+        } catch (_: Exception) {}
+        cachedPredictor = null
     }
 
+    @Synchronized
     fun predict(bmp: Bitmap): String {
         val startTime = System.currentTimeMillis()
         log("=== predict 开始, 图像=${bmp.width}x${bmp.height}")
         log("rec 模型文件: $modelDir/ppocrv4_mobile_rec.nb 存在=${File(modelDir, "ppocrv4_mobile_rec.nb").exists()} 大小=${File(modelDir, "ppocrv4_mobile_rec.nb").length()}")
         try {
-            log("=== Step 1: createPredictor 开始...")
+            log("=== Step 1: getPredictor 开始...")
             val predictor: Any
             try {
-                predictor = createPredictor()
+                predictor = getPredictor()
                 log("=== Step 1 OK: predictor=$predictor")
             } catch (e: Throwable) {
                 log("=== Step 1 createPredictor 失败: ${e::class.simpleName}: ${e.message}")
@@ -88,7 +93,6 @@ class PaddleLiteRecModel(private val device: String = "cpu") {
             log("=== CTC seqLen=$seqLen numClasses=$numClasses labelList.size=${labelList.size}")
 
             val text = ctcDecode(outputData, seqLen, numClasses)
-            predictorClose(predictor)
 
             val totalTime = System.currentTimeMillis() - startTime
             log("=== predict 结果: \"$text\" (${totalTime}ms)")
@@ -98,6 +102,15 @@ class PaddleLiteRecModel(private val device: String = "cpu") {
             log("=== 堆栈: ${e.stackTraceToString()}")
             return ""
         }
+    }
+
+    private var cachedPredictor: Any? = null
+
+    private fun getPredictor(): Any {
+        if (cachedPredictor == null) {
+            cachedPredictor = createPredictor()
+        }
+        return cachedPredictor!!
     }
 
     fun predictBatch(bmps: List<Bitmap>): List<String> {

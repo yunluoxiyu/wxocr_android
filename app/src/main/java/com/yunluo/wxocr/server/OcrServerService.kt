@@ -10,6 +10,7 @@ import android.os.Build
 import android.os.Handler
 import android.os.IBinder
 import android.os.Looper
+import android.os.PowerManager
 import android.util.Log
 import com.yunluo.wxocr.MainActivity
 import com.yunluo.wxocr.config.AppConfig
@@ -25,6 +26,7 @@ class OcrServerService : Service() {
     private var httpServer: OcrHttpServer? = null
     private var questionBank: QuestionBank? = null
     private var ocrEngine: PaddleOcrEngine? = null
+    private var wakeLock: PowerManager.WakeLock? = null
 
     var onLog: ((String) -> Unit)? = null
     var onStatusChange: ((Boolean, String) -> Unit)? = null
@@ -32,6 +34,7 @@ class OcrServerService : Service() {
     override fun onCreate() {
         super.onCreate()
         createNotificationChannel()
+        acquireWakeLock()
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -162,6 +165,29 @@ class OcrServerService : Service() {
         return "127.0.0.1"
     }
 
+    private fun acquireWakeLock() {
+        try {
+            val pm = getSystemService(PowerManager::class.java)
+            wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "WxOCR:Server").apply {
+                setReferenceCounted(false)
+                acquire(24 * 60 * 60 * 1000L)
+            }
+        } catch (e: Exception) {
+            Log.w(TAG, "获取唤醒锁失败", e)
+        }
+    }
+
+    private fun releaseWakeLock() {
+        try {
+            wakeLock?.let {
+                if (it.isHeld) it.release()
+            }
+        } catch (e: Exception) {
+            Log.w(TAG, "释放唤醒锁失败", e)
+        }
+        wakeLock = null
+    }
+
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
@@ -185,14 +211,24 @@ class OcrServerService : Service() {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        val builder = Notification.Builder(this, CHANNEL_ID)
+        val stopIntent = Intent(this, OcrServerService::class.java).apply {
+            action = ACTION_STOP
+        }
+        val stopPendingIntent = PendingIntent.getService(
+            this, 1, stopIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
 
-        return builder
+        return Notification.Builder(this, CHANNEL_ID)
             .setContentTitle("WxOCR")
             .setContentText(content)
             .setSmallIcon(android.R.drawable.ic_menu_camera)
             .setContentIntent(pendingIntent)
             .setOngoing(true)
+            .setShowWhen(false)
+            .setCategory(Notification.CATEGORY_SERVICE)
+            .setPriority(Notification.PRIORITY_LOW)
+            .addAction(android.R.drawable.ic_menu_close_clear_cancel, "停止", stopPendingIntent)
             .build()
     }
 
@@ -201,6 +237,7 @@ class OcrServerService : Service() {
     override fun onDestroy() {
         scope.cancel()
         httpServer?.stop()
+        releaseWakeLock()
         super.onDestroy()
     }
 

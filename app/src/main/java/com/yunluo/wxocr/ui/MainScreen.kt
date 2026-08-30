@@ -1,11 +1,15 @@
 package com.yunluo.wxocr.ui
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
+import android.os.PowerManager
+import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -104,6 +108,24 @@ fun MainScreen(
         }
     }
 
+    // 请求忽略电池优化，防止后台被杀
+    fun requestIgnoreBatteryOptimization(ctx: Context) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) return
+        val pm = ctx.getSystemService(PowerManager::class.java)
+        if (pm.isIgnoringBatteryOptimizations(ctx.packageName)) return
+        try {
+            val intent = Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
+                data = Uri.parse("package:${ctx.packageName}")
+            }
+            ctx.startActivity(intent)
+        } catch (e: Exception) {
+            try {
+                ctx.startActivity(Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS))
+            } catch (_: Exception) {
+            }
+        }
+    }
+
     // 启动服务
     fun startServer() {
         val p = port.toIntOrNull() ?: return
@@ -136,6 +158,7 @@ fun MainScreen(
                     authState.value = false
                     try {
                         if (valid) {
+                            requestIgnoreBatteryOptimization(context)
                             val intent = Intent(context, OcrServerService::class.java).apply {
                                 action = OcrServerService.ACTION_START
                             }
@@ -179,6 +202,12 @@ fun MainScreen(
                 != PackageManager.PERMISSION_GRANTED
             ) {
                 permissions.add(Manifest.permission.ACCESS_FINE_LOCATION)
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS)
+                != PackageManager.PERMISSION_GRANTED
+            ) {
+                permissions.add(Manifest.permission.POST_NOTIFICATIONS)
             }
             if (permissions.isNotEmpty()) {
                 permissionLauncher.launch(permissions.toTypedArray())

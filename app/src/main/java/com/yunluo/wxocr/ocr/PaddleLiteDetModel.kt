@@ -31,7 +31,9 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
         }
     }
 
-    fun release() {}
+    fun release() {
+        invalidateDetPredictor()
+    }
 
     fun predict(mat: Mat): List<DetBox> {
         val start = System.currentTimeMillis()
@@ -39,14 +41,14 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
         log("det 模型文件: $modelDir/PP-OCRv5_mobile_det.nb 存在=${File(modelDir, "PP-OCRv5_mobile_det.nb").exists()} 大小=${File(modelDir, "PP-OCRv5_mobile_det.nb").length()}")
 
         try {
-            // Step 1: 创建 predictor
-            log("predict: Step1 createPredictor 开始...")
+            // Step 1: 获取/创建 predictor
+            log("predict: Step1 getPredictor 开始...")
             val predictor: Any
             try {
-                predictor = createPredictor()
-                log("predict: Step1 createPredictor 完成")
+                predictor = getDetPredictor()
+                log("predict: Step1 getPredictor 完成")
             } catch (e: Throwable) {
-                log("predict: Step1 createPredictor 失败: ${e::class.simpleName}: ${e.message}")
+                log("predict: Step1 getPredictor 失败: ${e::class.simpleName}: ${e.message}")
                 log("predict: 堆栈: ${e.stackTraceToString()}")
                 return emptyList()
             }
@@ -74,10 +76,12 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
             } catch (e: TimeoutException) {
                 log("predict: Step4 predictorRun 超时 (${System.currentTimeMillis() - inferStart}ms)")
                 runFuture?.cancel(true)
+                invalidateDetPredictor()
                 return emptyList()
             } catch (e: Throwable) {
                 log("predict: Step4 predictorRun 异常: ${e::class.simpleName}: ${e.message}")
                 runFuture?.cancel(true)
+                invalidateDetPredictor()
                 return emptyList()
             }
 
@@ -90,7 +94,6 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
 
             if (outputData.isEmpty()) {
                 log("predict: 输出数据为空，返回空列表")
-                predictorClose(predictor)
                 return emptyList()
             }
 
@@ -100,7 +103,6 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
             val totalPixels = outH * outW
             if (totalPixels <= 0 || totalPixels > outputData.size) {
                 log("predict: 输出尺寸不合法: $outH x $outW, 数据长度=${outputData.size}")
-                predictorClose(predictor)
                 return emptyList()
             }
 
@@ -110,7 +112,6 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
 
             val boxes = dbPostProcess(mat, mapMat, inW, inH)
             mapMat.release()
-            predictorClose(predictor)
 
             val total = System.currentTimeMillis() - start
             log("=== det predict 完成: ${boxes.size} 框 (${total}ms)")
@@ -119,6 +120,27 @@ class PaddleLiteDetModel(private val device: String = "cpu") {
             log("=== det predict 异常: ${e::class.simpleName}: ${e.message}")
             log("=== 堆栈: ${e.stackTraceToString()}")
             return emptyList()
+        }
+    }
+
+    private val predictorLock = Any()
+    private var cachedDetPredictor: Any? = null
+
+    private fun getDetPredictor(): Any {
+        synchronized(predictorLock) {
+            if (cachedDetPredictor == null) {
+                cachedDetPredictor = createPredictor()
+            }
+            return cachedDetPredictor!!
+        }
+    }
+
+    private fun invalidateDetPredictor() {
+        synchronized(predictorLock) {
+            try {
+                cachedDetPredictor?.let { predictorClose(it) }
+            } catch (_: Exception) {}
+            cachedDetPredictor = null
         }
     }
 

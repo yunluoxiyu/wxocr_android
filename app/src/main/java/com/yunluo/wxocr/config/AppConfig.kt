@@ -31,8 +31,18 @@ object AppConfig {
 
     // 保存目录（调试图片、日志等），可在菜单中修改
     var saveDirPath: String
-        get() = prefs.getString("save_dir", "/storage/emulated/0/wx_ocr") ?: "/storage/emulated/0/wx_ocr"
+        get() = prefs.getString("save_dir", null) ?: defaultSaveDir()
         set(v) = prefs.edit().putString("save_dir", v).apply()
+
+    // 默认使用 App 专属外部存储目录，无需任何存储权限即可写入
+    fun defaultSaveDir(): String {
+        return try {
+            val base = appContext.getExternalFilesDir(null) ?: appContext.filesDir
+            File(base, "wx_ocr").absolutePath
+        } catch (e: Exception) {
+            File(appContext.filesDir, "wx_ocr").absolutePath
+        }
+    }
 
     val saveDir: File
         get() = File(saveDirPath).also { it.mkdirs() }
@@ -79,9 +89,15 @@ object AppConfig {
     // 反作弊 OCR 预处理
     val WHITE_HSV_LOWER = intArrayOf(0, 0, 200)
     val WHITE_HSV_UPPER = intArrayOf(180, 20, 255)
+    // 题目窗/补全：题目文字非纯白（带抗锯齿/描边），用更宽松阈值避免首字笔划被裁掉
+    val ANTI_QUESTION_HSV_LOWER = intArrayOf(0, 0, 180)
+    val ANTI_QUESTION_HSV_UPPER = intArrayOf(180, 60, 255)
+    const val OPTION_OCR_UPSCALE = 2.0
     const val WHITE_BINARY_THRESHOLD = 128
     const val OCR_RESIZE_TARGET_WIDTH = 280
     const val OCR_MIN_CONFIDENCE = 0.4f
+    const val ANTI_CHEAT_MIN_CONFIDENCE = 0.3f
+    const val ANTI_CHEAT_DET_WIDTH = 480
 
     // 选项网格分类
     const val GRID_Y_GAP_MIN = 15
@@ -116,7 +132,7 @@ object AppConfig {
 
     // DBNet 检测参数 — 与 Python config.py 一致
     const val DET_DB_THRESH = 0.22f
-    const val DET_DB_BOX_THRESH = 0.38f
+    const val DET_DB_BOX_THRESH = 0.1f
     const val DET_DB_UNCLIP_RATIO = 1.8f
     const val DET_USE_DILATION = true
     const val DET_MAX_SIDE_LEN = 480
@@ -138,7 +154,7 @@ object AppConfig {
         get() = prefs.getString("deepseek_api_key", null)
         set(v) = prefs.edit().putString("deepseek_api_key", v).apply()
     const val DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
-    const val DEEPSEEK_MODEL = "deepseek-v4-flash"
+    const val DEEPSEEK_MODEL = "deepseek-chat"
     const val DEEPSEEK_TIMEOUT_MS = 30000
 
     data class SearchRect(val offsetX: Int, val offsetY: Int, val w: Int, val h: Int)

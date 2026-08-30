@@ -14,13 +14,11 @@ object ImagePreprocessor {
     private const val TAG = "ImagePreprocessor"
 
     fun decodeBase64ToMat(base64Str: String): Mat? {
-        val raw = if (base64Str.startsWith("data:image")) {
-            base64Str.substringAfter("base64,")
-        } else base64Str
-        Log.d(TAG, "decodeBase64ToMat: base64 长度=${raw.length}")
+        val normalized = normalizeBase64(base64Str)
+        Log.d(TAG, "decodeBase64ToMat: base64 长度=${normalized.length}")
         return try {
             val start = System.currentTimeMillis()
-            val bytes = android.util.Base64.decode(raw, android.util.Base64.DEFAULT)
+            val bytes = android.util.Base64.decode(normalized, android.util.Base64.DEFAULT)
             Log.d(TAG, "Base64 解码: ${bytes.size} bytes (${System.currentTimeMillis() - start}ms)")
             val mat = Mat()
             val bmp = android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
@@ -38,14 +36,119 @@ object ImagePreprocessor {
     }
 
     fun decodeBase64ToBitmap(base64Str: String): Bitmap? {
-        val raw = if (base64Str.startsWith("data:image")) {
-            base64Str.substringAfter("base64,")
-        } else base64Str
+        val normalized = normalizeBase64(base64Str)
         return try {
-            val bytes = android.util.Base64.decode(raw, android.util.Base64.DEFAULT)
+            val bytes = android.util.Base64.decode(normalized, android.util.Base64.DEFAULT)
             android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
         } catch (e: Exception) {
             Log.w(TAG, "decodeBase64ToBitmap 失败: ${e.message}")
+            null
+        }
+    }
+
+    /** 归一化 base64：去掉 data 前缀、清空白/换行、空格转 +、还原 URL 编码（%2F→/、%2B→+ 等） */
+    internal fun normalizeBase64(base64Str: String): String {
+        var raw = if (base64Str.startsWith("data:image")) {
+            base64Str.substringAfter("base64,")
+        } else base64Str
+        raw = raw.trim()
+            .replace("\r", "")
+            .replace("\n", "")
+            .replace(" ", "+")
+            .replace(Regex("%([0-9A-Fa-f]{2})")) { m ->
+                m.groupValues[1].toInt(16).toChar().toString()
+            }
+        return raw
+    }
+
+    /** 解码为白字黑底软掩码：alpha 灰度保留抗锯齿细笔画，低饱和度排除绿色等彩色标签 */
+    fun decodeToWhiteTextMask(
+        base64Str: String,
+        alphaThreshold: Int = 15,
+        satThreshold: Int = 30,
+        brightThreshold: Int = 120
+    ): Mat? {
+        val normalized = normalizeBase64(base64Str)
+        return try {
+            val bytes = android.util.Base64.decode(normalized, android.util.Base64.DEFAULT)
+            val rawMat = MatOfByte(*bytes)
+            var src = Imgcodecs.imdecode(rawMat, Imgcodecs.IMREAD_UNCHANGED)
+            rawMat.release()
+            if (src == null || src.empty()) {
+                Log.w(TAG, "decodeToWhiteTextMask: 解码为空")
+                return null
+            }
+            if (src.depth() != CvType.CV_8U) {
+                val tmp = Mat()
+                src.convertTo(tmp, CvType.CV_8U)
+                src.release(); src = tmp
+            }
+
+            val chCount = src.channels()
+            val ch = mutableListOf<Mat>()
+            Core.split(src, ch)
+            val b = ch[0]; val g = ch[1]; val r = ch[2]
+            val a = if (chCount == 4) ch[3] else null
+
+            // 灰度（保留抗锯齿梯度）
+            val bgrTmp = Mat()
+            Core.merge(listOf(b, g, r), bgrTmp)
+            val gray = Mat()
+            Imgproc.cvtColor(bgrTmp, gray, Imgproc.COLOR_BGR2GRAY)
+            bgrTmp.release()
+
+            // 饱和度 = max(R,G,B) - min(R,G,B)，白字/灰字 ≈ 0，绿字高
+            val maxCh = Mat()
+            Core.max(b, g, maxCh); Core.max(maxCh, r, maxCh)
+            val minCh = Mat()
+            Core.min(b, g, minCh); Core.min(minCh, r, minCh)
+            val diff = Mat()
+            Core.subtract(maxCh, minCh, diff)
+            val lowSat = Mat()
+            Imgproc.threshold(diff, lowSat, satThreshold.toDouble(), 255.0, Imgproc.THRESH_BINARY_INV)
+
+            // alpha 是否退化（全 0 或全 255）：退化则按不透明处理，避免灰度被 alpha 清零导致全黑
+            val alphaUniform = if (a != null) {
+                val mm = Core.minMaxLoc(a)
+                mm.minVal == mm.maxVal
+            } else true
+
+            var soft: Mat
+            if (a == null || alphaUniform) {
+                val bright = Mat()
+                Imgproc.threshold(gray, bright, brightThreshold.toDouble(), 255.0, Imgproc.THRESH_BINARY)
+                val textMask = Mat()
+                Core.bitwise_and(bright, lowSat, textMask)
+                soft = Mat()
+                Core.bitwise_and(gray, textMask, soft)
+                bright.release(); textMask.release()
+            } else {
+                val comp = Mat()
+                Core.multiply(gray, a, comp, 1.0 / 255.0)
+                val opq = Mat()
+                Imgproc.threshold(comp, opq, alphaThreshold.toDouble(), 255.0, Imgproc.THRESH_BINARY)
+                val textMask = Mat()
+                Core.bitwise_and(opq, lowSat, textMask)
+                soft = Mat()
+                Core.bitwise_and(comp, textMask, soft)
+                opq.release(); textMask.release()
+                if (Core.countNonZero(soft) == 0) {
+                    soft.release()
+                    soft = Mat()
+                    Core.multiply(gray, a, soft, 1.0 / 255.0)
+                }
+            }
+
+            val out = Mat()
+            Imgproc.cvtColor(soft, out, Imgproc.COLOR_GRAY2BGR)
+            val nz = Core.countNonZero(soft)
+            ch.forEach { it.release() }
+            maxCh.release(); minCh.release(); diff.release(); lowSat.release(); gray.release()
+            soft.release(); src.release()
+            Log.d(TAG, "decodeToWhiteTextMask: ${out.cols()}x${out.rows()} ch=$chCount alphaUniform=$alphaUniform soft_nz=$nz")
+            out
+        } catch (e: Exception) {
+            Log.w(TAG, "decodeToWhiteTextMask 失败: ${e.message}")
             null
         }
     }
@@ -55,6 +158,55 @@ object ImagePreprocessor {
         val bmp = Bitmap.createBitmap(mat.cols(), mat.rows(), Bitmap.Config.ARGB_8888)
         Utils.matToBitmap(mat, bmp)
         return bmp
+    }
+
+    /** 按目标高度等比放大，用于小字放大后再识别，减少笔画丢失 */
+    fun upscaleToHeight(src: Mat, targetHeight: Int): Mat {
+        val h = src.rows()
+        val w = src.cols()
+        val scale = targetHeight.toDouble() / h.coerceAtLeast(1)
+        val dst = Mat()
+        Imgproc.resize(
+            src, dst,
+            Size((w * scale).toDouble().coerceAtLeast(1.0), targetHeight.toDouble()),
+            0.0, 0.0, Imgproc.INTER_CUBIC
+        )
+        return dst
+    }
+
+    /** 裁剪到非背景像素的紧致包围盒（模拟检测模型的裁剪，供纯 rec 识别使用） */
+    fun trimToContent(src: Mat, bgThreshold: Int = 10): Mat {
+        if (src.empty()) return Mat()
+        val bbox = findContentBbox(src, bgThreshold)
+        if (bbox == null) return src.clone()
+        val x1 = (bbox.x - 2).coerceAtLeast(0)
+        val y1 = (bbox.y - 2).coerceAtLeast(0)
+        val x2 = (bbox.x + bbox.width + 2).coerceAtMost(src.cols())
+        val y2 = (bbox.y + bbox.height + 2).coerceAtMost(src.rows())
+        if (x2 <= x1 || y2 <= y1) return src.clone()
+        val roi = Mat(src, Rect(x1, y1, x2 - x1, y2 - y1))
+        val out = roi.clone()
+        roi.release()
+        return out
+    }
+
+    /** 返回非背景像素的紧致包围盒，无内容返回 null */
+    fun findContentBbox(src: Mat, bgThreshold: Int = 10): Rect? {
+        if (src.empty()) return null
+        val gray = Mat()
+        if (src.channels() == 1) src.copyTo(gray) else Imgproc.cvtColor(src, gray, Imgproc.COLOR_BGR2GRAY)
+        val binary = Mat()
+        Imgproc.threshold(gray, binary, bgThreshold.toDouble(), 255.0, Imgproc.THRESH_BINARY)
+        val pts = Mat()
+        Core.findNonZero(binary, pts)
+        binary.release(); gray.release()
+        if (pts.empty()) {
+            pts.release()
+            return null
+        }
+        val rect = Imgproc.boundingRect(pts)
+        pts.release()
+        return rect
     }
 
     fun crop(mat: Mat, x1: Int, y1: Int, x2: Int, y2: Int): Mat {
@@ -202,7 +354,12 @@ object ImagePreprocessor {
         return result
     }
 
-    fun preprocessAntiCheatWhite(roi: Mat, targetWidth: Int = AppConfig.OCR_RESIZE_TARGET_WIDTH): Mat {
+    fun preprocessAntiCheatWhite(
+        roi: Mat,
+        targetWidth: Int = AppConfig.OCR_RESIZE_TARGET_WIDTH,
+        hsvLower: IntArray = AppConfig.WHITE_HSV_LOWER,
+        hsvUpper: IntArray = AppConfig.WHITE_HSV_UPPER
+    ): Mat {
         Log.d(TAG, "preprocessAntiCheatWhite: ${roi.cols()}x${roi.rows()}")
         val hsv = Mat()
         Imgproc.cvtColor(roi, hsv, Imgproc.COLOR_BGR2HSV)
@@ -210,14 +367,14 @@ object ImagePreprocessor {
         Core.inRange(
             hsv,
             Scalar(
-                AppConfig.WHITE_HSV_LOWER[0].toDouble(),
-                AppConfig.WHITE_HSV_LOWER[1].toDouble(),
-                AppConfig.WHITE_HSV_LOWER[2].toDouble()
+                hsvLower[0].toDouble(),
+                hsvLower[1].toDouble(),
+                hsvLower[2].toDouble()
             ),
             Scalar(
-                AppConfig.WHITE_HSV_UPPER[0].toDouble(),
-                AppConfig.WHITE_HSV_UPPER[1].toDouble(),
-                AppConfig.WHITE_HSV_UPPER[2].toDouble()
+                hsvUpper[0].toDouble(),
+                hsvUpper[1].toDouble(),
+                hsvUpper[2].toDouble()
             ),
             mask
         )
@@ -240,6 +397,31 @@ object ImagePreprocessor {
             result.release()
             return dst
         }
+        return result
+    }
+
+    /** 白字软掩码：保留灰度渐变（不硬二值化），用于小字识别，避免抗锯齿笔画断裂 */
+    fun preprocessAntiCheatWhiteSoft(
+        roi: Mat,
+        hsvLower: IntArray = AppConfig.WHITE_HSV_LOWER,
+        hsvUpper: IntArray = AppConfig.WHITE_HSV_UPPER
+    ): Mat {
+        val hsv = Mat()
+        Imgproc.cvtColor(roi, hsv, Imgproc.COLOR_BGR2HSV)
+        val mask = Mat()
+        Core.inRange(
+            hsv,
+            Scalar(hsvLower[0].toDouble(), hsvLower[1].toDouble(), hsvLower[2].toDouble()),
+            Scalar(hsvUpper[0].toDouble(), hsvUpper[1].toDouble(), hsvUpper[2].toDouble()),
+            mask
+        )
+        val whiteOnly = Mat()
+        Core.bitwise_and(roi, roi, whiteOnly, mask)
+        val gray = Mat()
+        Imgproc.cvtColor(whiteOnly, gray, Imgproc.COLOR_BGR2GRAY)
+        val result = Mat()
+        Imgproc.cvtColor(gray, result, Imgproc.COLOR_GRAY2BGR)
+        hsv.release(); mask.release(); whiteOnly.release(); gray.release()
         return result
     }
 
@@ -295,9 +477,7 @@ object ImagePreprocessor {
     fun saveBase64Image(base64Str: String, prefix: String, dir: File = AppConfig.debugDir) {
         try {
             dir.mkdirs()
-            val raw = if (base64Str.startsWith("data:image")) {
-                base64Str.substringAfter("base64,")
-            } else base64Str
+            val raw = normalizeBase64(base64Str)
             val bytes = android.util.Base64.decode(raw, android.util.Base64.DEFAULT)
             val bmp = android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
             val dims = if (bmp != null) "${bmp.width}x${bmp.height}" else "unknown"
@@ -332,12 +512,17 @@ object ImagePreprocessor {
         Imgproc.threshold(gray, binary, 0.0, 255.0, Imgproc.THRESH_BINARY or Imgproc.THRESH_OTSU)
         val h = binary.rows()
         val w = binary.cols()
-        val rowSums = IntArray(h) { y ->
-            var cnt = 0
-            for (x in 0 until w) {
-                if (binary.get(y, x)[0] > 0) cnt++
+        val rowSums = IntArray(h)
+        if (w > 0) {
+            val rowBuf = ByteArray(w)
+            for (y in 0 until h) {
+                var cnt = 0
+                binary.row(y).get(0, 0, rowBuf)
+                for (x in 0 until w) {
+                    if (rowBuf[x].toInt() and 0xFF > 0) cnt++
+                }
+                rowSums[y] = cnt
             }
-            cnt
         }
         val smoothed = IntArray(h) { y ->
             var sum = 0

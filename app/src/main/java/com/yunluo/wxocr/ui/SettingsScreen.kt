@@ -1,5 +1,10 @@
 package com.yunluo.wxocr.ui
 
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
+import android.os.Environment
+import android.provider.Settings
 import android.widget.Toast
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
@@ -185,13 +190,36 @@ fun SettingsScreen(onNavigateBack: () -> Unit) {
                                 ServiceState.postLog("保存目录已设置为: $path")
                                 Toast.makeText(context, "保存目录已更新", Toast.LENGTH_SHORT).show()
                             } else {
-                                dirError = "目录创建失败，请检查路径是否可写"
-                                Toast.makeText(context, "目录创建失败", Toast.LENGTH_SHORT).show()
+                                dirError = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&
+                                    !Environment.isExternalStorageManager()
+                                ) {
+                                    "目录创建失败：Android 11+ 需要先授予“所有文件访问”权限"
+                                } else {
+                                    "目录创建失败，请检查路径是否可写"
+                                }
+                                Toast.makeText(context, dirError, Toast.LENGTH_SHORT).show()
                             }
                         } else {
                             dirError = "路径不能为空"
                         }
                     }) { Text("保存") }
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R &&
+                        !Environment.isExternalStorageManager()
+                    ) {
+                        Spacer(Modifier.height(8.dp))
+                        OutlinedButton(modifier = Modifier.fillMaxWidth(), onClick = {
+                            try {
+                                val intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION)
+                                    .setData(Uri.parse("package:${context.packageName}"))
+                                context.startActivity(intent)
+                            } catch (_: Exception) {
+                                context.startActivity(Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION))
+                            }
+                        }) { Text("授予所有文件访问权限") }
+                        Spacer(Modifier.height(4.dp))
+                        Text("或使用下方 App 专属目录（无需权限）：${AppConfig.defaultSaveDir()}",
+                            fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    }
                 }
             }
         }

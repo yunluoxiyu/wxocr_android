@@ -51,11 +51,9 @@ class PaddleOcrEngine(private val device: String = "cpu") {
     }
 
     private fun decodeToMat(base64Str: String): Mat? {
-        val raw = if (base64Str.startsWith("data:image")) {
-            base64Str.substringAfter("base64,")
-        } else base64Str
+        val normalized = ImagePreprocessor.normalizeBase64(base64Str)
         return try {
-            val bytes = android.util.Base64.decode(raw, android.util.Base64.DEFAULT)
+            val bytes = android.util.Base64.decode(normalized, android.util.Base64.DEFAULT)
             val rawMat = MatOfByte(*bytes)
             val mat = Imgcodecs.imdecode(rawMat, Imgcodecs.IMREAD_COLOR)
             rawMat.release()
@@ -277,9 +275,30 @@ class PaddleOcrEngine(private val device: String = "cpu") {
                 tplMat.release()
                 return null
             }
-            val result = ImagePreprocessor.templateMatch(mat, tplMat)
+            Log.d(TAG, "findAntiCheatButton: source=${mat.cols()}x${mat.rows()}, template=${tplMat.cols()}x${tplMat.rows()}")
+            val scales = doubleArrayOf(0.75, 0.85, 0.95, 1.0, 1.05, 1.15, 1.25)
+            var best: ImagePreprocessor.TemplateMatchResult? = null
+            var bestScore = 0.0
+            for (scale in scales) {
+                val scaledTpl = if (scale == 1.0) {
+                    tplMat.clone()
+                } else {
+                    Mat().also {
+                        Imgproc.resize(tplMat, it, Size(), scale, scale)
+                    }
+                }
+                try {
+                    val result = ImagePreprocessor.templateMatch(mat, scaledTpl, 0.70)
+                    if (result != null && result.confidence > bestScore) {
+                        best = result
+                        bestScore = result.confidence
+                    }
+                } finally {
+                    scaledTpl.release()
+                }
+            }
             tplMat.release()
-            return result
+            return best
         } finally { mat.release() }
     }
 
@@ -296,14 +315,82 @@ class PaddleOcrEngine(private val device: String = "cpu") {
         } finally { mat.release() }
     }
 
-    fun ocrRoiDetections(base64Str: String, x: Int, y: Int, w: Int, h: Int): List<OcrDetection> {
+    fun ocrRoiDetections(base64Str: String, x: Int, y: Int, w: Int, h: Int, windowType: String = "option"): List<OcrDetection> {
         val mat = decodeToMat(base64Str) ?: return emptyList()
         try {
-            return ocrRoiDetections(mat, x, y, w, h)
+            return ocrRoiDetections(mat, x, y, w, h, windowType)
         } finally { mat.release() }
     }
 
-    fun ocrAntiCheatOptionGrid(base64Str: String, x: Int, y: Int, w: Int, h: Int): Map<String, OcrDetection> {
+    fun ocrQuestionFallback(base64Str: String, x: Int, y: Int, w: Int, h: Int): String {
+        val mat = decodeToMat(base64Str) ?: return ""
+        try {
+            val roi = ImagePreprocessor.crop(mat, x, y, x + w, y + h)
+            if (roi.empty()) return ""
+            val processed = ImagePreprocessor.preprocessAntiCheatWhite(
+                roi, targetWidth = AppConfig.ANTI_CHEAT_DET_WIDTH,
+                hsvLower = AppConfig.ANTI_QUESTION_HSV_LOWER,
+                hsvUpper = AppConfig.ANTI_QUESTION_HSV_UPPER
+            )
+            if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_q_fallback")
+            val text = cleanAntiCheatText(predictAndRecycle(processed))
+            roi.release(); processed.release()
+            return text
+        } finally { mat.release() }
+    }
+
+    /** 识别指定区域截图的白字文本（支持透明背景）：投影切行 + 裁剪紧致框 + 每行识别，过高行递归再切分 */
+    fun ocrTextRegion(base64Str: String): String {
+        val mask = ImagePreprocessor.decodeToWhiteTextMask(base64Str) ?: return ""
+        if (mask.empty()) return ""
+        if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(mask, "ocr_text_mask")
+
+        val texts = mutableListOf<String>()
+        recTextSegments(mask, texts)
+
+        val joined = texts.filter { it.isNotBlank() }.joinToString(",")
+        log("ocrTextRegion: ${mask.cols()}x${mask.rows()} -> \"$joined\"")
+        return joined
+    }
+
+    /** 递归识别文本段：过高（可能合并多行）再次切分，逐行裁剪紧致框后识别 */
+    private fun recTextSegments(seg: Mat, texts: MutableList<String>) {
+        if (seg.rows() <= 52) {
+            val trimmed = ImagePreprocessor.trimToContent(seg)
+            if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(trimmed, "ocr_text_line_${texts.size + 1}")
+            texts.add(cleanOcrLine(predictAndRecycle(trimmed)))
+            trimmed.release()
+            seg.release()
+            return
+        }
+        val subs = ImagePreprocessor.splitTextLines(seg, minHeight = 8)
+        if (subs.size <= 1) {
+            subs.forEach { it.release() }
+            val trimmed = ImagePreprocessor.trimToContent(seg)
+            if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(trimmed, "ocr_text_line_${texts.size + 1}")
+            texts.add(cleanOcrLine(predictAndRecycle(trimmed)))
+            trimmed.release()
+            seg.release()
+            return
+        }
+        seg.release()
+        for (sub in subs) {
+            recTextSegments(sub, texts)
+        }
+    }
+
+    /** 对应 wangxian_ocr _clean_ocr_line：去 Lv、去首尾杂字符、剔除括号/答题行，并只保留技能前缀行 */
+    private fun cleanOcrLine(text: String): String {
+        var t = text.replace(Regex("(?:LV|V)\\s*\\d+", RegexOption.IGNORE_CASE), "")
+        t = t.trim().trim(',')
+        t = t.trimStart('：', ':', '；', ';', '，', ',', '。', '.', '、', '-', ' ')
+        if (t.isEmpty() || t.contains('(') || t.contains(')') || t.contains("答题")) return ""
+        // 只保留以技能前缀开头的行，过滤乱码（如 ¥+++——+）与其他标签
+        if (!SKILL_PREFIXES.any { t.startsWith(it) }) return ""
+        return t
+    }
+
+    fun ocrAntiCheatOptionGrid(base64Str: String, x: Int, y: Int, w: Int, h: Int, faint: Boolean = false): Map<String, OcrDetection> {
         val mat = decodeToMat(base64Str) ?: return emptyMap()
         try {
             val halfW = w / 2
@@ -318,68 +405,117 @@ class PaddleOcrEngine(private val device: String = "cpu") {
             for ((letter, rect) in cells) {
                 val padX = (rect.width * 0.06).toInt()
                 val padY = (rect.height * 0.12).toInt()
-                val roi = ImagePreprocessor.crop(
-                    mat,
-                    rect.x + padX,
-                    rect.y + padY,
-                    rect.x + rect.width - padX,
-                    rect.y + rect.height - padY
-                )
+                var cropLeft = rect.x + padX
+                var cropTop = rect.y + padY
+                val baseRight = rect.x + rect.width - padX
+                val baseBottom = rect.y + rect.height - padY
+                val upscaleFactor = if (faint) AppConfig.OPTION_OCR_UPSCALE else 1.0
+                var roi = ImagePreprocessor.crop(mat, cropLeft, cropTop, baseRight, baseBottom)
                 if (roi.empty()) {
                     roi.release()
                     continue
                 }
-                val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi, targetWidth = 320)
-                if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_option_${letter}")
-                val text = cleanAntiCheatText(predictAndRecycle(processed))
-                processed.release(); roi.release()
+                if (faint) {
+                    val up = Mat()
+                    Imgproc.resize(roi, up, Size(), upscaleFactor, upscaleFactor, Imgproc.INTER_CUBIC)
+                    roi.release()
+                    roi = up
+                }
+                val hsvLower = if (faint) AppConfig.ANTI_QUESTION_HSV_LOWER else AppConfig.WHITE_HSV_LOWER
+                val hsvUpper = if (faint) AppConfig.ANTI_QUESTION_HSV_UPPER else AppConfig.WHITE_HSV_UPPER
+                // 识别用软掩码（保留灰度渐变），小字识别更准
+                var soft = ImagePreprocessor.preprocessAntiCheatWhiteSoft(roi, hsvLower, hsvUpper)
+                // 文字紧贴裁剪左/下边缘时，仅向左下各扩展 50px 重裁，避免被裁掉（不向上扩展，防止带入题目文字）
+                val bbox = ImagePreprocessor.findContentBbox(soft)
+                if (bbox != null && (bbox.x <= 4 || bbox.y + bbox.height >= soft.rows() - 4)) {
+                    val newLeft = (cropLeft - 50).coerceAtLeast(0)
+                    val newRight = (baseRight + 50).coerceAtMost(mat.cols())
+                    val newBottom = (baseBottom + 50).coerceAtMost(mat.rows())
+                    if (newRight > newLeft && newBottom > cropTop) {
+                        roi.release(); soft.release()
+                        cropLeft = newLeft
+                        roi = ImagePreprocessor.crop(mat, newLeft, cropTop, newRight, newBottom)
+                        if (faint) {
+                            val up = Mat()
+                            Imgproc.resize(roi, up, Size(), upscaleFactor, upscaleFactor, Imgproc.INTER_CUBIC)
+                            roi.release()
+                            roi = up
+                        }
+                        soft = ImagePreprocessor.preprocessAntiCheatWhiteSoft(roi, hsvLower, hsvUpper)
+                    }
+                }
+                if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(soft, "anti_option_${letter}${if (faint) "_faint" else ""}")
+                // 文字左边缘（用于点击坐标）：soft 中文字 bbox 左边界映射回原图
+                val finalBbox = ImagePreprocessor.findContentBbox(soft)
+                val textLeftInMat = if (finalBbox != null) {
+                    (cropLeft + (finalBbox.x / upscaleFactor).toInt()).coerceAtLeast(0)
+                } else {
+                    cropLeft
+                }
+                // 裁剪到文字紧致框，避免单元格内大量空白被压缩导致识别不全
+                val trimmed = ImagePreprocessor.trimToContent(soft)
+                val text = cleanAntiCheatText(predictAndRecycle(trimmed))
+                trimmed.release(); soft.release(); roi.release()
                 result[letter] = OcrDetection(
                     text = text,
                     centerX = rect.x + rect.width / 2,
                     centerY = rect.y + rect.height / 2,
-                    confidence = 0.8f
+                    confidence = 0.8f,
+                    leftX = textLeftInMat
                 )
             }
             return result
         } finally { mat.release() }
     }
 
-    private fun ocrRoiDetections(mat: Mat, x: Int, y: Int, w: Int, h: Int): List<OcrDetection> {
+    private fun ocrRoiDetections(mat: Mat, x: Int, y: Int, w: Int, h: Int, windowType: String = "option"): List<OcrDetection> {
         val roi = ImagePreprocessor.crop(mat, x, y, x + w, y + h)
         if (roi.empty()) return emptyList()
-        val processed = ImagePreprocessor.preprocessAntiCheatWhite(roi)
-        if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_roi_${x}_${y}")
+        val isRelaxed = windowType == "question" || windowType == "option_faint"
+        val hsvLower = if (isRelaxed) AppConfig.ANTI_QUESTION_HSV_LOWER else AppConfig.WHITE_HSV_LOWER
+        val hsvUpper = if (isRelaxed) AppConfig.ANTI_QUESTION_HSV_UPPER else AppConfig.WHITE_HSV_UPPER
+        val processed = ImagePreprocessor.preprocessAntiCheatWhite(
+            roi, targetWidth = AppConfig.ANTI_CHEAT_DET_WIDTH,
+            hsvLower = hsvLower, hsvUpper = hsvUpper
+        )
+        // 识别用软掩码（保留灰度渐变），小字识别更准
+        val soft = ImagePreprocessor.preprocessAntiCheatWhiteSoft(roi, hsvLower, hsvUpper)
+        if (AppConfig.saveDebug) ImagePreprocessor.saveDebugCrop(processed, "anti_roi_${x}_${y}_$windowType")
 
         val sx = roi.cols().toDouble() / processed.cols().coerceAtLeast(1)
         val sy = roi.rows().toDouble() / processed.rows().coerceAtLeast(1)
         val boxes = synchronized(inferenceLock) { detModel.predict(processed) }
-            .filter { it.score >= AppConfig.OCR_MIN_CONFIDENCE }
+            .filter { it.score >= AppConfig.ANTI_CHEAT_MIN_CONFIDENCE }
             .sortedWith(compareBy<PaddleLiteDetModel.DetBox> { it.centerY }.thenBy { it.centerX })
 
         val detections = mutableListOf<OcrDetection>()
         for (box in boxes) {
-            val localCrop = cropDetBox(processed, box)
+            val localCrop = cropDetBox(soft, box)
             if (localCrop.empty()) {
                 localCrop.release()
                 continue
             }
-            val text = cleanAntiCheatText(predictAndRecycle(localCrop))
-            localCrop.release()
+            // 裁剪到文字紧致框，减少检测框不精确导致的裁切
+            val trimmed = ImagePreprocessor.trimToContent(localCrop)
+            val text = cleanAntiCheatText(predictAndRecycle(trimmed))
+            trimmed.release(); localCrop.release()
             if (text.isBlank()) continue
+            val boxLeft = minOf(box.x1, box.x2, box.x3, box.x4)
             val centerX = x + (box.centerX * sx).toInt()
             val centerY = y + (box.centerY * sy).toInt()
-            detections.add(OcrDetection(text = text, centerX = centerX, centerY = centerY, confidence = box.score))
+            val leftX = x + (boxLeft * sx).toInt()
+            detections.add(OcrDetection(text = text, centerX = centerX, centerY = centerY, confidence = box.score, leftX = leftX))
         }
 
         if (detections.isEmpty()) {
-            val text = cleanAntiCheatText(predictAndRecycle(processed))
-            processed.release(); roi.release()
+            val text = cleanAntiCheatText(predictAndRecycle(soft))
+            processed.release(); soft.release(); roi.release()
             return if (text.isBlank()) emptyList() else listOf(
                 OcrDetection(text = text, centerX = x + w / 2, centerY = y + h / 2, confidence = 0.8f)
             )
         }
 
-        processed.release(); roi.release()
+        processed.release(); soft.release(); roi.release()
         return detections
     }
 
@@ -401,10 +537,12 @@ class PaddleOcrEngine(private val device: String = "cpu") {
             .map { (k, v) -> "$k: $v" }
     }
 
-    data class OcrDetection(val text: String, val centerX: Int, val centerY: Int, val confidence: Float)
+    data class OcrDetection(val text: String, val centerX: Int, val centerY: Int, val confidence: Float, val leftX: Int = 0)
 
     companion object {
         private const val TAG = "PaddleOcrEngine"
+
+        val SKILL_PREFIXES = listOf("初级", "中级", "高级", "特级", "特技", "终极")
 
         fun extractQuestionIndex(text: String): Int {
             var m = Regex("""^(\d+)\s*[<、.．\s,]""").find(text)
